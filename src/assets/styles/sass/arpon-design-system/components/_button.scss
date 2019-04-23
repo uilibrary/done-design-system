@@ -1,0 +1,67 @@
+// html [type="button"],
+// .btn[type="button"] {
+//   -webkit-appearance: none !important;
+// }
+// .btn {
+//   &.rounded,
+//   &.btn-rounded {
+//     border-radius: 40px;
+//   }
+
+//   &:focus,
+//   &:active {
+//     box-shadow: none !important;
+//   }
+
+//   font-weight: $button-font-weight;
+//   font-size: $button-font-size;
+//   letter-spacing: $button-letter-specing;
+//   padding: $button-padding;
+
+//   &.btn-sm {
+//     font-size: $button-sm-font-size;
+//     padding: $button-sm-padding;
+//   }
+//   &.btn-lg {
+//     font-size: $button-lg-font-size;
+//     padding: $button-lg-padding;
+//   }
+
+//   &.btn-raised {
+//     @include button-raised-shadow();
+//   }
+//   &.btn-outline {
+//     @include button-outline-colors();
+//   }
+// }
+
+// .btn-icon {
+//   display: inline-flex;
+//   align-items: center;
+//   .icon {
+//     font-size: 18px;
+//     margin: 0 4px;
+//   }
+// }
+
+
+// Social buttons
+// .btn-facebook {
+//   @include social-button($facebook);
+//   &.btn-outline {
+//     @include social-button-outline($facebook);
+//   }
+// }
+
+// .btn-google {
+//   @include social-button($google);
+//   &.btn-outline {
+//     @include social-button-outline($google);
+//   }
+// }
+// .btn-twitter {
+//   @include social-button($twitter);
+//   &.btn-outline {
+//     @include social-button-outline($twitter);
+//   }
+// }

@@ -1,0 +1,92 @@
+// .dropdown-toggle {
+//     position: relative;
+//     &.btn {
+//         // border: 1px solid $grey-200;
+//         // border-radius: 40px;
+//         // height: 40px;
+//         // line-height: 40px;
+//         // padding: 0 28px 0 20px;
+//         // background: $grey-100;
+//         padding-right: 28px;
+//     }
+//     &::after {
+//         position: absolute;
+//         top: calc(50% - 2px);
+//         right: 10px !important;
+//     }
+// }
+// .dropdown-menu {
+//     border: 0;
+//     box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.08);
+// }
+// .dropdown-item {
+//     padding: .42rem 1.5rem;
+// }
+// .menu-icon-grid {
+//     width: 220px;
+//     padding: 0 8px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     > a {
+//         display: inline-flex;
+//         width: 6rem;
+//         flex-direction: column;
+//         align-items: center;
+//         padding: 18px 12px;
+//         color: $grey-800;
+//         border-radius: 4px;
+//         i {
+//             font-size: 28px;
+//             margin-bottom: 4px;
+//         }
+//         &:hover {
+//             background: $primary;
+//             color: $white;
+//         }
+//     }
+// }
+// .mega-menu {
+//     position: static;
+//     .dropdown-menu {
+//         left: auto;
+//         right: 0;
+//         width: calc(100% - 120px);
+//         max-width: 1200px;
+//         padding: 0;
+//         overflow: hidden;
+//         max-height: calc(100vh - 100px);
+//         overflow-y: scroll;
+//         .bg-img {
+//             background: linear-gradient(to right, $primary, $info);
+//         }
+//         .bg-img, .bg-img .title {
+//             color: #ffffff;
+//         }
+//         // .menu-icon-grid {
+//         //     margin-left: -2rem;
+//         // }
+//         ul.links {
+//             list-style: none;
+//             margin: 0;
+//             padding: 0;
+//             column-count: 2;
+//             li a {
+//                 display: inline-block;
+//                 margin-bottom: 8px;
+//                 color: $grey-600;
+//                 &:hover {
+//                     color: $primary;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 767px) {
+//     .mega-menu {
+//         .dropdown-menu {
+//             width: calc(100% - 10px);
+//         }
+//     }
+// }

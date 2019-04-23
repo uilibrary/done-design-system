@@ -1,0 +1,76 @@
+$spaces: (
+  0: 0px,
+  4: 4px,
+  8: 8px,
+  12: 12px,
+  16: 16px,
+  24: 24px,
+  28: 28px,
+  32: 32px,
+  36: 36px,
+  40: 40px,
+  44: 44px,
+  48: 48px
+);
+
+@each $name, $value in $spaces {
+  .m-#{$name} {
+      margin: $value !important;
+  }
+  .mt-#{$name} {
+    margin-top: $value !important;
+  }
+  .mr-#{$name} {
+    margin-right: $value !important;
+  }
+  .mb-#{$name} {
+    margin-bottom: $value !important;
+  }
+  .ml-#{$name} {
+    margin-left: $value !important;
+  }
+  .mx-#{$name} {
+    margin-left: $value !important;
+    margin-right: $value !important;
+  }
+  .my-#{$name} {
+    margin-top: $value !important;
+    margin-bottom: $value !important;
+  }
+
+  .p-#{$name} {
+    padding: $value !important;
+  }
+  .pt-#{$name} {
+    padding-top: $value !important;
+  }
+  .pr-#{$name} {
+    padding-right: $value !important;
+  }
+  .pb-#{$name} {
+    padding-bottom: $value !important;
+  }
+  .pl-#{$name} {
+    padding-left: $value !important;
+  }
+  .px-#{$name} {
+    padding-left: $value !important;
+    padding-right: $value !important;
+  }
+  .py-#{$name} {
+    padding-top: $value !important;
+    padding-bottom: $value !important;
+  }
+}
+
+.m-auto {
+  margin: auto !important;
+}
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}

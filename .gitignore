@@ -1,0 +1,4 @@
+node_modules
+dist
+src/assets/styles/css
+src/assets/js/es5

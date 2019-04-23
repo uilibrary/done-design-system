@@ -1,0 +1,54 @@
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  letter-spacing: $letter-spacing-base;
+  background: $background;
+  color: $foreground;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+select,
+button,
+textarea,
+input {
+  vertical-align: baseline;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  &[dir="rtl"],
+  &[dir="ltr"] {
+    unicode-bidi: embed;
+  }
+}
+
+bdo[dir="rtl"] {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+bdo[dir="ltr"] {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+}

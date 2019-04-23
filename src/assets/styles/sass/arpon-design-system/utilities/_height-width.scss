@@ -1,0 +1,26 @@
+// ================== Heights ================
+@for $i from 0 through 10 {
+  .h-#{$i * 100}px {
+    height: #{$i * 100}px;
+  }
+}
+
+.h-100vh,
+[h-100vh] {
+  min-height: 100vh;
+}
+
+//==================== Widths =====================
+@for $i from 0 through 10 {
+  [w-#{$i * 10}],
+  .w-#{$i * 10} {
+    width: #{$i * 10}% !important;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .w-sm-100 {
+    width: 100% !important;
+  }
+}

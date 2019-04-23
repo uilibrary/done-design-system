@@ -1,0 +1,86 @@
+$solid-colors: (
+    "blue": #4A90E2,
+    "midnight-blue": #0C0C3C,
+    "indigo": #3F51B5,
+    "dark-purple": #322740,
+    "purple": #7367F0,
+    "pink": #CB3066,
+    "red": #F14004,
+    "orange": #e97d23,
+    "yellow": #F8E71C,
+    "green": #28C76E,
+    "teal": #20c997,
+    "cyan": #9c27b0,
+    "gray": #2d2d33,
+    "slate-gray": #405365
+);
+
+// Gradient colors
+$gradient-colors: (
+  gradient-purple-indigo: (
+    "start-color": #663399,
+    "end-color": #33214b
+  ),
+  gradient-black-blue: (
+    'start-color' : #004e92,
+      'end-color' : #000428
+  ),
+  gradient-black-gray: (
+    'start-color' : #404040,
+      'end-color' : #000000
+  ),
+  gradient-steel-gray: (
+    'start-color' : #616d86,
+      'end-color' : #1F1C2C
+  )
+);
+
+$blue:    map-get($solid-colors, 'blue') !default;
+$indigo:  map-get($solid-colors, 'indigo') !default;
+$purple:  map-get($solid-colors, 'purple') !default;
+$pink:    map-get($solid-colors, 'pink') !default;
+$red:     map-get($solid-colors, 'red') !default;
+$orange:  map-get($solid-colors, 'orange') !default;
+$yellow:  map-get($solid-colors, 'yellow') !default;
+$green:   map-get($solid-colors, 'green') !default;
+$teal:    map-get($solid-colors, 'teal') !default;
+$cyan:    map-get($solid-colors, 'cyan') !default;
+
+$white:    #fff !default;
+$grey-100: #fafafa !default;
+$grey-200: #f5f5f5 !default;
+$grey-300: #eeeeee !default;
+$grey-400: #e0e0e0 !default;
+$grey-500: #bdbdbd !default;
+$grey-600: #9e9e9e !default;
+$grey-700: #757575 !default;
+$grey-800: #616161 !default;
+$grey-900: #4A4A4A !default;
+$black:    #333333 !default;
+
+$primary:       $purple !default;
+$secondary:     $grey-800 !default;
+$success:       $green !default;
+$info:          $blue !default;
+$warning:       $orange !default;
+$danger:        $red !default;
+$light:         $grey-500 !default;
+$dark:          $grey-900 !default;
+$background:    $white !default;
+$foreground:    $black !default;
+
+
+$facebook: rgb(55, 101, 201);
+$google: rgb(236, 65, 44);
+$twitter: rgb(3, 159, 245);
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  info: $info,
+  warning: $warning,
+  danger: $danger,
+  light: $light,
+  dark: $dark
+) !default;

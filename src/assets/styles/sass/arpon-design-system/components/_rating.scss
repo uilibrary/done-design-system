@@ -1,0 +1,23 @@
+// ngb-rating {
+//     .star {
+//         position: relative;
+//         display: inline-block;
+//     }
+//     .half {
+//         position: absolute;
+//         display: inline-block;
+//         overflow: hidden;
+//     }
+// }
+
+// @each $name, $value in $theme-colors {
+//     .rating-#{$name} {
+//         color: $value;
+//         .star {
+//             color: $grey-500;
+//         }
+//         .full, .half {
+//             color: $value;
+//         }
+//     }
+// }

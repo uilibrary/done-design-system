@@ -1,0 +1,25 @@
+.sidebar-panel,
+.main-content-wrap,
+.main-header {
+  transition: all 0.2s ease-in;
+}
+
+.main-content-wrap {
+  width: 100%;
+  min-height: 100vh;
+  float: right;
+
+  .main-content-body {
+    padding: 0.66rem;
+  }
+}
+
+.app-admin-wrap.sidebar-compact-onhover {
+  .sidebar-compact-switch {
+    background: $primary;
+    span {
+      left: 14px;
+      background: $white;
+    }
+  }
+}

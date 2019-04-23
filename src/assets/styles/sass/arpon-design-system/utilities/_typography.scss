@@ -1,0 +1,140 @@
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-family-base;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-normal;
+}
+
+
+h1,
+.h1 {
+  font-size: $font-size-h1;
+  line-height: 1.15;
+  margin-bottom: $margin-base-vertical * 2;
+
+  small {
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+}
+h2,
+.h2 {
+  font-size: $font-size-h2;
+  margin-bottom: $margin-base-vertical * 2;
+}
+h3,
+.h3 {
+  font-size: $font-size-h3;
+  margin-bottom: $margin-base-vertical * 2;
+  line-height: 1.4em;
+}
+h4,
+.h4 {
+  font-size: $font-size-h4;
+  line-height: 1.45em;
+  margin-top: $margin-base-vertical * 2;
+  margin-bottom: $margin-base-vertical;
+
+  & + .category,
+  &.title + .category {
+    margin-top: -5px;
+  }
+}
+h5,
+.h5 {
+  font-size: $font-size-h5;
+  line-height: 1.4em;
+  margin-bottom: 15px;
+
+  &.category {
+    font-weight: 400;
+  }
+}
+h6,
+.h6 {
+  font-size: $font-size-h6;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+}
+
+.display-1 {
+  font-size: $font-size-display-1;
+  font-weight: $font-weight-light;
+}
+.display-2 {
+  font-size: $font-size-display-2;
+  font-weight: $font-weight-light;
+}
+.display-3 {
+  font-size: $font-size-display-3;
+  font-weight: $font-weight-light;
+}
+.display-4 {
+  font-size: $font-size-display-4;
+  font-weight: $font-weight-light;
+}
+.title {
+  font-size: $font-size-title;
+  font-weight: $font-weight-semi;
+}
+.subtitle {
+  font-size: $font-size-subtitle;
+  font-weight: $font-weight-normal;
+}
+
+.blockquote {
+  border-left: 1px solid;
+  padding-left: 1.5rem;
+  font-size: $font-size-blockquote;
+  line-height: 1.8;
+  font-style: italic;
+
+  small {
+    font-weight: $font-weight-semi;
+    font-size: $font-size-small;
+  }
+  @each $name, $value in $theme-colors {
+    &.blockquote-#{$name} {
+      color: $value !important;
+      border-color: $value;
+    }
+  }
+}
+
+// Font size
+@for $i from 10 through 78 {
+  .text-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+// Font weight
+@for $i from 300 through 900 {
+  .font-weight-#{$i} {
+    font-weight: $i;
+  }
+}
+
+// Text colors
+@each $name, $value in $theme-colors {
+  .text-#{$name} {
+    color: $value !important;
+  }
+}
+.text-muted {
+  color: $grey-700 !important;
+}
+
+small,
+.text-small {
+  font-size: $font-size-small;
+}

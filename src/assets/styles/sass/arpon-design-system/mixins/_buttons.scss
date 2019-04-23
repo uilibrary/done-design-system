@@ -1,0 +1,132 @@
+// @mixin bmd-button-variant(
+//   $color,
+//   $background,
+//   $focus-background,
+//   $active-background,
+//   $border,
+//   $focus-border,
+//   $active-border
+// ) {
+//   color: $color;
+//   background-color: $background;
+//   border-color: $border;
+
+//   @include hover {
+//     color: $color;
+//     background-color: $focus-background;
+//     border-color: $focus-border;
+//   }
+
+//   &:focus,
+//   &.focus,
+//   &:hover {
+//     color: $color;
+//     background-color: $focus-background;
+//     border-color: $focus-border;
+//   }
+
+//   &:active,
+//   &.active,
+//   .open > &.dropdown-toggle,
+//   .show > &.dropdown-toggle {
+//     color: $color;
+//     background-color: $focus-background;
+//     border-color: $focus-border;
+//     @include shadow-2dp-color($background);
+
+//     &:hover,
+//     &:focus,
+//     &.focus {
+//       color: $color;
+//       background-color: $active-background;
+//       border-color: $active-border;
+//     }
+//   }
+
+//   // when it is an icon, kill the active bg on open dropdown, but stabilize on hover
+//   .open > &.dropdown-toggle.bmd-btn-icon {
+//     color: inherit;
+//     background-color: $background;
+
+//     // leave hover on with the lighter focus color
+//     &:hover {
+//       background-color: $focus-background;
+//     }
+//   }
+
+//   &.disabled,
+//   &:disabled {
+//     &:focus,
+//     &.focus {
+//       background-color: $background;
+//       border-color: $border;
+//     }
+//     @include hover {
+//       background-color: $background;
+//       border-color: $border;
+//     }
+//   }
+// }
+
+// Button Raised
+// @mixin button-raised-shadow() {
+//   @each $name, $value in $theme-colors {
+//     &.btn-#{$name} {
+//       &:hover {
+//         @include button-shadow-color($value);
+//       }
+//     }
+//   }
+// }
+
+// // Button Outline
+// @mixin button-outline-color($color) {
+//   border-color: $color;
+//   background: rgba($color, 0.1);
+// }
+
+// @mixin button-outline-colors() {
+//   @each $name, $value in $theme-colors {
+//     &.btn-#{$name} {
+//       &:focus {
+//         @include button-outline-color($value);
+//       }
+//       &:hover {
+//         @include button-outline-color($value);
+//         @include button-shadow-color($value);
+//       }
+//     }
+//   }
+// }
+
+// Icon button
+
+
+
+// // Social button
+// @mixin social-button($color) {
+//   background: $color;
+//   border-color: $color;
+//   color: get-contrast($color);
+
+//   &:active,
+//   &:focus,
+//   &:hover {
+//     background: darken($color, 5%);
+//     border-color: darken($color, 5%);
+//     color: get-contrast($color);
+//     // @include button-shadow-color($color);
+//   }
+// }
+
+// @mixin social-button-outline($color) {
+//   @include button-outline-color($color);
+//   color: $color;
+//   &:focus {
+//     @include button-outline-color($color);
+//   }
+//   &:hover {
+//     @include button-outline-color($color);
+//     // @include button-shadow-color($color);
+//   }
+// }

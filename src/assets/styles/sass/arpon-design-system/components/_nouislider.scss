@@ -1,0 +1,166 @@
+// .slider-default {
+//     background: #FAFAFA !important;
+//     border-radius: 15px !important;
+//     border: 0px solid #D3D3D3 !important;
+//     box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+//     height: 10px !important;
+//     .noUi-value-horizontal {
+//         display: none;
+//     }
+//     .noUi-handle {
+//         width: 20px !important;
+//         height: 20px !important;
+//         left: -5px !important;
+//         top: -5px !important;
+//         border-radius: 50%;
+//         border: 5px solid $primary;
+//         box-shadow: none;
+//         cursor: pointer;
+//     }
+//     .noUi-handle:after,
+//     .noUi-handle:before {
+//         content: none !important;
+//         display: block;
+//         position: absolute;
+//         height: 14px;
+//         width: 1px;
+//         background: #E8E7E6;
+//         left: 14px;
+//         top: 6px;
+//     }
+//     .noUi-handle:focus {
+//         outline: none;
+//     }
+//     .noUi-connect {
+//         background: $primary;
+//         border-radius: 15px !important;
+//         box-shadow: inset 0 0 3px rgba(51, 51, 51, .45);
+//         -webkit-transition: background 450ms;
+//         transition: background 450ms;
+//     }
+// }
+
+// // square
+// .square-default {
+//     background: #FAFAFA !important;
+//     border-radius: 15px !important;
+//     border: 0px solid #D3D3D3 !important;
+//     box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+//     height: 10px !important;
+//     .noUi-handle {
+//         width: 20px !important;
+//         height: 20px !important;
+//         border: 5px solid $primary;
+//         box-shadow: none;
+//         cursor: pointer;
+//     }
+//     .noUi-handle:after,
+//     .noUi-handle:before {
+//         content: " " !important;
+//         display: none;
+//         position: absolute;
+//         height: 14px;
+//         width: 1px;
+//         background: #E8E7E6;
+//         left: 14px;
+//         top: 6px;
+//     }
+//     .noUi-handle:focus {
+//         outline: none;
+//     }
+//     .noUi-connect {
+//         background: $primary;
+//         border-radius: 15px !important;
+//         box-shadow: inset 0 0 3px rgba(51, 51, 51, .45);
+//         -webkit-transition: background 450ms;
+//         transition: background 450ms;
+//     }
+// }
+
+// @each $name,
+// $value in $theme-colors {
+//     .slider-#{$name} {
+//         .noUi-connect {
+//             background: $value;
+//         }
+//         .noUi-handle {
+//             border: 5px solid $value;
+//         }
+//     }
+// }
+
+// .slider-custom {
+//     .noUi-connect {
+//         background: #3FB8AF;
+//     }
+//     .noUi-handle {
+//         border: 5px solid #B2DFDB;
+//     }
+// }
+
+// .slider-extra-large {
+//     height: 14px !important;
+//     .noUi-handle {
+//         width: 28px !important;
+//         height: 28px !important;
+//         top: -7px !important;
+//     }
+// }
+
+// .slider-large {
+//     height: 12px !important;
+//     .noUi-handle {
+//         width: 24px !important;
+//         height: 24px !important;
+//         top: -6px !important;
+//     }
+// }
+
+// .slider-small {
+//     height: 6px !important;
+//     .noUi-handle {
+//         top: -7px !important;
+//     }
+// }
+
+// .slider-extra-small {
+//     height: 3px !important;
+//     .noUi-handle {
+//         top: -8px !important;
+//     }
+// }
+
+// @each $name,
+// $value in $theme-colors {
+//     .circle-filled.slider-#{$name} {
+//         .noUi-handle {
+//             background: $value;
+//         }
+//     }
+// }
+
+// @each $name,
+// $value in $theme-colors {
+//     .square-default.slider-#{$name} {
+//         .noUi-handle {
+//             background: $value;
+//         }
+//     }
+// }
+
+// .square-default.slider-custom,
+// .circle-filled.slider-custom {
+//     .noUi-handle {
+//         background: #B2DFDB;
+//     }
+// }
+
+// // vertical slider
+// .vertical-slider-example {
+//     display: inline-block;
+// }
+
+// .noUi-vertical {
+//     width: 10px !important;
+//     height: 150px !important;
+// }
