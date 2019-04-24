@@ -3,10 +3,9 @@
 */
 
 @import "variables/variables";
-
-@import 'globals';
 @import 'functions/functions';
 @import 'mixins/mixins';
+
+@import 'globals';
 @import 'utilities/utilities';
 @import 'components/components';
-@import 'layouts/layouts';

@@ -1,39 +1,42 @@
-// html [type="button"],
-// .btn[type="button"] {
-//   -webkit-appearance: none !important;
-// }
-// .btn {
-//   &.rounded,
-//   &.btn-rounded {
-//     border-radius: 40px;
-//   }
+html [type="button"],
+.btn[type="button"] {
+  -webkit-appearance: none !important;
+}
+.btn {
+  &.rounded,
+  &.btn-rounded {
+    border-radius: 40px;
+  }
 
-//   &:focus,
-//   &:active {
-//     box-shadow: none !important;
-//   }
+  font-weight: $button-font-weight;
+  font-size: $button-font-size;
+  letter-spacing: $button-letter-specing;
+  text-transform: $button-text-transform;
+  padding: $button-padding;
+  @include transition(all, $animation-duration-base, $animation-timing-base);
 
-//   font-weight: $button-font-weight;
-//   font-size: $button-font-size;
-//   letter-spacing: $button-letter-specing;
-//   padding: $button-padding;
+  &.btn-sm {
+    font-size: $button-sm-font-size;
+    padding: $button-sm-padding;
+  }
+  &.btn-lg {
+    font-size: $button-lg-font-size;
+    padding: $button-lg-padding;
+  }
 
-//   &.btn-sm {
-//     font-size: $button-sm-font-size;
-//     padding: $button-sm-padding;
-//   }
-//   &.btn-lg {
-//     font-size: $button-lg-font-size;
-//     padding: $button-lg-padding;
-//   }
+  @include button();
+  &.btn-outline {
+    @include button-outline();
+  }
+  &.btn-raised {
+    @include button-raised();
+  }
 
-//   &.btn-raised {
-//     @include button-raised-shadow();
-//   }
-//   &.btn-outline {
-//     @include button-outline-colors();
-//   }
-// }
+}
+
+.btn-group {
+    
+}
 
 // .btn-icon {
 //   display: inline-flex;

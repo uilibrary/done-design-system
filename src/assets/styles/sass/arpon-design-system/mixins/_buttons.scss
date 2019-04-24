@@ -1,83 +1,141 @@
-// @mixin bmd-button-variant(
-//   $color,
-//   $background,
-//   $focus-background,
-//   $active-background,
-//   $border,
-//   $focus-border,
-//   $active-border
-// ) {
-//   color: $color;
-//   background-color: $background;
-//   border-color: $border;
+@mixin arp-button-variant(
+  $color,
+  $focus-color,
+  $active-color,
+  $background,
+  $focus-background,
+  $active-background,
+  $border,
+  $focus-border,
+  $active-border,
+  $shadow,
+  $hover-shadow
+) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+  box-shadow: $shadow;
 
-//   @include hover {
-//     color: $color;
-//     background-color: $focus-background;
-//     border-color: $focus-border;
-//   }
+  &:hover,
+  &:active {
+    color: $focus-color !important;
+    background-color: $focus-background !important;
+    border-color: $focus-border !important;
+    box-shadow: $hover-shadow;
+    
+    transform: translateY(-2px);
+  }
+  &:focus {
+    color: $focus-color !important;
+    box-shadow: none !important;
+    background-color: $focus-background !important;
+  }
 
-//   &:focus,
-//   &.focus,
-//   &:hover {
-//     color: $color;
-//     background-color: $focus-background;
-//     border-color: $focus-border;
-//   }
+  &.active,
+  .open > &.dropdown-toggle,
+  .show > &.dropdown-toggle {
+    color: $active-color;
+    background-color: $active-background !important;
+    border-color: $active-border !important;
 
-//   &:active,
-//   &.active,
-//   .open > &.dropdown-toggle,
-//   .show > &.dropdown-toggle {
-//     color: $color;
-//     background-color: $focus-background;
-//     border-color: $focus-border;
-//     @include shadow-2dp-color($background);
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $focus-color;
+      background-color: $active-background;
+      border-color: $active-border;
+    }
+  }
 
-//     &:hover,
-//     &:focus,
-//     &.focus {
-//       color: $color;
-//       background-color: $active-background;
-//       border-color: $active-border;
-//     }
-//   }
+  .open > &.dropdown-toggle.btn-icon {
+    color: inherit;
+    background-color: $background;
 
-//   // when it is an icon, kill the active bg on open dropdown, but stabilize on hover
-//   .open > &.dropdown-toggle.bmd-btn-icon {
-//     color: inherit;
-//     background-color: $background;
+    &:hover {
+      background-color: $focus-background;
+    }
+  }
 
-//     // leave hover on with the lighter focus color
-//     &:hover {
-//       background-color: $focus-background;
-//     }
-//   }
+  &.disabled,
+  &:disabled {
+    &:focus,
+    &.focus {
+      background-color: $background !important;
+      border-color: $border !important;
+    }
+    @include hover {
+      background-color: $background !important;
+      border-color: $border !important;
+      box-shadow: none !important;
+      transform: none !important;
+    }
+  }
+}
 
-//   &.disabled,
-//   &:disabled {
-//     &:focus,
-//     &.focus {
-//       background-color: $background;
-//       border-color: $border;
-//     }
-//     @include hover {
-//       background-color: $background;
-//       border-color: $border;
-//     }
-//   }
-// }
+@mixin button() {
+  @each $name, $value in $theme-colors {
+    &.btn-#{$name} {
+      $lighten: lighten($value, 5);      
+      @include arp-button-variant(
+        $white,   // color
+        $white,   // focus-color
+        $white,   // active-color
+        $value,   // background
+        $lighten, // focus-background
+        $lighten, // active-background
+        $value,   // border
+        $lighten, // focus-border
+        $lighten,  // active-border
+        none,
+        arp-shadow-4dp($value)
+      );
+    }
+  }
+}
+
+@mixin button-outline() {
+  @each $name, $value in $theme-colors {
+    &.btn-outline-#{$name} {
+      @include arp-button-variant(
+        $value, // color
+        $white, // focus-color
+        $white, // active-color
+        $white, // background
+        $value, // focus-background
+        $value, // active-background
+        $value, // border
+        $value, // focus-border
+        $value,  // active-border
+        none,
+        arp-shadow-4dp($value)
+      );
+    }
+  }
+}
 
 // Button Raised
-// @mixin button-raised-shadow() {
-//   @each $name, $value in $theme-colors {
-//     &.btn-#{$name} {
-//       &:hover {
-//         @include button-shadow-color($value);
-//       }
-//     }
-//   }
-// }
+@mixin button-raised() {
+  @each $name, $value in $theme-colors {
+    &.btn-raised-#{$name} {
+      @include shadow-4dp-color($value);
+
+      $lighten: lighten($value, 5);
+      @include arp-button-variant(
+        $white,   // color
+        $white,   // focus-color
+        $white,   // active-color
+        $value,   // background
+        $lighten, // focus-background
+        $lighten, // active-background
+        $value,   // border
+        $lighten, // focus-border
+        $lighten,  // active-border
+        arp-shadow-3dp($value), // shadow
+        arp-shadow-4dp($value) // hover-shadow
+      );
+    }
+  }
+}
 
 // // Button Outline
 // @mixin button-outline-color($color) {
@@ -100,8 +158,6 @@
 // }
 
 // Icon button
-
-
 
 // // Social button
 // @mixin social-button($color) {

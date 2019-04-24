@@ -1,7 +1,2 @@
-@function get-contrast($color) {
-  @if(lightness($color) < 40) {
-    @return $black;
-  } @else {
-    @return $white;
-  }
-}
+@import "color.function";
+@import "shadow.function";

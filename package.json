@@ -1,5 +1,5 @@
 {
-  "name": "gull-html",
+  "name": "arpon-design-system",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -30,8 +30,5 @@
     "gulp-useref": "^3.1.5",
     "gulp-wait": "0.0.2",
     "run-sequence": "^2.2.1"
-  },
-  "dependencies": {
-    "bootstrap": "^4.3.1"
   }
 }
