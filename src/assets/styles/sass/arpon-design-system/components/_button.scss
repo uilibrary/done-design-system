@@ -5,8 +5,11 @@ html [type="button"],
 .btn {
   &.rounded,
   &.btn-rounded {
-    border-radius: 40px;
+    border-radius: $button-rounded-radius !important;
   }
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   font-weight: $button-font-weight;
   font-size: $button-font-size;
@@ -32,20 +35,32 @@ html [type="button"],
     @include button-raised();
   }
 
+  @include button-icon-style();
 }
 
 .btn-group {
-    
+  .btn {
+    transform: none !important;
+  }
 }
 
-// .btn-icon {
-//   display: inline-flex;
-//   align-items: center;
-//   .icon {
-//     font-size: 18px;
-//     margin: 0 4px;
-//   }
-// }
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  @include button-icon-style();
+  
+  .icon,
+  i,
+  [class^="ti-"],
+  [class*=" ti-"],
+  .feather {
+    margin: 0;
+  }
+}
 
 
 // Social buttons

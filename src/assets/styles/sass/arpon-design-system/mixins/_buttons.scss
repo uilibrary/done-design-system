@@ -137,6 +137,21 @@
   }
 }
 
+@mixin button-icon-style() {
+  .icon,
+  i,
+  [class^="ti-"],
+  [class*=" ti-"] {
+    font-size: $button-icon-size;
+    margin-right: $button-icon-margin;
+  }
+  .feather {
+    height: 16px;
+    width: 16px;
+    margin-right: $button-icon-margin;
+  }
+}
+
 // // Button Outline
 // @mixin button-outline-color($color) {
 //   border-color: $color;

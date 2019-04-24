@@ -15,6 +15,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/assets/fonts/themify-icons.css">
     <link
       rel="stylesheet"
       href="/assets/styles/css/arpon-design-system/arpon-design-system.min.css"
@@ -110,6 +111,7 @@
         <div class="mb-24">
           <!-- <p class="title text-muted">Default flat buttons</p> -->
           <button class="btn btn-primary mx-4">Button</button>
+          <button class="btn btn-primary rounded mx-4">Button</button>
           <button class="btn btn-secondary mx-4">Button</button>
           <button class="btn btn-success mx-4">Button</button>
           <button class="btn btn-warning mx-4">Button</button>
@@ -149,6 +151,27 @@
             <button class="btn btn-link btn-link-primary mx-4">Button</button>
             <button class="btn btn-link btn-link-secondary mx-4">Button</button>
             <button class="btn btn-link btn-link-success mx-4">Button</button>
+        </div>
+
+        <div class="mb-24">
+            <button class="btn btn-primary btn-icon mx-4">
+              <i class="ti-save-alt"></i>
+            </button>
+            <button class="btn btn-primary btn-icon">
+                <i data-feather="bell-off"></i>
+            </button>
+            <button class="btn btn-primary rounded-circle btn-icon">
+                <i data-feather="bell-off"></i>
+            </button>
+            <button class="btn btn-primary mx-4">
+                <i class="ti-save-alt"></i> Themify Icon
+              </button>
+              <button class="btn btn-primary ">
+                  <i data-feather="bell-off"></i> Feather Icon
+              </button>
+              <button class="btn btn-primary rounded">
+                  <i data-feather="bell-off"></i> Feather Icon
+              </button>
         </div>
 
         <div class="mb-24">
@@ -196,5 +219,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
   </body>
 </html>
