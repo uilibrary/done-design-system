@@ -3,39 +3,38 @@ html [type="button"],
   -webkit-appearance: none !important;
 }
 .btn {
-  &.rounded,
-  &.btn-rounded {
-    border-radius: $button-rounded-radius !important;
-  }
+  // Button Base Styles
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   font-weight: $button-font-weight;
   font-size: $button-font-size;
   letter-spacing: $button-letter-specing;
   text-transform: $button-text-transform;
   padding: $button-padding;
+
   @include transition(all, $animation-duration-base, $animation-timing-base);
-
-  &.btn-sm {
-    font-size: $button-sm-font-size;
-    padding: $button-sm-padding;
-  }
-  &.btn-lg {
-    font-size: $button-lg-font-size;
-    padding: $button-lg-padding;
-  }
-
-  @include button();
-  &.btn-outline {
-    @include button-outline();
-  }
-  &.btn-raised {
-    @include button-raised();
-  }
-
+  
+  @include button-colors();
+  @include button-socials();
+  @include button-sizes();
   @include button-icon-style();
+
+  &.rounded,
+  &.btn-rounded {
+    border-radius: $button-rounded-radius !important;
+  }
+  &.semi-rounded,
+  &.btn-semi-rounded {
+    border-radius: $button-semi-rounded-radius !important;
+  }
+
+  &.move-up {
+    &:hover,
+    &:active {
+      transform: translateY(-2px);
+    }
+  }
 }
 
 .btn-group {
@@ -61,25 +60,3 @@ html [type="button"],
     margin: 0;
   }
 }
-
-
-// Social buttons
-// .btn-facebook {
-//   @include social-button($facebook);
-//   &.btn-outline {
-//     @include social-button-outline($facebook);
-//   }
-// }
-
-// .btn-google {
-//   @include social-button($google);
-//   &.btn-outline {
-//     @include social-button-outline($google);
-//   }
-// }
-// .btn-twitter {
-//   @include social-button($twitter);
-//   &.btn-outline {
-//     @include social-button-outline($twitter);
-//   }
-// }

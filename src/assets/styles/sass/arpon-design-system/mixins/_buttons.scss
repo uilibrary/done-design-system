@@ -22,8 +22,6 @@
     background-color: $focus-background !important;
     border-color: $focus-border !important;
     box-shadow: $hover-shadow;
-    
-    transform: translateY(-2px);
   }
   &:focus {
     color: $focus-color !important;
@@ -72,68 +70,95 @@
   }
 }
 
-@mixin button() {
+// Default flat butotn
+@mixin button($color) {
+  $lighten: lighten($color, 5);      
+  @include arp-button-variant(
+    $white,   // color
+    $white,   // focus-color
+    $white,   // active-color
+    $color,   // background
+    $lighten, // focus-background
+    $lighten, // active-background
+    $color,   // border
+    $lighten, // focus-border
+    $lighten, // active-border
+    none,      // shadow
+    arp-shadow-2dp($color) // hover-shadow
+  );
+}
+
+// Outline button
+@mixin button-outline($color) {
+  @include arp-button-variant(
+    $color, // color
+    $white, // focus-color
+    $white, // active-color
+    $white, // background
+    $color, // focus-background
+    $color, // active-background
+    $color, // border
+    $color, // focus-border
+    $color,  // active-border
+    none,   // shadow
+    arp-shadow-2dp($color) // hover-shadow
+  );
+}
+// Raised button
+@mixin button-raised($color) {
+  @include shadow-4dp-color($color); // Raised button default shadow
+  $lighten: lighten($color, 5);
+  @include arp-button-variant(
+    $white,   // color
+    $white,   // focus-color
+    $white,   // active-color
+    $color,   // background
+    $lighten, // focus-background
+    $lighten, // active-background
+    $color,   // border
+    $lighten, // focus-border
+    $lighten,  // active-border
+    arp-shadow-2dp($color), // shadow
+    arp-shadow-4dp($color) // hover-shadow
+  );
+}
+
+@mixin button-colors() {
   @each $name, $value in $theme-colors {
     &.btn-#{$name} {
-      $lighten: lighten($value, 5);      
-      @include arp-button-variant(
-        $white,   // color
-        $white,   // focus-color
-        $white,   // active-color
-        $value,   // background
-        $lighten, // focus-background
-        $lighten, // active-background
-        $value,   // border
-        $lighten, // focus-border
-        $lighten,  // active-border
-        none,
-        arp-shadow-4dp($value)
-      );
+      @include button($value);
+    }
+    &.btn-outline.btn-outline-#{$name} {
+      @include button-outline($value);
+    }
+    &.btn-raised.btn-raised-#{$name} {
+      @include button-raised($value);
     }
   }
 }
 
-@mixin button-outline() {
-  @each $name, $value in $theme-colors {
-    &.btn-outline-#{$name} {
-      @include arp-button-variant(
-        $value, // color
-        $white, // focus-color
-        $white, // active-color
-        $white, // background
-        $value, // focus-background
-        $value, // active-background
-        $value, // border
-        $value, // focus-border
-        $value,  // active-border
-        none,
-        arp-shadow-4dp($value)
-      );
+@mixin button-socials {
+  @each $name, $value in $social-colors {
+    &.btn-#{$name} {
+      @include button($value);
+      &.btn-outline {
+        @include button-outline($value);
+      }
+      &.btn-raised {
+        @include button-raised($value);
+      }
     }
   }
 }
 
-// Button Raised
-@mixin button-raised() {
-  @each $name, $value in $theme-colors {
-    &.btn-raised-#{$name} {
-      @include shadow-4dp-color($value);
-
-      $lighten: lighten($value, 5);
-      @include arp-button-variant(
-        $white,   // color
-        $white,   // focus-color
-        $white,   // active-color
-        $value,   // background
-        $lighten, // focus-background
-        $lighten, // active-background
-        $value,   // border
-        $lighten, // focus-border
-        $lighten,  // active-border
-        arp-shadow-3dp($value), // shadow
-        arp-shadow-4dp($value) // hover-shadow
-      );
-    }
+@mixin button-sizes() {
+  &.btn-sm {
+    font-size: $button-sm-font-size;
+    padding: $button-sm-padding;
+  }
+  &.btn-lg {
+    font-size: $button-lg-font-size;
+    padding: $button-lg-padding;
   }
 }
 
@@ -151,53 +176,3 @@
     margin-right: $button-icon-margin;
   }
 }
-
-// // Button Outline
-// @mixin button-outline-color($color) {
-//   border-color: $color;
-//   background: rgba($color, 0.1);
-// }
-
-// @mixin button-outline-colors() {
-//   @each $name, $value in $theme-colors {
-//     &.btn-#{$name} {
-//       &:focus {
-//         @include button-outline-color($value);
-//       }
-//       &:hover {
-//         @include button-outline-color($value);
-//         @include button-shadow-color($value);
-//       }
-//     }
-//   }
-// }
-
-// Icon button
-
-// // Social button
-// @mixin social-button($color) {
-//   background: $color;
-//   border-color: $color;
-//   color: get-contrast($color);
-
-//   &:active,
-//   &:focus,
-//   &:hover {
-//     background: darken($color, 5%);
-//     border-color: darken($color, 5%);
-//     color: get-contrast($color);
-//     // @include button-shadow-color($color);
-//   }
-// }
-
-// @mixin social-button-outline($color) {
-//   @include button-outline-color($color);
-//   color: $color;
-//   &:focus {
-//     @include button-outline-color($color);
-//   }
-//   &:hover {
-//     @include button-outline-color($color);
-//     // @include button-shadow-color($color);
-//   }
-// }

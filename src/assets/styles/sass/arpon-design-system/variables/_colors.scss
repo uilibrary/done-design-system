@@ -15,7 +15,6 @@ $solid-colors: (
     "slate-gray": #405365
 );
 
-// Gradient colors
 $gradient-colors: (
   gradient-purple-indigo: (
     "start-color": #663399,
@@ -69,11 +68,6 @@ $dark:          $grey-900 !default;
 $background:    $white !default;
 $foreground:    $black !default;
 
-
-$facebook: rgb(55, 101, 201);
-$google: rgb(236, 65, 44);
-$twitter: rgb(3, 159, 245);
-
 $theme-colors: (
   primary: $primary,
   secondary: $secondary,
@@ -84,3 +78,14 @@ $theme-colors: (
   light: $light,
   dark: $dark
 ) !default;
+
+
+$social-colors: (
+  facebook: rgb(55, 101, 201),
+  google: rgb(236, 65, 44),
+  twitter: rgb(3, 159, 245)
+);
+
+$facebook: map-get($social-colors, 'facebook');
+$google: map-get($social-colors, 'google');
+$twitter: map-get($social-colors, 'twitter');
