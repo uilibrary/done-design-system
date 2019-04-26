@@ -117,6 +117,7 @@
           <button class="btn btn-secondary move-up mx-4">Button</button>
           <button class="btn btn-success mx-4">Button</button>
           <button class="btn btn-warning mx-4">Button</button>
+          <button class="btn btn-info mx-4">Button</button>
           <button class="btn btn-danger mx-4">Button</button>
           <button class="btn btn-dark mx-4">Button</button>
 
@@ -214,13 +215,13 @@
 
         <div class="mb-36">
           <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-secondary active">
+            <label class="btn btn-primary active">
               <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
             </label>
-            <label class="btn btn-secondary">
+            <label class="btn btn-primary">
               <input type="radio" name="options" id="option2" autocomplete="off"> Radio
             </label>
-            <label class="btn btn-secondary">
+            <label class="btn btn-primary">
               <input type="radio" name="options" id="option3" autocomplete="off"> Radio
             </label>
           </div>
@@ -242,6 +243,62 @@
       </div>
     </section>
 
+    <section class="py-48">
+      <div class="container">
+        <div class="row mb-36">
+          <div class="col-6 mb-24">
+                <div class="input-group input-rounded mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text ti-user" id="basic-addon1"></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text ti-save-alt" id="basic-addon1"></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group has-success mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text ti-user" id="basic-addon1"></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group has-error mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text ti-save-alt" id="basic-addon1"></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group has-warning mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text ti-save-alt" id="basic-addon1"></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+        
+                
+              
+                
+                <div class="input-group input-rounded has-error">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text ti-user" id="basic-addon1"></span>
+                      </div>
+                  <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+          </div>
+
+          
+          
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -258,9 +315,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-        feather.replace();
-    </script>
+    <script src="/assets/vendor/feather.min.js"></script>
+
+    <script src="/assets/js/es5/arpon.min.js"></script>
   </body>
 </html>

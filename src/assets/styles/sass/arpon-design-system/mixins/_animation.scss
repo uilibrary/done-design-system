@@ -4,3 +4,7 @@
       -ms-transition: $properties $duration $timing;
           transition: $properties $duration $timing;
 }
+
+@mixin transition-all {
+  transition: all $animation-duration-base $animation-timing-base !important;
+}

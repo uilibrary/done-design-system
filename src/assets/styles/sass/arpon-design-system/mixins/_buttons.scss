@@ -128,10 +128,10 @@
     &.btn-#{$name} {
       @include button($value);
     }
-    &.btn-outline.btn-outline-#{$name} {
+    &.btn-outline-#{$name} {
       @include button-outline($value);
     }
-    &.btn-raised.btn-raised-#{$name} {
+    &.btn-raised-#{$name} {
       @include button-raised($value);
     }
   }
@@ -163,10 +163,7 @@
 }
 
 @mixin button-icon-style() {
-  .icon,
-  i,
-  [class^="ti-"],
-  [class*=" ti-"] {
+  @include icons {
     font-size: $button-icon-size;
     margin-right: $button-icon-margin;
   }
