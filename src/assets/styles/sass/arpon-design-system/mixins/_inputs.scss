@@ -1,0 +1,161 @@
+@mixin rounded-input() {
+  .input-rounded &, &.input-rounded {
+    border-radius: $input-rounded-radius;
+  }
+}
+
+@mixin input-light-bg {
+  .input-light &, &.input-light {
+    border: 0 !important;
+    background: $grey-200;
+  }
+
+  // .has-success.input-light &, 
+  // &.has-success.input-light {
+  //   background: rgba($success, .1);
+  // }
+  // .has-error.input-light &, 
+  // &.has-error.input-light {
+  //   background: rgba($danger, .1);
+  // }
+  // .has-warning.input-light &, 
+  // &.has-warning.input-light {
+  //   background: rgba($warning, .1);
+  // }
+
+}
+
+@mixin input() {
+  font-size: $input-font-size;
+  height: $input-height;
+  border-color: $input-border-color;
+  border-width: $input-border-width;
+  background: transparent;
+  &:focus,
+  .focus {
+    border-color: $primary;
+    box-shadow: none;
+  }
+  @include rounded-input();
+  @include input-light-bg();
+
+  .has-success &,
+  .has-error &,
+  .has-warning {
+    padding-right: 48px;    
+  }
+  .has-success & {
+    border-color: $success;
+  }
+  .has-warning & {
+    border-color: $warning;
+  }
+  .has-error & {
+    border-color: $danger;
+  }
+  .input-group-prepend + & {
+    border-left: 0;
+  }
+  .input-group-append + & {
+    border-right: 0;
+  }
+  @include transition-all();
+}
+
+@mixin input-group-focus {
+  &.input-group-focus {
+    .input-group-text {
+      border-color: $primary;
+      color: $primary;
+    }
+    box-shadow: arp-shadow-2dp(rgba($primary, .1));
+  }
+  &.input-group-focus.has-success {
+    box-shadow: arp-shadow-2dp(rgba($success, .6));
+    .input-group-text {
+      color: $success;
+    }
+  }
+  &.input-group-focus.has-error {
+    box-shadow: arp-shadow-2dp(rgba($danger, .6));
+    .input-group-text {
+      color: $danger;
+    }
+  }
+  &.input-group-focus.has-warning {
+    box-shadow: arp-shadow-2dp(rgba($warning, .6));
+    .input-group-text {
+      color: $warning;
+    }
+  }
+}
+
+@mixin input-group-icon {
+  font-size: $input-icon-font-size;
+  border-color: $input-border-color;
+  border-width: $input-border-width;
+  background: transparent;
+  border-right: 0;
+  @include input-light-bg();
+  @include rounded-input();
+
+  .has-success &,
+  .input-group-foucs.has-success & {
+    border-color: $success !important;
+    color: $success;
+  }
+  .has-warning &,
+  .input-group-foucs.has-error & {
+    border-color: $warning !important;
+    color: $warning;
+  }
+  .has-error &,
+  .input-group-foucs.has-warning & {
+    border-color: $danger !important;
+    color: $danger;
+  }
+  @include transition-all();
+}
+
+@mixin input-state-icon {
+  &::after {
+    position: absolute;
+    top: 0;
+    // top: calc(50% - #{$input-state-icon-size / 2});
+    right: 0px;
+    font-size: $input-state-icon-size;
+    font-family: 'themify';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    z-index: 10;
+    height: 100%;
+    width: 40px;
+    line-height: $input-height;
+    text-align: center;
+  }
+}
+
+@mixin input-placeholder($color, $opacity){
+  &::-moz-placeholder {
+      color: $color;
+      opacity: $opacity;
+  }
+  &:-moz-placeholder{
+      color: $color;
+      opacity: $opacity;
+  }
+  &::-webkit-input-placeholder{
+      color: $color;
+      opacity: $opacity;
+  }
+  &:-ms-input-placeholder{
+      color: $color;
+      opacity: $opacity;
+  }
+}

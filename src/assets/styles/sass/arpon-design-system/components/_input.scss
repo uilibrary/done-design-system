@@ -1,116 +1,37 @@
-@mixin rounded-input() {
-  .input-rounded &, &.input-rounded {
-    border-radius: 30px;
-  }
-}
-
-@mixin input() {
-  border-color: $input-border-color;
-  &:focus,
-  .focus {
-    border-color: $primary;
-    box-shadow: none;
-    // background: transparent !important;
-  }
-  @include rounded-input();
-
-  .has-success &,
-  .has-error &,
-  .has-warning {
-    padding-right: 48px;    
-  }
-  .has-success & {
-    border-color: $success;
-  }
-  .has-warning & {
-    border-color: $warning;
-  }
-  .has-error & {
-    border-color: $danger;
-  }
-  .input-group-prepend + & {
-    border-left: 0;
-  }
-  .input-group-append + & {
-    border-right: 0;
-  }
-  @include transition-all();
-}
-
-@mixin input-group-focus {
-  &.input-group-focus {
-    .input-group-text {
-      border-color: $primary;
-    }
-    box-shadow: arp-shadow-2dp($grey-600);
-  }
-}
-
-@mixin input-group-icon {
-  font-size: $input-icon-font-size;
-  border-color: $input-border-color;
-  background: transparent;
-  @include rounded-input();
-
-  .has-success &,
-  .input-group-foucs.has-success & {
-    border-color: $success !important;
-    color: $success;
-  }
-  .has-warning &,
-  .input-group-foucs.has-error & {
-    border-color: $warning !important;
-    color: $warning;
-  }
-  .has-error &,
-  .input-group-foucs.has-warning & {
-    border-color: $danger !important;
-    color: $danger;
-  }
-  @include transition-all();
-}
-
 .form-control {
-  font-size: $input-font-size;
-  height: $input-height;
-
   @include input();
-  // border-color: $foreground;
-  // border: 1px solid;
-
+  @include input-placeholder($grey-800, .6);
 }
 
 .input-group {
+  border-radius: $input-default-radius;
   &.has-success,
   &.has-error,
   &.has-warning {
     position: relative;
-    &::after {
-      position: absolute;
-      top: calc(50% - 6.5px);
-      right: 10px;
-      font-size: 13px;
-      font-family: 'themify';
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+    overflow: hidden;
+    @include input-state-icon();
   }
+
   &.has-success {
     &::after {
       content: "\e64c";
       color: $success;
+      background: rgba($success, .14);
     }
   }
   &.has-error {
     &::after {
       content: "\e646";
       color: $danger;
+      background: rgba($danger, .14);
+    }
+  }
+  &.has-warning {
+    &::after {
+      content: "\e646";
+      color: $warning;
+      background: rgba($warning, .14);
     }
   }
   
@@ -125,6 +46,6 @@
 .input-group-text {
   @include input-group-icon();
   .input-group-prepend & {
-    padding-right: 0 !important;
+    padding-right: 1px !important;
   }
 }
