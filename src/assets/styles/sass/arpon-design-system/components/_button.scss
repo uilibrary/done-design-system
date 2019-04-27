@@ -13,7 +13,7 @@ html [type="button"],
   text-transform: $button-text-transform;
   padding: $button-padding;
 
-  @include transition(all, $animation-duration-base, $animation-timing-base);
+  @include transition-all();
   
   @include button-colors();
   @include button-socials();
