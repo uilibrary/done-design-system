@@ -45,17 +45,20 @@ $green:   map-get($solid-colors, 'green') !default;
 $teal:    map-get($solid-colors, 'teal') !default;
 $cyan:    map-get($solid-colors, 'cyan') !default;
 
+$grey-base: desaturate($purple, 72);
+
 $white:    #fff !default;
-$grey-100: #fafafa !default;
-$grey-200: #f5f5f5 !default;
-$grey-300: #eeeeee !default;
-$grey-400: #e0e0e0 !default;
-$grey-500: #bdbdbd !default;
-$grey-600: #9e9e9e !default;
-$grey-700: #757575 !default;
-$grey-800: #616161 !default;
-$grey-900: #4A4A4A !default;
-$black:    #333333 !default;
+$grey-100: lighten($grey-base, 36) !default;
+$grey-200: lighten($grey-base, 28) !default;
+$grey-300: lighten($grey-base, 20) !default;
+$grey-400: lighten($grey-base, 12) !default;
+$grey-500: lighten($grey-base, 4) !default;
+// $grey-600: #9e9e9e !default;
+$grey-600: darken($grey-base, 4) !default;
+$grey-700: darken($grey-base, 12) !default;
+$grey-800: darken($grey-base, 20) !default;
+$grey-900: darken($grey-base, 28) !default;
+$black:    darken($grey-base, 48) !default;
 
 $primary:       $purple !default;
 $secondary:     $grey-800 !default;

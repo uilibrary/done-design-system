@@ -1,4 +1,11 @@
 .card {
   box-shadow: arp-shadow-2dp($grey-600);
   border: 0;
+  // color: $grey-600;
+  .card-header {
+    background: $card-header-bg;
+  }
+  .card-footer {
+    background: $card-footer-bg;
+  }
 }
