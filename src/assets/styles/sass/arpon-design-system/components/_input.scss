@@ -17,27 +17,28 @@
     &::after {
       content: "\e64c";
       color: $success;
-      background: rgba($success, .14);
+      // background: rgba($success, .14);
     }
   }
   &.has-error {
     &::after {
       content: "\e646";
       color: $danger;
-      background: rgba($danger, .14);
+      // background: rgba($danger, .14);
     }
   }
   &.has-warning {
     &::after {
       content: "\e646";
       color: $warning;
-      background: rgba($warning, .14);
+      // background: rgba($warning, .14);
     }
   }
   
   @include icons {
     color: $grey-800;
   }
+  @include input-group-light-bg();
   @include rounded-input();
   @include input-group-focus();
   @include transition-all();

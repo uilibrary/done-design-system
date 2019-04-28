@@ -9,20 +9,11 @@
     border: 0 !important;
     background: $grey-200;
   }
-
-  // .has-success.input-light &, 
-  // &.has-success.input-light {
-  //   background: rgba($success, .1);
-  // }
-  // .has-error.input-light &, 
-  // &.has-error.input-light {
-  //   background: rgba($danger, .1);
-  // }
-  // .has-warning.input-light &, 
-  // &.has-warning.input-light {
-  //   background: rgba($warning, .1);
-  // }
-
+}
+@mixin input-group-light-bg() {
+  &.input-light {
+    // box-shadow: arp-shadow-2dp($grey-400);
+  }
 }
 
 @mixin input() {
@@ -67,6 +58,10 @@
     .input-group-text {
       border-color: $primary;
       color: $primary;
+      background: $white;
+    }
+    .form-control {
+      background: $white;
     }
     box-shadow: arp-shadow-2dp(rgba($primary, .1));
   }
@@ -120,8 +115,8 @@
 @mixin input-state-icon {
   &::after {
     position: absolute;
-    top: 0;
-    // top: calc(50% - #{$input-state-icon-size / 2});
+    // top: 0;
+    top: calc(50% - #{$input-state-icon-size / 2});
     right: 0px;
     font-size: $input-state-icon-size;
     font-family: 'themify';
@@ -134,9 +129,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     z-index: 10;
-    height: 100%;
+    // height: 100%;
     width: 40px;
-    line-height: $input-height;
+    // line-height: $input-height;
     text-align: center;
   }
 }
