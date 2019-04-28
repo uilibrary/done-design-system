@@ -5,3 +5,31 @@
     @return $white;
   }
 }
+
+@function gen-color-opacity-map($color) {
+  $map: (
+   
+    50: lighten($color, 50),
+    100: lighten($color, 40),
+    200: lighten($color, 30),
+    300: lighten($color, 20),
+    400: lighten($color, 10),
+    500: $color,
+    600: darken($color, 10),
+    700: darken($color, 20),
+    800: darken($color, 30),
+    900: darken($color, 40),
+  );
+  @return $map;
+}
+
+@function gen-color-full-opacity-map($color-map) {
+  $full-color-map: ();
+  @each $name, $value in $color-map {
+    $map: ();
+    $map: map-merge($map, ($name: gen-color-opacity-map($value)) );
+    $full-color-map: map-merge($full-color-map, $map);
+  }
+  @return $full-color-map;
+}
+

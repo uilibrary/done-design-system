@@ -8,4 +8,11 @@
   .card-footer {
     background: $card-footer-bg;
   }
+  .card-header, .card-footer {
+    border-color: $card-border-color
+  }
+  .card-title {
+    margin: 0 0 1rem;
+    font-weight: $font-weight-semi;
+  }
 }

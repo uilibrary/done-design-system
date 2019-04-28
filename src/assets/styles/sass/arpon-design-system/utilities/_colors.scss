@@ -1,10 +1,104 @@
-.grey-100 {background-color: $grey-100}
-.grey-200 {background-color: $grey-200}
-.grey-300 {background-color: $grey-300}
-.grey-400 {background-color: $grey-400}
-.grey-500 {background-color: $grey-500}
-.grey-600 {background-color: $grey-600}
-.grey-700 {background-color: $grey-700}
-.grey-800 {background-color: $grey-800}
-.grey-900 {background-color: $grey-900}
-.black {background-color: $black}
+// Background Grey colors
+.grey-100 {
+  background-color: $grey-100;
+}
+.grey-200 {
+  background-color: $grey-200;
+}
+.grey-300 {
+  background-color: $grey-300;
+}
+.grey-400 {
+  background-color: $grey-400;
+}
+.grey-500 {
+  background-color: $grey-500;
+}
+.grey-600 {
+  background-color: $grey-600;
+}
+.grey-700 {
+  background-color: $grey-700;
+}
+.grey-800 {
+  background-color: $grey-800;
+}
+.grey-900 {
+  background-color: $grey-900;
+}
+.black {
+  background-color: $black;
+}
+// Text Grey colors
+.text-grey-100 {
+  color: $grey-100;
+}
+.text-grey-200 {
+  color: $grey-200;
+}
+.text-grey-300 {
+  color: $grey-300;
+}
+.text-grey-400 {
+  color: $grey-400;
+}
+.text-grey-500 {
+  color: $grey-500;
+}
+.text-grey-600 {
+  color: $grey-600;
+}
+.text-grey-700 {
+  color: $grey-700;
+}
+.text-grey-800 {
+  color: $grey-800;
+}
+.text-grey-900 {
+  color: $grey-900;
+}
+.text-black {
+  color: $black;
+}
+
+// Text colors based on theme color map
+@each $name, $value in $theme-colors {
+  .text-#{$name} {
+    color: $value !important;
+  }
+}
+// Text and background based on solid colors map
+@each $name, $value in $solid-colors {
+  .#{$name} {
+    background-color: $value;
+  }
+  .text-#{$name} {
+    color: $value;
+  }
+}
+
+//Generate color opacity map
+$full-map: gen-color-full-opacity-map($solid-colors);
+/*
+$full-map: (
+  blue: (
+    100: #f31312,
+    .....,
+    900: #f32332
+  ),
+  red: (
+    100: #f31312,
+    .....,
+    900: #f32332
+  )
+)
+*/
+
+// background color opacity 
+@each $colorName, $map in $full-map {
+  @each $name, $value in $map {
+    .#{$colorName}-#{$name} {
+      background-color: $value;
+    }
+  }
+}

@@ -124,12 +124,6 @@ h6,
   }
 }
 
-// Text colors
-@each $name, $value in $theme-colors {
-  .text-#{$name} {
-    color: $value !important;
-  }
-}
 .text-muted {
   color: $grey-700 !important;
 }
