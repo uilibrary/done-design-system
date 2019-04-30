@@ -63,13 +63,17 @@
 
 // Text colors based on theme color map
 @each $name, $value in $theme-colors {
+  .bg-#{$name} {
+    background-color: $value !important;
+  }
   .text-#{$name} {
     color: $value !important;
   }
 }
+
 // Text and background based on solid colors map
 @each $name, $value in $solid-colors {
-  .#{$name} {
+  .#{$name}, .bg-#{$name} {
     background-color: $value;
   }
   .text-#{$name} {

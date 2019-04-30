@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="/assets/fonts/themify-icons.css">
     <link
@@ -23,11 +21,78 @@
     />
   </head>
   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar" data-color-on-scroll="on-scroll bg-primary shadow-4dp" data-scroll-distance="400">
+          <div class="container">
+            <a class="navbar-brand" href="#">Arpon</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Dropdown link
+                  </a>
+                  <div
+                    class="dropdown-menu dropdown-primary"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-header" href="#">Dropdown Header</a>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+        <section class="section section-header text-center">
+          <div class="section-header-image" style="background-image: url(assets/images/photo-wide-3.jpg)"></div>
+          
+          <div class="container d-flex flex-column section-header-content">
+            <div class="brand mb-16">
+                <!-- <img src="assets/images/bootstrap-logo.png" alt=""> -->
+            </div>
+            <h1 class="display-2 text-uppercase mb-8">Arpon Design system</h1>
+            <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+            <div class="my-32"></div>
+            <p>Design and coded by UI Lib</p>
+          </div>
+        </section>
     <section class="py-48">
       <div class="container">
         <div class="mb-24">
           <p class="title text-muted">Headings</p>
-          <h1>The Arpon Design System heading 1</h1>
+          <h1 >The Arpon Design System heading 1</h1>
           <h2>The Arpon Design System heading 2</h2>
           <h3>The Arpon Design System heading 3</h3>
           <h4>The Arpon Design System heading 4</h4>
@@ -193,15 +258,30 @@
       </div>
 
         <div class="mb-36">
-            <button class="btn btn-primary btn-icon mx-4">
+            <button class="btn btn-raised btn-raised-primary rounded-circle btn-icon btn-lg mx-4">
+              <i class="ti-save-alt"></i>
+            </button>
+            <button class="btn btn-raised btn-raised-primary rounded-circle btn-icon mx-4">
+              <i class="ti-save-alt"></i>
+            </button>
+            <button class="btn btn-raised btn-raised-primary rounded-circle btn-icon btn-sm mx-4">
               <i class="ti-save-alt"></i>
             </button>
             <button class="btn btn-primary btn-icon">
                 <i data-feather="bell-off"></i>
             </button>
-            <button class="btn btn-primary rounded-circle btn-icon">
+            <button class="btn btn-primary rounded-circle btn-lg btn-icon">
                 <i data-feather="bell-off"></i>
             </button>
+
+            <button class="btn btn-primary rounded-circle btn-icon">
+              <i data-feather="bell-off"></i>
+          </button>
+
+          <button class="btn btn-primary rounded-circle btn-sm btn-icon">
+            <i data-feather="bell-off"></i>
+        </button>
+
             <button class="btn btn-primary mx-4">
                 <i class="ti-save-alt"></i> Themify Icon
               </button>
@@ -359,8 +439,52 @@
                 <textarea class="form-control" aria-label="With textarea"></textarea>
               </div>
         </div>
-          
-          
+        
+
+        <!-- Radio & checkbox -->
+        
+        <div class="col-6 mb-36">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">checkbox default</label>
+          </div>
+        </div>
+
+        <div class="col-6 mb-36">
+          <div class="custom-control custom-checkbox checkbox-primary">
+            <input type="checkbox" class="custom-control-input" id="customCheck2">
+            <label class="custom-control-label" for="customCheck2">checkbox primary</label>
+          </div>
+        </div>
+
+        <div class="col-6 mb-36">
+          <div class="custom-control custom-checkbox checkbox-success">
+            <input type="checkbox" class="custom-control-input" id="customCheck3">
+            <label class="custom-control-label" for="customCheck3">checkbox success</label>
+          </div>
+        </div>
+
+        <div class="col-6 mb-36">
+          <div class="custom-control custom-checkbox checkbox-warning">
+            <input type="checkbox" class="custom-control-input" id="customCheck4">
+            <label class="custom-control-label" for="customCheck4">checkbox warning</label>
+          </div>
+        </div>
+
+        <!-- Radio -->
+        <div class="col-6 mb-36">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
+          </div>
+          <div class="custom-control custom-radio radio-success custom-control-inline">
+            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
+          </div>
+
+
+        </div>
+
         </div>
 
 
@@ -399,6 +523,108 @@
           </div>
         </div>
 
+        <!-- Nav bar -->
+        <div class="row">
+          <div class="col-6 mb-36">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-4dp rounded">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-header" href="#">Dropdown Header</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col-6 mb-36">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-4dp rounded">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"><i data-feather="home"></i> <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> <i data-feather="chrome"></i> </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> <i data-feather="box"></i> </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i data-feather="user"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-header" href="#">Dropdown Header</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col-6 mb-36">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-4dp rounded">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> <i class="fab fa-chrome"></i> </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> <i class="fas fa-briefcase"></i> </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-cog"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-header" href="#">Dropdown Header</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+
         
       </div>
     </section>
@@ -409,14 +635,7 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
+      src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"
     ></script>
 
     <script src="/assets/vendor/feather.min.js"></script>

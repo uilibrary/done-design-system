@@ -154,3 +154,42 @@
       opacity: $opacity;
   }
 }
+
+
+
+@mixin custom-checkbox() {
+  .custom-control-label {
+    &::before, &::after {
+      top: $checkbox-height / 4;
+      height: $checkbox-height;
+      width: $checkbox-width;
+    }
+  }
+  .custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 .2rem rgba($primary, .4);
+    border-color: $primary;
+  }
+  .custom-control-input:checked~.custom-control-label::before {
+    background: $primary;
+    border-color: $primary;
+  }
+
+  @each $name, $value in $theme-colors {
+    &.checkbox-#{$name}, &.radio-#{$name} {
+      .custom-control-label {
+        &::before {
+          border-color: $value;
+        }
+      }
+      .custom-control-input:focus~.custom-control-label::before {
+        box-shadow: 0 0 0 .2rem rgba($value, .4);
+        border-color: $value;
+    
+      }
+      .custom-control-input:checked~.custom-control-label::before {
+        background: $value;
+        border-color: $value;
+      }
+    }
+  }
+}

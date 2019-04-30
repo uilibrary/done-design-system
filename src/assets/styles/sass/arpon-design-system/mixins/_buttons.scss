@@ -160,6 +160,24 @@
     font-size: $button-lg-font-size;
     padding: $button-lg-padding;
   }
+  &.btn-icon {
+    &.btn-sm {
+      height: 36px;
+      width: 36px;
+      padding: 0;
+      @include icons {
+        font-size: $button-icon-sm-size;
+      }
+    }
+    &.btn-lg {
+      height: 56px;
+      width: 56px;
+      padding: 0;
+      @include icons {
+        font-size: $button-icon-lg-size;
+      }
+    }
+  }
 }
 
 @mixin button-icon-style() {
@@ -167,6 +185,7 @@
     font-size: $button-icon-size;
     margin-right: $button-icon-margin;
   }
+  
   .feather {
     height: 16px;
     width: 16px;

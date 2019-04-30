@@ -1,0 +1,20 @@
+.navbar {
+  padding-top: $navbar-padding-base;
+  padding-bottom: $navbar-padding-base;
+
+  transition: all .4s ease-in;
+
+  &.main-navbar {
+    padding-top: 24px;
+  }
+  &.on-scroll {
+    padding-top: $navbar-padding-base !important;
+  }
+}
+
+.nav-item {
+  .feather {
+    height: 18px;
+    width: 18px;
+  }
+}

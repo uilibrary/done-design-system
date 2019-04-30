@@ -17,7 +17,10 @@ $button-rounded-radius: 40px;
 // Icon button vars
 $button-icon-padding: 12px 12px;
 $button-icon-margin: 7px;
+
 $button-icon-size: $button-font-size;
+$button-icon-sm-size: $button-font-size * .874;
+$button-icon-lg-size: $button-font-size * 1.2;
 $button-icon-sm-padding: 6.5px 20px;
 $button-icon-lg-padding: 18px 36px;
 

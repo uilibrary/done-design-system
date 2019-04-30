@@ -50,3 +50,16 @@
     padding-right: 1px !important;
   }
 }
+
+
+.custom-checkbox, 
+.custom-radio {
+  @include custom-checkbox(); 
+}
+.custom-checkbox {
+  .custom-control-label {
+    &::before {
+      border-radius: 2px;
+    }
+  }
+}

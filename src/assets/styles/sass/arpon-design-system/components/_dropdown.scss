@@ -1,0 +1,33 @@
+.dropdown-menu {
+  border: 0;
+  box-shadow: arp-shadow-4dp($grey-400);
+  top: 100% !important;
+  font-size: $font-size-base;
+  padding: 0;
+  overflow: hidden;
+  @include transition-all();
+
+  .dropdown & {
+    
+  }
+  .dropdown.show &,
+  &.open {
+    transform: translateY(0) !important;
+    opacity: 1;
+  }
+
+  .dropdown-header {
+    color: $grey-600;
+    font-weight: $font-weight-semi;
+    padding: 0.75rem 1.5rem 0.5rem;
+  }
+
+  .dropdown-item {
+    padding: 0.5rem 1.5rem;
+    &:hover,
+    &:focus {
+      background-color: lighten($primary, 3);
+      color: $white;
+    }
+  }
+}
