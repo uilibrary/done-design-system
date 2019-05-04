@@ -1,7 +1,6 @@
 .navbar {
   padding-top: $navbar-padding-base;
   padding-bottom: $navbar-padding-base;
-
   transition: all .4s ease-in;
 
   &.main-navbar {
@@ -12,9 +11,15 @@
   }
 }
 
-.nav-item {
-  .feather {
-    height: 18px;
-    width: 18px;
+
+.navbar-nav {
+  .nav-item {
+    .nav-link {
+      font-weight: $font-weight-semi;
+    }
+    .feather {
+      height: 18px;
+      width: 18px;
+    }
   }
 }

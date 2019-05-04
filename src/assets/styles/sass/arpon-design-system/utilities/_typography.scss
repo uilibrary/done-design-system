@@ -117,12 +117,6 @@ h6,
     font-size: #{$i}px;
   }
 }
-// Font weight
-@for $i from 300 through 900 {
-  .font-weight-#{$i} {
-    font-weight: $i;
-  }
-}
 
 .text-muted {
   color: $grey-700 !important;

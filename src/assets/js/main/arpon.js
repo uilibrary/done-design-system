@@ -42,6 +42,7 @@ $(document).ready(function() {
     $(window).on("scroll", arponUtils.onSrollChangeColor($elemOnScroll));
   }
 
+  // Feather icons
   if (feather) {
     feather.replace();
   }

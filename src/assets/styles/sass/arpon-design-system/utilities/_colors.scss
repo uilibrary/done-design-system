@@ -81,25 +81,10 @@
   }
 }
 
-//Generate color opacity map
-$full-map: gen-color-full-opacity-map($solid-colors);
-/*
-$full-map: (
-  blue: (
-    100: #f31312,
-    .....,
-    900: #f32332
-  ),
-  red: (
-    100: #f31312,
-    .....,
-    900: #f32332
-  )
-)
-*/
+
 
 // background color opacity 
-@each $colorName, $map in $full-map {
+@each $colorName, $map in $opacity-map {
   @each $name, $value in $map {
     .#{$colorName}-#{$name} {
       background-color: $value;
