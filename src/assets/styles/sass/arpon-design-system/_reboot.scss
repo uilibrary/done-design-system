@@ -18,10 +18,14 @@ img {
   max-width: 100%;
 }
 
-a,
-a:focus,
-a:hover {
-  text-decoration: none;
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  @include hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
 }
 
 select,

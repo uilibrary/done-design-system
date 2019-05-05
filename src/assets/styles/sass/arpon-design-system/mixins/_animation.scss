@@ -6,5 +6,5 @@
 }
 
 @mixin transition-all {
-  transition: all $animation-duration-base $animation-timing-base !important;
+  transition: $transition-base !important;
 }

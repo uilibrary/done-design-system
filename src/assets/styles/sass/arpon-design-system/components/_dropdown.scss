@@ -1,6 +1,6 @@
 .dropdown-menu {
   border: 0;
-  box-shadow: arp-shadow-4dp($grey-400);
+  box-shadow: arp-shadow-4dp($gray-400);
   top: 100% !important;
   font-size: $font-size-base;
   padding: 0;
@@ -17,7 +17,7 @@
   }
 
   .dropdown-header {
-    color: $grey-600;
+    color: $gray-600;
     font-weight: $font-weight-semi;
     padding: 0.75rem 1.5rem 0.5rem;
   }

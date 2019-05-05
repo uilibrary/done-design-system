@@ -1,30 +1,31 @@
 $button-font-weight: $font-weight-semi        !default;
-$button-font-size: 14px                       !default;
+$button-font-size: rem(14)                     !default;
 $button-text-transform: uppercase             !default;
-$button-sm-font-size: 10px                    !default;
-$button-lg-font-size: 14px                    !default;
+$button-sm-font-size: rem(10)                    !default;
+$button-lg-font-size: rem(14)                    !default;
 $button-letter-specing: .3px                  !default;
 
-$button-padding: 8.5px 24px;
-$button-sm-padding: 5px 14px;
-$button-sm-font-size: 12px;
-$button-lg-padding: 10.5px 30px;
-$button-lg-font-size: 18px;
+$button-padding: rem(8.5) rem(24);
+$button-sm-padding: rem(5) rem(14);
+$button-sm-font-size: rem(12);
+$button-lg-padding: rem(10.5) rem(30);
 
-$button-semi-rounded-radius: 10px;
-$button-rounded-radius: 40px;
+$button-lg-font-size: rem(18);
+
+$button-semi-rounded-radius: rem(10);
+$button-rounded-radius: rem(40);
 
 // Icon button vars
-$button-icon-padding: 12px 12px;
-$button-icon-margin: 7px;
+$button-icon-padding: rem(12) rem(12);
+$button-icon-margin: rem(7);
 
 $button-icon-size: $button-font-size;
-$button-icon-sm-size: $button-font-size * .874;
-$button-icon-lg-size: $button-font-size * 1.2;
-$button-icon-sm-padding: 6.5px 20px;
-$button-icon-lg-padding: 18px 36px;
+$button-icon-sm-size: rem(12);
+$button-icon-lg-size: rem(16);
+$button-icon-sm-padding: rem(6.5) rem(20);
+$button-icon-lg-padding: rem(18) rem(36);
 
 // Font awesome icons
-$button-fa-icon-font-size: 16px; 
-$button-fa-icon-sm-font-size: 12px; 
-$button-fa-icon-lg-font-size: 18px; 
+$button-fa-icon-font-size: rem(16);
+$button-fa-icon-sm-font-size: rem(12); 
+$button-fa-icon-lg-font-size: rem(18); 

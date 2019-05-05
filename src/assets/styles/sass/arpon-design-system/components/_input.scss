@@ -1,6 +1,6 @@
 .form-control {
   @include input();
-  @include input-placeholder($grey-800, .6);
+  @include input-placeholder($gray-800, .6);
 }
 
 .input-group {
@@ -36,7 +36,7 @@
   }
   
   @include icons {
-    color: $grey-800;
+    color: $gray-800;
   }
   @include input-group-light-bg();
   @include rounded-input();

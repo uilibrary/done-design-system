@@ -1,0 +1,25 @@
+@mixin tab-colors {
+  @each $name, $value in $theme-colors {
+    .nav-tabs-#{$name} {
+      .tab-content,
+      .nav-tabs {
+        border-color: $value !important;
+      }
+      .nav-link {
+        &.active {
+          border-color: $value $value $white !important;
+          color: $value !important;
+        }
+        &:hover {
+          color: $value;
+        }
+      }
+    }
+    .nav-pills-#{$name} {
+      .nav-link.active,
+      .show > .nav-link {
+        background-color: $value;
+      }
+    }
+  }
+}

@@ -1,14 +1,13 @@
-$input-height: 2.5rem; // 40px
-$input-font-size: .875em; // 14px
-$input-default-radius: .25rem;
-$input-rounded-radius: 1.875rem; // 30px
-$input-icon-font-size: .875em;
-$input-state-icon-size: .8125em; // 13px
+$input-height: rem(40); // 40px
+$input-font-size: rem(14); // 14px
+$input-default-radius: rem(4);
+$input-rounded-radius: rem(30); // 30px
+$input-icon-font-size: rem(14);
+$input-state-icon-size: rem(13); // 13px
 
-$input-border-color: $grey-600;
+$input-border-color: $gray-600;
 $input-border-width: 1px;
 
-
 // checkbox
-$checkbox-height: 1.1rem;
-$checkbox-width: 1.1rem;
+$checkbox-height: rem(18);
+$checkbox-width: rem(18);

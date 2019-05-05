@@ -1,6 +1,29 @@
+@function rem($px) {
+  @return #{$px/16}rem;
+}
+
 $font-family-heading: 'Roboto', sans-serif;
 $font-family-base: 'Roboto', sans-serif;
-$font-size-base: 15px;
+$font-size-base: rem(15);
 $font-weight-base: 400;
 $line-height-base: 1.5;
 $letter-spacing-base: .3px;
+
+$spacer: 1rem !default;
+
+// Border style & radius
+$border-width: 1px !default;
+$border-color: $gray-300 !default;
+$border-radius: .25rem !default;
+$border-radius-lg: .3rem !default;
+$border-radius-sm: .2rem !default;
+
+// Acive colors
+$component-active-color: $white !default;
+$component-active-bg: $primary !default;
+
+// Style anchor elements.
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;

@@ -7,12 +7,12 @@
 @mixin input-light-bg {
   .input-light &, &.input-light {
     border: 0 !important;
-    background: $grey-200;
+    background: $gray-200;
   }
 }
 @mixin input-group-light-bg() {
   &.input-light {
-    // box-shadow: arp-shadow-2dp($grey-400);
+    // box-shadow: arp-shadow-2dp($gray-400);
   }
 }
 
@@ -115,7 +115,6 @@
 @mixin input-state-icon {
   &::after {
     position: absolute;
-    // top: 0;
     top: calc(50% - #{$input-state-icon-size / 2});
     right: 0px;
     font-size: $input-state-icon-size;
@@ -160,7 +159,7 @@
 @mixin custom-checkbox() {
   .custom-control-label {
     &::before, &::after {
-      top: $checkbox-height / 4;
+      top: calc(50% - #{$checkbox-height} / 2);
       height: $checkbox-height;
       width: $checkbox-width;
     }

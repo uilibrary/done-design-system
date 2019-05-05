@@ -1,2 +1,4 @@
-$animation-duration-base: .15s;
-$animation-timing-base: ease-in;
+$animation-duration-base: .2s;
+$animation-timing-base: ease-in-out;
+
+$transition-base: all $animation-duration-base $animation-timing-base !default;
