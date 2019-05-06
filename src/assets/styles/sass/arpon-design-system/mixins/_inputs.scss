@@ -7,12 +7,12 @@
 @mixin input-light-bg {
   .input-light &, &.input-light {
     border: 0 !important;
-    background: $gray-200;
+    background: $white;
   }
 }
 @mixin input-group-light-bg() {
   &.input-light {
-    // box-shadow: arp-shadow-2dp($gray-400);
+    box-shadow: arp-shadow-1dp($gray-900);
   }
 }
 
@@ -37,12 +37,15 @@
   }
   .has-success & {
     border-color: $success;
+    color: $success;
   }
   .has-warning & {
     border-color: $warning;
+    color: $warning;
   }
   .has-error & {
     border-color: $danger;
+    color: $danger;
   }
   .input-group-prepend + & {
     border-left: 0;
@@ -63,22 +66,22 @@
     .form-control {
       background: $white;
     }
-    box-shadow: arp-shadow-2dp(rgba($primary, .1));
+    box-shadow: arp-shadow-2dp($gray-600);
   }
   &.input-group-focus.has-success {
-    box-shadow: arp-shadow-2dp(rgba($success, .6));
+    // box-shadow: arp-shadow-2dp(rgba($success, .6));
     .input-group-text {
       color: $success;
     }
   }
   &.input-group-focus.has-error {
-    box-shadow: arp-shadow-2dp(rgba($danger, .6));
+    // box-shadow: arp-shadow-2dp(rgba($danger, .6));
     .input-group-text {
       color: $danger;
     }
   }
   &.input-group-focus.has-warning {
-    box-shadow: arp-shadow-2dp(rgba($warning, .6));
+    // box-shadow: arp-shadow-2dp(rgba($warning, .6));
     .input-group-text {
       color: $warning;
     }

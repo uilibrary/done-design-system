@@ -50,7 +50,7 @@
   margin-right: -.5rem;
   .nav-link {
     background: $white;
-    box-shadow: arp-shadow-2dp($gray-600);
+    box-shadow: arp-shadow-2dp($gray-400);
     margin: 0 .5rem;
     color: $black;
   }
@@ -81,7 +81,7 @@
   [class^="nav-pills-"] &,
   [class*=" nav-pills-"] & {
     border-radius: $border-radius;
-    box-shadow: arp-shadow-2dp($gray-600);
+    box-shadow: arp-shadow-2dp($gray-400);
   }
 
 }

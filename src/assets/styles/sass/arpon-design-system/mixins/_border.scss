@@ -1,0 +1,7 @@
+@mixin border-colors() {
+  @each $name, $value in $theme-colors {
+    .border-#{$name} {
+      border-color: $value !important;
+    }
+  }
+}

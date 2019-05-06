@@ -1,0 +1,10 @@
+.badge {
+  padding: .3em .4em;
+  font-weight: 500;
+  &.badge-white {
+    background: $white;
+    color: $black;
+  }
+}
+
+@include badge-colors();
