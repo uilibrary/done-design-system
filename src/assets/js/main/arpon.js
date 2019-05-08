@@ -47,6 +47,18 @@ $(document).ready(function() {
     feather.replace();
   }
 
+  /*
+    Bootstrap Select
+  */
+  $(".selectpicker").selectpicker();
+  /*
+    Bootstrap Slider
+  */
+  $(".bootstrap-slider").slider({});
+
+  // Bootstrap Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
   // Form group focus class
   $(".form-control")
     .on("focus", function() {

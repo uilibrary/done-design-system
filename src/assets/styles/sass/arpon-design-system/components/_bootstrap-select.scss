@@ -1,0 +1,24 @@
+.bootstrap-select {
+  &.show > .btn {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: $bootstrap-select-shadow !important;
+
+  }
+  // & {
+  //   border-width: 0 .26em .26em 0;
+  // }
+  &.show-tick .dropdown-menu .selected span.check-mark {
+    top: 9px;
+    
+  }
+  .dropdown-menu {
+    box-shadow: $bootstrap-select-shadow !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .dropdown-toggle:focus {
+    outline: none !important;
+  }
+}
+// .bootstrap-select.show-tick .dropdown-menu .selected span.check-mark

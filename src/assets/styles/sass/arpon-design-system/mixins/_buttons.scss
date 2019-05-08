@@ -135,6 +135,11 @@
       @include button-raised($value);
     }
   }
+  &.btn-white {
+    background: $white;
+    color: $foreground;
+    box-shadow: arp-shadow-2dp($gray-400);
+  }
 }
 
 @mixin button-socials {
