@@ -1,1 +1,59 @@
 @import '../../../src/assets/styles/sass/arpon-design-system/arpon-design-system.scss';
+$header-height: rem(60);
+.doc-header{
+    height: $header-height;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: arp-shadow-4dp($gray-400);
+    z-index: 99;
+}
+.doc-content{
+
+    &__sidebar{
+        width:220px;
+        position: fixed;
+        height: calc(100vh -  #{$header-height});
+        top: $header-height;
+        left: 0;
+        border-right: 1px solid $gray-300;
+        background: rgba($gray-200, .5);
+        z-index: 98;
+        .sidebar__list{
+
+            list-style: none;
+            text-transform: capitalize;
+            margin: 0;
+            padding: 30px 0 0 0;
+            li{
+                a{
+                    display: block;
+                    color: $black;
+                    padding: 8px 20px;
+
+                    &:hover{
+                        text-decoration: none;
+                        background: $gray-300;
+                    }
+                }
+                ul{
+                    list-style: none;
+                    text-transform: capitalize;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        a{
+                            padding-left: 40px;
+                            color: $gray-700;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    &__body{
+
+    }
+}

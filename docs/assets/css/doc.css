@@ -3845,3 +3845,42 @@ html [type="button"],
       background: rgba(115, 103, 240, 0.6); }
   .section-header .section-header-content {
     padding: 80px 0 0; }
+
+.doc-header {
+  height: 3.75rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 8px 20px 0 rgba(198, 197, 207, 0.6);
+  z-index: 99; }
+
+.doc-content__sidebar {
+  width: 220px;
+  position: fixed;
+  height: calc(100vh -  3.75rem);
+  top: 3.75rem;
+  left: 0;
+  border-right: 1px solid #dcdbe2;
+  background: rgba(242, 242, 244, 0.5);
+  z-index: 98; }
+  .doc-content__sidebar .sidebar__list {
+    list-style: none;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 30px 0 0 0; }
+    .doc-content__sidebar .sidebar__list li a {
+      display: block;
+      color: #2d2c36;
+      padding: 8px 20px; }
+      .doc-content__sidebar .sidebar__list li a:hover {
+        text-decoration: none;
+        background: #dcdbe2; }
+    .doc-content__sidebar .sidebar__list li ul {
+      list-style: none;
+      text-transform: capitalize;
+      margin: 0;
+      padding: 0; }
+      .doc-content__sidebar .sidebar__list li ul li a {
+        padding-left: 40px;
+        color: #838198; }
