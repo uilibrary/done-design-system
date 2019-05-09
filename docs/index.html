@@ -16,9 +16,11 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css"
+    />
     <link
       rel="stylesheet"
       href="../src/assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -31,74 +33,93 @@
   </head>
   <body>
     <div class="wrapper">
-        <div class="doc-header">
-          <div class="brand">
-            <a href="#">Arpon</a>
-            <small>v1.0.0</small>
-          </div>
-          <a href="#" class="btn btn-raised btn-raised-success">download</a>
+      <div class="doc-header">
+        <div class="brand">
+          <a href="#">Arpon</a>
+          <small>v1.0.0</small>
         </div>
-        <div class="doc-content clearfix">
-          <div class="doc-content__sidebar">
-            <ul class="sidebar__list">
-              <li> 
-                <a href="#" class="active">getting started</a>
-                <ul>
-                  <li>
-                    <a href="#" class="active">introduction</a>
-                  </li>
-                  <li>
-                      <a href="#">download</a>
-                    </li>
-                </ul>
-              </li>
-              <li> 
-                  <a href="#" class="">getting started</a>
-                  <ul>
-                    <li>
-                      <a href="#" class="">introduction</a>
-                    </li>
-                    <li>
-                        <a href="#">download</a>
-                      </li>
-                  </ul>
+        <a href="#" class="btn btn-raised btn-raised-success">download</a>
+      </div>
+      <div class="doc-content clearfix">
+        <div class="doc-content__sidebar">
+          <ul class="sidebar__list">
+            <li>
+              <a href="#" class="active">getting started</a>
+              <ul>
+                <li>
+                  <a href="#" class="active">introduction</a>
                 </li>
-            </ul>
+                <li>
+                  <a href="#">download</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="">getting started</a>
+              <ul>
+                <li>
+                  <a href="#" class="">introduction</a>
+                </li>
+                <li>
+                  <a href="#">download</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="doc-content__body">
+          <h1>Introduction</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            vel quaerat voluptatem tempora vitae saepe illo deleniti blanditiis
+            odio cumque.
+          </p>
+
+          <div class="copy-code">
+            <button
+              class="btn btn-sm btn-primary btn-clipboard"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Copy to clipboard"
+            >
+              Copy
+            </button>
           </div>
-
-          <div class="doc-content__body">
-            <h1>Introduction</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vel quaerat 
-              voluptatem tempora vitae saepe illo deleniti blanditiis odio cumque.</p>
-
-            <div class="copy-code">
-              <button class="btn btn-sm btn-primary btn-clipboard" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
-            </div>
-            <code class="code" data-code='<button class="btn"></button>
+          <code
+            class="code"
+            data-code='<button class="btn"></button>
               <button class="btn"></button>
               <button class="btn"></button>
-            '>
+            '
+          >
           </code>
 
-
-            <div class="copy-code">
-                <button class="btn btn-sm btn-primary btn-clipboard" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
-            </div>
-              <div class="code" data-code='
+          <div class="copy-code">
+            <button
+              class="btn btn-sm btn-primary btn-clipboard"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Copy to clipboard"
+            >
+              Copy
+            </button>
+          </div>
+          <div
+            class="code"
+            data-code='
                 <button class="btn btn-raised btn-raised-primary"></button>
-              '>
-              </div>
+              '
+          ></div>
 
-            
-            <figure>
-                <button class="btn btn-raised btn-raised-primary">Button</button>
-            </figure>
-
-          </div>
-          <div class="doc-content__secondary-sidebar">
-            <h2>Secondary</h2>
-          </div>
+          <figure>
+            <button class="btn btn-raised btn-raised-primary">Button</button>
+          </figure>
         </div>
+        <div class="doc-content__secondary-sidebar">
+          <h2>Secondary</h2>
+        </div>
+      </div>
     </div>
 
     <script src="../src/assets/vendor/jquery-3.4.1.min.js"></script>
