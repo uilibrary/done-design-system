@@ -1,6 +1,8 @@
 @import '../../../src/assets/styles/sass/arpon-design-system/arpon-design-system.scss';
 $header-height: rem(60);
 .doc-header{
+    display: flex;
+    justify-content: space-between;
     height: $header-height;
     width: 100%;
     position: fixed;
@@ -8,6 +10,21 @@ $header-height: rem(60);
     left: 0;
     box-shadow: arp-shadow-4dp($gray-400);
     z-index: 99;
+    padding: 10px 40px;
+
+    .brand{
+        
+        a{
+            display: block;
+            font-size: rem(18);
+            color: $black;
+            line-height: 1.1;
+            letter-spacing: 2px;
+            &:hover{
+                text-decoration: none; 
+            }
+        }
+    }
 }
 .doc-content{
 
@@ -31,6 +48,9 @@ $header-height: rem(60);
                     display: block;
                     color: $black;
                     padding: 8px 20px;
+                    &.active{
+                        background: rgba($primary, .3)
+                    }
 
                     &:hover{
                         text-decoration: none;
@@ -46,6 +66,13 @@ $header-height: rem(60);
                         a{
                             padding-left: 40px;
                             color: $gray-700;
+                            &.active{
+                                background: none;
+                                font-weight: $font-weight-semi;
+                                &:hover{
+                                    background: $gray-300;
+                                }
+                            }
                         }
                     }
                 }
