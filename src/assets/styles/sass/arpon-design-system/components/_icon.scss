@@ -1,0 +1,19 @@
+[class^="icon-light-bg-"],
+[class*=" icon-light-bg-"] {
+  display: inline-block;
+  height: $icon-light-bg-height;
+  width: $icon-light-bg-width;
+  text-align: center;
+  padding: $icon-light-bg-padding;
+  border-radius: $border-radius;
+  .feather {
+    // margin-top: -calc($icon-light-bg-height / 10);
+  }
+}
+
+@each $name, $value in $theme-colors {
+  .icon-light-bg-#{$name} {
+    background-color: rgba($value, 0.2);
+    color: darken($value, 10);
+  }
+}
