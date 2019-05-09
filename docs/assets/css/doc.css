@@ -3947,6 +3947,23 @@ html [type="button"],
   .section-header .section-header-content {
     padding: 80px 0 0; }
 
+/*
+  Code viewer
+*/
+.copy-code {
+  position: relative; }
+  .copy-code .btn-clipboard {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    padding: .2rem .4rem; }
+
+.code {
+  margin-bottom: 1rem; }
+
+/*
+  Layout
+*/
 .doc-header {
   display: flex;
   justify-content: space-between;
@@ -3955,9 +3972,10 @@ html [type="button"],
   position: fixed;
   top: 0;
   left: 0;
-  box-shadow: 0 8px 20px 0 rgba(198, 197, 207, 0.6);
+  box-shadow: 0 2px 12px 0 rgba(198, 197, 207, 0.6);
   z-index: 99;
-  padding: 10px 40px; }
+  padding: 10px 40px;
+  background: #fff; }
   .doc-header .brand a {
     display: block;
     font-size: 1.125rem;
@@ -3970,7 +3988,7 @@ html [type="button"],
 .doc-content__sidebar {
   width: 220px;
   position: fixed;
-  height: calc(100vh -  3.75rem);
+  height: calc(100vh - 3.75rem);
   top: 3.75rem;
   left: 0;
   border-right: 1px solid #dcdbe2;
@@ -4003,3 +4021,16 @@ html [type="button"],
           font-weight: 500; }
           .doc-content__sidebar .sidebar__list li ul li a.active:hover {
             background: #dcdbe2; }
+
+.doc-content__body {
+  position: relative;
+  padding: 5rem 1.5rem 1.5rem;
+  width: calc(100% - 220px - 180px);
+  left: 220px;
+  z-index: 96; }
+
+.doc-content__secondary-sidebar {
+  position: fixed;
+  width: 180px;
+  top: 3.75rem;
+  right: 0; }

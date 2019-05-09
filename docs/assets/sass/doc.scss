@@ -1,86 +1,116 @@
-@import '../../../src/assets/styles/sass/arpon-design-system/arpon-design-system.scss';
+@import "../../../src/assets/styles/sass/arpon-design-system/arpon-design-system.scss";
 $header-height: rem(60);
-.doc-header{
-    display: flex;
-    justify-content: space-between;
-    height: $header-height;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: arp-shadow-4dp($gray-400);
-    z-index: 99;
-    padding: 10px 40px;
+$sidebar-width: 220px;
+$secondary-sidebar-width: 180px;
 
-    .brand{
-        
-        a{
-            display: block;
-            font-size: rem(18);
-            color: $black;
-            line-height: 1.1;
-            letter-spacing: 2px;
-            &:hover{
-                text-decoration: none; 
-            }
-        }
-    }
+/*
+  Code viewer
+*/
+.copy-code {
+  position: relative;
+  .btn-clipboard {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    padding: .2rem .4rem;
+  }
 }
-.doc-content{
+.code {
+  margin-bottom: 1rem;
+}
 
-    &__sidebar{
-        width:220px;
-        position: fixed;
-        height: calc(100vh -  #{$header-height});
-        top: $header-height;
-        left: 0;
-        border-right: 1px solid $gray-300;
-        background: rgba($gray-200, .5);
-        z-index: 98;
-        .sidebar__list{
+/*
+  Layout
+*/ 
+.doc-header {
+  display: flex;
+  justify-content: space-between;
+  height: $header-height;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: arp-shadow-2dp($gray-400);
+  z-index: 99;
+  padding: 10px 40px;
+  background: $white;
+  .brand {
+    a {
+      display: block;
+      font-size: rem(18);
+      color: $black;
+      line-height: 1.1;
+      letter-spacing: 2px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.doc-content {
+  &__sidebar {
+    width: $sidebar-width;
+    position: fixed;
+    height: calc(100vh - #{$header-height});
+    top: $header-height;
+    left: 0;
+    border-right: 1px solid $gray-300;
+    background: rgba($gray-200, 0.5);
+    z-index: 98;
+    .sidebar__list {
+      list-style: none;
+      text-transform: capitalize;
+      margin: 0;
+      padding: 30px 0 0 0;
+      li {
+        a {
+          display: block;
+          color: $black;
+          padding: 8px 20px;
+          &.active {
+            background: rgba($primary, 0.3);
+          }
 
-            list-style: none;
-            text-transform: capitalize;
-            margin: 0;
-            padding: 30px 0 0 0;
-            li{
-                a{
-                    display: block;
-                    color: $black;
-                    padding: 8px 20px;
-                    &.active{
-                        background: rgba($primary, .3)
-                    }
-
-                    &:hover{
-                        text-decoration: none;
-                        background: $gray-300;
-                    }
-                }
-                ul{
-                    list-style: none;
-                    text-transform: capitalize;
-                    margin: 0;
-                    padding: 0;
-                    li{
-                        a{
-                            padding-left: 40px;
-                            color: $gray-700;
-                            &.active{
-                                background: none;
-                                font-weight: $font-weight-semi;
-                                &:hover{
-                                    background: $gray-300;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+          &:hover {
+            text-decoration: none;
+            background: $gray-300;
+          }
         }
-
+        ul {
+          list-style: none;
+          text-transform: capitalize;
+          margin: 0;
+          padding: 0;
+          li {
+            a {
+              padding-left: 40px;
+              color: $gray-700;
+              &.active {
+                background: none;
+                font-weight: $font-weight-semi;
+                &:hover {
+                  background: $gray-300;
+                }
+              }
+            }
+          }
+        }
+      }
     }
-    &__body{
+  }
+  &__body {
+    position: relative;
+    padding: 5rem 1.5rem 1.5rem;
+    width: calc(100% - #{$sidebar-width} - #{$secondary-sidebar-width});
+    left: $sidebar-width;
+    z-index: 96;
+  }
 
-    }
+  &__secondary-sidebar {
+    position: fixed;
+    width: $secondary-sidebar-width;
+    top: $header-height;
+    right: 0;
+    // float: right;
+  }
 }
