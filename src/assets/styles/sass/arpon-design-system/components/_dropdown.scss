@@ -5,14 +5,14 @@
   font-size: $font-size-base;
   padding: 0;
   overflow: hidden;
-  @include transition-all();
+  // @include transition-all();
 
   .dropdown & {
     
   }
   .dropdown.show &,
   &.open {
-    transform: translateY(0) !important;
+    transform: translateY(-2px) !important;
     opacity: 1;
   }
 
@@ -24,8 +24,12 @@
 
   .dropdown-item {
     padding: 0.5rem 1.5rem;
-    &:hover,
-    &:focus {
+    @include hover-focus-active {
+      background-color: lighten($primary, 3);
+      color: $white;
+      outline: 0;
+    }
+    &.active {
       background-color: lighten($primary, 3);
       color: $white;
     }
