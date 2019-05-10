@@ -1,7 +1,7 @@
 @import "../../../src/assets/styles/sass/arpon-design-system/arpon-design-system.scss";
 $header-height: rem(60);
-$sidebar-width: 220px;
-$secondary-sidebar-width: 180px;
+$sidebar-width: 240px;
+$secondary-sidebar-width: 200px;
 
 /*
   Code viewer
@@ -17,6 +17,39 @@ $secondary-sidebar-width: 180px;
 }
 .code {
   margin-bottom: 1rem;
+}
+
+.doc-section-title {
+  &::before {
+    display: block;
+    height: 6rem;
+    margin-top: -6rem;
+    visibility: hidden;
+    content: "";
+  }
+  &:hover {
+    .section-link {
+      opacity: 1;
+    }
+  }
+  .section-link {
+    opacity: 0;
+    padding-left: .3rem;
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f0c1";
+      font-weight: 900!important;
+      font-size: 18px;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+      vertical-align: middle;
+    }
+  }
 }
 
 /*

@@ -1714,6 +1714,22 @@ small,
     margin: 0 0 1rem;
     font-weight: 500; }
 
+.image-bg {
+  overflow: hidden; }
+  .image-bg .image-bg-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff; }
+    .image-bg .image-bg-content .image-bg-footer h4 {
+      margin: 0 0 1rem; }
+
 html [type="button"],
 .btn[type="button"] {
   -webkit-appearance: none !important; }
@@ -3872,6 +3888,63 @@ html [type="button"],
   height: 18px;
   width: 18px; }
 
+.list-1 {
+  border: 0;
+  box-shadow: 0 2px 12px 0 rgba(198, 197, 207, 0.6); }
+  .list-1 .list-group-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.875rem 2.5rem;
+    border: 0;
+    border-radius: 0 !important;
+    border-left: 3px solid transparent;
+    transition: all 0.2s ease-in-out !important; }
+    .list-1 .list-group-item:hover {
+      box-shadow: 0 8px 20px 0 rgba(198, 197, 207, 0.6);
+      border-left: 3px solid #7367F0; }
+      .list-1 .list-group-item:hover .item-action .btn {
+        background: #7367F0 !important;
+        border-color: #7367F0 !important;
+        color: #fff; }
+    .list-1 .list-group-item .item-thumbnail, .list-1 .list-group-item .item-icon {
+      height: 3.5rem;
+      width: 3.5rem;
+      border-radius: 0.25rem; }
+    .list-1 .list-group-item .item-icon {
+      background: #f2f2f4;
+      border: 1px solid #dcdbe2;
+      color: #9a98ab;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .list-1 .list-group-item .item-content {
+      flex-grow: 1;
+      padding: 0 2.5rem 0 0.9375rem; }
+      .list-1 .list-group-item .item-content h4 {
+        font-size: 1.125rem;
+        margin-top: 0;
+        margin-bottom: 0.375rem;
+        font-weight: 400; }
+      .list-1 .list-group-item .item-content .item-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .list-1 .list-group-item .item-content .item-footer span {
+          color: #9a98ab;
+          font-weight: 500;
+          padding-right: 1.25rem;
+          font-size: 0.8125rem; }
+          .list-1 .list-group-item .item-content .item-footer span i,
+          .list-1 .list-group-item .item-content .item-footer span svg {
+            margin-right: 0.375rem; }
+    .list-1 .list-group-item .item-action .btn {
+      background: #fff !important;
+      border-color: #fff;
+      color: #2d2c36; }
+
 .bootstrap-select.show > .btn {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -3961,6 +4034,33 @@ html [type="button"],
 .code {
   margin-bottom: 1rem; }
 
+.doc-section-title::before {
+  display: block;
+  height: 6rem;
+  margin-top: -6rem;
+  visibility: hidden;
+  content: ""; }
+
+.doc-section-title:hover .section-link {
+  opacity: 1; }
+
+.doc-section-title .section-link {
+  opacity: 0;
+  padding-left: .3rem; }
+  .doc-section-title .section-link::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c1";
+    font-weight: 900 !important;
+    font-size: 18px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    vertical-align: middle; }
+
 /*
   Layout
 */
@@ -3986,7 +4086,7 @@ html [type="button"],
       text-decoration: none; }
 
 .doc-content__sidebar {
-  width: 220px;
+  width: 240px;
   position: fixed;
   height: calc(100vh - 3.75rem);
   top: 3.75rem;
@@ -4025,12 +4125,12 @@ html [type="button"],
 .doc-content__body {
   position: relative;
   padding: 5rem 1.5rem 1.5rem;
-  width: calc(100% - 220px - 180px);
-  left: 220px;
+  width: calc(100% - 240px - 200px);
+  left: 240px;
   z-index: 96; }
 
 .doc-content__secondary-sidebar {
   position: fixed;
-  width: 180px;
+  width: 200px;
   top: 3.75rem;
   right: 0; }
