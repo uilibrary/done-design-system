@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // hilight
   var $codes = $(".code");
-  hljs.configure({ useBR: true });
+  hljs.configure({ useBR: true, tabReplace: '  ' });
 
   $codes.each(function(e) {
     var $code = $(this);
@@ -18,7 +18,16 @@ $(document).ready(function() {
     }
   });
 
-  clipboard.on("success", function(e) {});
+  clipboard.on("success", function(e) {
+    $(e.trigger)
+        .attr('title', 'Copied!')
+        .tooltip('_fixTitle')
+        .tooltip('show')
+        .attr('title', 'Copy to clipboard')
+        .tooltip('_fixTitle');
+
+      e.clearSelection();
+  });
 
   clipboard.on("error", function(e) {});
 

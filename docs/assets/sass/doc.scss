@@ -6,6 +6,9 @@ $secondary-sidebar-width: 200px;
 /*
   Code viewer
 */
+pre {
+  margin-top: -38px;
+}
 .copy-code {
   position: relative;
   .btn-clipboard {
@@ -20,6 +23,7 @@ $secondary-sidebar-width: 200px;
 }
 
 .doc-section-title {
+  margin: 1.5rem 0 1rem 0;
   &::before {
     display: block;
     height: 6rem;
@@ -144,6 +148,29 @@ $secondary-sidebar-width: 200px;
     width: $secondary-sidebar-width;
     top: $header-height;
     right: 0;
-    // float: right;
+    border-left: 1px solid $gray-300;
+    margin-top: 2rem;
+    padding: .25rem 1rem;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        a {
+          display: inline-block;
+          font-size: rem(14);
+          color: $gray-500;
+          padding: .125rem 0;
+          font-weight: $font-weight-semi;
+          &:hover {
+            color: $primary;
+            text-decoration: none;
+          }
+        }
+        ul {
+          padding-left: 1rem;
+        }
+      }
+    }
   }
 }

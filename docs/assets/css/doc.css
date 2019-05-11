@@ -4023,6 +4023,9 @@ html [type="button"],
 /*
   Code viewer
 */
+pre {
+  margin-top: -38px; }
+
 .copy-code {
   position: relative; }
   .copy-code .btn-clipboard {
@@ -4034,32 +4037,32 @@ html [type="button"],
 .code {
   margin-bottom: 1rem; }
 
-.doc-section-title::before {
-  display: block;
-  height: 6rem;
-  margin-top: -6rem;
-  visibility: hidden;
-  content: ""; }
-
-.doc-section-title:hover .section-link {
-  opacity: 1; }
-
-.doc-section-title .section-link {
-  opacity: 0;
-  padding-left: .3rem; }
-  .doc-section-title .section-link::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f0c1";
-    font-weight: 900 !important;
-    font-size: 18px;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    vertical-align: middle; }
+.doc-section-title {
+  margin: 1.5rem 0 1rem 0; }
+  .doc-section-title::before {
+    display: block;
+    height: 6rem;
+    margin-top: -6rem;
+    visibility: hidden;
+    content: ""; }
+  .doc-section-title:hover .section-link {
+    opacity: 1; }
+  .doc-section-title .section-link {
+    opacity: 0;
+    padding-left: .3rem; }
+    .doc-section-title .section-link::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f0c1";
+      font-weight: 900 !important;
+      font-size: 18px;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+      vertical-align: middle; }
 
 /*
   Layout
@@ -4133,4 +4136,22 @@ html [type="button"],
   position: fixed;
   width: 200px;
   top: 3.75rem;
-  right: 0; }
+  right: 0;
+  border-left: 1px solid #dcdbe2;
+  margin-top: 2rem;
+  padding: .25rem 1rem; }
+  .doc-content__secondary-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .doc-content__secondary-sidebar ul li a {
+      display: inline-block;
+      font-size: 0.875rem;
+      color: #b0aebd;
+      padding: .125rem 0;
+      font-weight: 500; }
+      .doc-content__secondary-sidebar ul li a:hover {
+        color: #7367F0;
+        text-decoration: none; }
+    .doc-content__secondary-sidebar ul li ul {
+      padding-left: 1rem; }
