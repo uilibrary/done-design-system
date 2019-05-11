@@ -1,6 +1,6 @@
 node_modules
 dist
-src/assets/styles/css
-src/assets/js/es5
+assets/styles/css
+assets/js/es5
 
 documentation/node_modules

@@ -1,0 +1,41 @@
+.card {
+  box-shadow: shadow-2dp($gray-600);
+  border: 0;
+  // color: $gray-600;
+  .card-header {
+    background: $card-header-bg;
+  }
+  .card-footer {
+    background: $card-footer-bg;
+  }
+  .card-header, .card-footer {
+    border-color: $card-border-color
+  }
+  .card-title {
+    margin: 0 0 1rem;
+    font-weight: $font-weight-semi;
+  }
+}
+
+
+.image-bg{
+  overflow: hidden;
+  .image-bg-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: $card-image-bg-padding;
+    background: $card-image-bg-background;
+    color: $card-image-bg-color;
+    .image-bg-footer {
+      h4 {
+        margin: 0 0 rem(16);
+      }
+
+    }
+  }
+}

@@ -1,4 +1,5 @@
-@import "../../../src/assets/styles/sass/arpon-design-system/arpon-design-system.scss";
+@import "../../../assets/styles/sass/done/done.scss";
+
 $header-height: rem(60);
 $sidebar-width: 240px;
 $secondary-sidebar-width: 200px;
@@ -67,7 +68,7 @@ pre {
   position: fixed;
   top: 0;
   left: 0;
-  box-shadow: arp-shadow-2dp($gray-400);
+  box-shadow: shadow-2dp($gray-400);
   z-index: 99;
   padding: 10px 40px;
   background: $white;

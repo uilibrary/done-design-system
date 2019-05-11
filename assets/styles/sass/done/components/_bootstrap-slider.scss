@@ -1,0 +1,40 @@
+.slider {
+  .tooltip {
+    &.in {
+      opacity: 1;
+    }
+    .tooltip-arrow {
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #000;
+    }
+  }
+  &.slider-horizontal {
+    .slider-track {
+      height: 4px;
+      width: 100%;
+      margin-top: -2px;
+      background: $gray-300;
+      box-shadow: none;
+      .slider-selection {
+        box-shadow: none;
+        background: $primary;
+      }
+    }
+  }
+  
+  .slider-handle {
+    background: $primary;
+    box-shadow: shadow-2dp($primary);
+    transition: box-shadow $animation-duration-base $animation-timing-base;
+    &:hover {
+      box-shadow: shadow-4dp($primary);
+    }
+  }
+}
