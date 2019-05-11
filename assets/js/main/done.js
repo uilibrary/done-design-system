@@ -1,13 +1,11 @@
-"use strict";
-
-var arponUtils = {
+var utils = {
   debounce: function debounce(func, wait, immediate) {
     var timeout;
-    return function () {
+    return function() {
       var context = this,
-          args = arguments;
+        args = arguments;
       clearTimeout(timeout);
-      timeout = setTimeout(function () {
+      timeout = setTimeout(function() {
         timeout = null;
         if (!immediate) func.apply(context, args);
       }, wait);
@@ -16,7 +14,7 @@ var arponUtils = {
   },
 
   onSrollChangeColor: function onSrollChangeColor($elemOnScroll) {
-    return arponUtils.debounce(function () {
+    return utils.debounce(function() {
       var colorClass = $elemOnScroll.data("color-on-scroll");
       var distance = $elemOnScroll.data("scroll-distance");
 
@@ -37,11 +35,11 @@ var arponUtils = {
   }
 };
 
-$(document).ready(function () {
+$(document).ready(function() {
   var $elemOnScroll = $("[data-color-on-scroll]");
 
   if ($elemOnScroll.length) {
-    $(window).on("scroll", arponUtils.onSrollChangeColor($elemOnScroll));
+    $(window).on("scroll", utils.onSrollChangeColor($elemOnScroll));
   }
 
   // Feather icons
@@ -62,9 +60,15 @@ $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
 
   // Form group focus class
-  $(".form-control").on("focus", function () {
-    $(this).parent(".input-group").addClass("input-group-focus");
-  }).on("blur", function () {
-    $(this).parent(".input-group").removeClass("input-group-focus");
-  });
+  $(".form-control")
+    .on("focus", function() {
+      $(this)
+        .parent(".input-group")
+        .addClass("input-group-focus");
+    })
+    .on("blur", function() {
+      $(this)
+        .parent(".input-group")
+        .removeClass("input-group-focus");
+    });
 });
