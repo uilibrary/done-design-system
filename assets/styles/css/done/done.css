@@ -3909,7 +3909,8 @@ html [type="button"],
     transition: all 0.2s ease-in-out !important; }
     .list-1 .list-group-item:hover {
       box-shadow: 0 8px 20px 0 rgba(187, 186, 198, 0.6);
-      border-left: 3px solid #7367F0; }
+      border-left: 3px solid #7367F0;
+      z-index: 4; }
       .list-1 .list-group-item:hover .item-action .btn {
         background: #7367F0 !important;
         border-color: #7367F0 !important;

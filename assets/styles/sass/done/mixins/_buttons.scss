@@ -1,4 +1,4 @@
-@mixin arp-button-variant(
+@mixin button-variant(
   $color,
   $focus-color,
   $active-color,
@@ -73,7 +73,7 @@
 // Default flat butotn
 @mixin button($color) {
   $lighten: lighten($color, 5);      
-  @include arp-button-variant(
+  @include button-variant(
     $white,   // color
     $white,   // focus-color
     $white,   // active-color
@@ -90,7 +90,7 @@
 
 // Outline button
 @mixin button-outline($color) {
-  @include arp-button-variant(
+  @include button-variant(
     $color, // color
     $white, // focus-color
     $white, // active-color
@@ -108,7 +108,7 @@
 @mixin button-raised($color) {
   @include shadow-4dp-color($color); // Raised button default shadow
   $lighten: lighten($color, 5);
-  @include arp-button-variant(
+  @include button-variant(
     $white,   // color
     $white,   // focus-color
     $white,   // active-color
