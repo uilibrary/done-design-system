@@ -1,3 +1,6 @@
+/*
+  Color Inventory
+*/
 $solid-colors: (
     "blue": #4A90E2,
     "midnight-blue": #0C0C3C,
@@ -45,19 +48,37 @@ $green:   map-get($solid-colors, 'green') !default;
 $teal:    map-get($solid-colors, 'teal') !default;
 $cyan:    map-get($solid-colors, 'cyan') !default;
 
+// Generate gray base form purple
 $gray-base: desaturate($purple, 72);
 
 $white:    #fff !default;
 $gray-100: lighten($gray-base, 36) !default;
 $gray-200: lighten($gray-base, 28) !default;
 $gray-300: lighten($gray-base, 20) !default;
-$gray-400: lighten($gray-base, 12) !default;
-$gray-500: lighten($gray-base, 4) !default;
-$gray-600: darken($gray-base, 4) !default;
-$gray-700: darken($gray-base, 12) !default;
-$gray-800: darken($gray-base, 20) !default;
-$gray-900: darken($gray-base, 28) !default;
-$black:    darken($gray-base, 48) !default;
+$gray-400: lighten($gray-base, 8) !default;
+$gray-500: $gray-base !default;
+$gray-600: darken($gray-base, 8) !default;
+$gray-700: darken($gray-base, 20) !default;
+$gray-800: darken($gray-base, 28) !default;
+$gray-900: darken($gray-base, 36) !default;
+$black:    $gray-900 !default;
+
+
+// $white:    #fff !default;
+// $gray-100: #ffffff !default;
+// $gray-200: #fafaf9 !default;
+// $gray-300: #f3f2f2 !default;
+// $gray-400: #ecebea !default;
+// $gray-500: #dddbda !default;
+// $gray-600: #c9c7c5 !default;
+// $gray-700: #b0adab !default;
+// $gray-800: #969492 !default;
+// $gray-900: #706e6b !default;
+// $gray-1000: #514f4d !default;
+// $gray-1100: #3e3e3c !default;
+// $gray-1200: #2b2826 !default;
+// $black:    $gray-1200 !default;
+
 
 $primary:       $purple !default;
 $secondary:     $gray-800 !default;
@@ -91,3 +112,21 @@ $social-colors: (
 $facebook: map-get($social-colors, 'facebook');
 $google: map-get($social-colors, 'google');
 $twitter: map-get($social-colors, 'twitter');
+
+
+
+/* 
+  Color Tokens 
+*/
+
+$primary-active: darken($primary, 10);
+$primary-dark: darken($primary, 15);
+
+// Background
+$background-light: $gray-200;
+
+// Border
+$border-color: $gray-400;
+$border-color-light: $gray-300;
+$border-color-dark: $gray-600;
+$border-color-black: $black;

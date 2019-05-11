@@ -30,8 +30,8 @@
       border-radius: $border-radius;
     }
     .item-icon {
-      background: $gray-200;
-      border: 1px solid $gray-300;
+      background: $background-light;
+      border: 1px solid $border-color-light;
       color: $gray-600;
       font-size: rem(24);
       display: flex;

@@ -20,10 +20,10 @@ $border-radius-sm: .2rem !default;
 
 // Acive colors
 $component-active-color: $white !default;
-$component-active-bg: $primary !default;
+$component-active-bg: $primary-active !default;
 
 // Style anchor elements.
 $link-color: $primary !default;
 $link-decoration: none !default;
-$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-color: $primary-active !default;
 $link-hover-decoration: underline !default;
