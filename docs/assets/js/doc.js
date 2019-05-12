@@ -32,7 +32,8 @@ $(document).ready(function() {
   clipboard.on("error", function(e) {});
 
   // Load Sidebar
-  $.get("/arpon-design-system/docs/assets/template-parts/sidebar-nav.html", function(data) {
+  var templateDir = window.location.origin + '/arpon-design-system/docs/assets/template-parts'
+  $.get(templateDir+"/sidebar-nav.html", function(data) {
     var $sidebar = $(".doc-content__sidebar").html(data);
     var path = window.location.pathname;
     var page = path.split("/").pop();
