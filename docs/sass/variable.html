@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Introduction | Arpon Design System Documentation by UI Lib</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/fonts/themify-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/bootstrap-select/css/bootstrap-select.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/doc.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="doc-header">
+        <div class="brand">
+          <a href="#">Done!</a>
+          <small>v1.0.0</small>
+        </div>
+        <a href="#" class="btn btn-raised btn-raised-success">download</a>
+      </div>
+
+      <div class="doc-content clearfix">
+        <div class="doc-content__sidebar"></div>
+
+        <div class="doc-content__body">
+          <h1 class="doc-section-title" id="variables"> 
+            Sass variables 
+            <a href="#variables" class="section-link"></a>
+          </h1>
+          <p class="text-lead">
+            Sass variables are useful for extending existing design without losing design consistancy.
+          </p>
+
+          <h3 class="doc-section-title" id="colors">
+            Colors
+            <a href="#colors" class="section-link"></a>
+          </h3>
+
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Variable name</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>$gray-100</code></td>
+                  <td><div style="height: 20px; width: 60px" class="grey-100 rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>$gray-200</code></td>
+                  <td><div style="height: 20px; width: 60px" class="grey-200 rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>$gray-300</code></td>
+                  <td><div style="height: 20px; width: 60px" class="grey-300 rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>$gray-400</code></td>
+                  <td><div style="height: 20px; width: 60px" class="grey-400 rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>$gray-500</code></td>
+                  <td><div style="height: 20px; width: 60px" class="grey-500 rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>$gray-600</code></td>
+                  <td><div style="height: 20px; width: 60px" class="grey-600 rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>$gray-700</code></td>
+                  <td><div style="height: 20px; width: 60px" class="grey-700 rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>$gray-800</code></td>
+                  <td><div style="height: 20px; width: 60px" class="grey-800 rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>$gray-900</code></td>
+                  <td><div style="height: 20px; width: 60px" class="grey-900 rounded"></div></td>
+                </tr>
+
+                <tr>
+                  <td><code>$black</code></td>
+                  <td><div style="height: 20px; width: 60px" class="grey-900 rounded"></div></td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <h3 class="doc-section-title" id="theme-color">
+                Theme color
+                <a href="#theme-color" class="section-link"></a>
+            </h3>
+
+            <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Variable name</th>
+                    <th scope="col">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>$primary</code></td>
+                    <td><div style="height: 20px; width: 60px" class="bg-primary rounded"></div></td>
+                  </tr>
+                  <tr>
+                    <td><code>$primary-active</code></td>
+                    <td><code>darken($primary, 10)</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$primary-dark</code></td>
+                    <td><code>darken($primary, 15)</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$secondary</code></td>
+                    <td><div style="height: 20px; width: 60px" class="bg-secondary rounded"></div></td>
+                  </tr>
+  
+                  <tr>
+                    <td><code>$success</code></td>
+                    <td><div style="height: 20px; width: 60px" class="bg-success rounded"></div></td>
+                  </tr>
+                  <tr>
+                    <td><code>$info</code></td>
+                    <td><div style="height: 20px; width: 60px" class="bg-info rounded"></div></td>
+                  </tr>
+                  <tr>
+                    <td><code>$warning</code></td>
+                    <td><div style="height: 20px; width: 60px" class="bg-warning rounded"></div></td>
+                  </tr>
+                  <tr>
+                    <td><code>$danger</code></td>
+                    <td><div style="height: 20px; width: 60px" class="bg-danger rounded"></div></td>
+                  </tr>
+                  <tr>
+                    <td><code>$light</code></td>
+                    <td><div style="height: 20px; width: 60px" class="bg-light rounded"></div></td>
+                  </tr>
+                  <tr>
+                    <td><code>$dark</code></td>
+                    <td><div style="height: 20px; width: 60px" class="bg-dark rounded"></div></td>
+                  </tr>
+                  <tr>
+                    <td><code>$background</code></td>
+                    <td><code>$white</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$foreground</code></td>
+                    <td><code>$black</code></td>
+                  </tr>
+  
+                  <tr>
+                    <td><code>$facebook</code></td>
+                    <td><code>rgb(55, 101, 201)</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$google</code></td>
+                    <td><code>rgb(236, 65, 44)</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$twitter</code></td>
+                    <td><code>rgb(3, 159, 245)</code></td>
+                  </tr>
+  
+                </tbody>
+            </table>
+
+            <h3 class="doc-section-title" id="border-color">
+                Border color
+                <a href="#border-color" class="section-link"></a>
+            </h3>
+
+            <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Variable name</th>
+                    <th scope="col">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>$border-color</code></td>
+                    <td><div style="height: 20px; width: 60px" class="gray-300 rounded"></div></td>
+                  </tr>
+                  <tr>
+                    <td><code>$border-color-light</code></td>
+                    <td><div style="height: 20px; width: 60px" class="gray-200 rounded"></div></td>
+                  </tr>
+                  <tr>
+                    <td><code>$border-color-dark</code></td>
+                    <td><div style="height: 20px; width: 60px" class="gray-400 rounded"></div></td>
+                  </tr>
+                  <tr>
+                    <td><code>$border-color-black</code></td>
+                    <td><div style="height: 20px; width: 60px" class="gray-600 rounded"></div></td>
+                  </tr>
+  
+                </tbody>
+            </table>
+
+            <h3 class="doc-section-title" id="font">
+                Font
+                <a href="#font" class="section-link"></a>
+            </h3>
+
+            <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Variable name</th>
+                    <th scope="col">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>$font-family-base</code></td>
+                    <td><code>'Roboto', sans-serif;</code></td>
+                  </tr>
+                 <tr>
+                    <td><code>$font-weight-base</code></td>
+                    <td><code>400</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$line-height-base</code></td>
+                    <td><code>1.5</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$letter-spacing-base</code></td>
+                    <td><code>.3px</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-weight-light</code></td>
+                    <td><code>300</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-weight-normal</code></td>
+                    <td><code>400</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-weight-semi</code></td>
+                    <td><code>500</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-weight-bold</code></td>
+                    <td><code>700</code></td>
+                  </tr>
+                </tbody>
+            </table>
+
+            <h3 class="doc-section-title" id="font-size">
+                Font size
+                <a href="#font-size" class="section-link"></a>
+            </h3>
+
+            <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Variable name</th>
+                    <th scope="col">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>$font-size-base</code></td>
+                    <td><code>.9375rem (15px)</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-size-xs</code></td>
+                    <td><code>0.7142em</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-size-sm</code></td>
+                    <td><code>0.8571em</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-size-lg</code></td>
+                    <td><code>1em</code></td>
+                  </tr>
+                 <tr>
+                    <td><code>$font-size-paragraph</code></td>
+                    <td><code>1em</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-size-h1</code></td>
+                    <td><code>2.125em</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-size-h2</code></td>
+                    <td><code>1.8125em</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-size-h3</code></td>
+                    <td><code>1.5em</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-size-h4</code></td>
+                    <td><code>1.25em</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-size-h5</code></td>
+                    <td><code>1.0625em</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-size-h6</code></td>
+                    <td><code>.8125em</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-size-display-1</code></td>
+                    <td><code>4.6875em</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-size-display-2</code></td>
+                    <td><code>3.75em</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-size-display-3</code></td>
+                    <td><code>2.8125em</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$font-size-display-4</code></td>
+                    <td><code>2.1875em</code></td>
+                  </tr>
+                </tbody>
+            </table>
+
+            <h3 class="doc-section-title" id="spacing">
+                Spacing
+                <a href="#spacing" class="section-link"></a>
+            </h3>
+
+            <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Variable name</th>
+                    <th scope="col">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>$spacing-xxxs</code></td>
+                    <td><code>.0625rem</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$spacing-xxs</code></td>
+                    <td><code>.125rem</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$spacing-xs</code></td>
+                    <td><code>.25rem</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$spacing-sm</code></td>
+                    <td><code>.5rem</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$spacing-md</code></td>
+                    <td><code>1rem</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$spacing-lg</code></td>
+                    <td><code>1.5rem</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$spacing-xl</code></td>
+                    <td><code>2rem</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$spacing-xxl</code></td>
+                    <td><code>2.5rem</code></td>
+                  </tr>
+                  <tr>
+                    <td><code>$spacing-xxxl</code></td>
+                    <td><code>3rem</code></td>
+                  </tr>
+                  
+                </tbody>
+            </table>
+          </div>
+
+          
+        <div class="doc-content__secondary-sidebar">
+          <ul>
+            <li><a href="#variables">Sass variables</a>
+            <li><a href="#colors">Colors</a>
+              <ul>
+                <li><a href="#theme-color">Theme color</a></li>
+                <li><a href="#border-color">Border color</a></li>
+              </ul>
+            </li>
+            <li><a href="#font">Font</a>
+              <ul>
+                <li><a href="#font-size">Font size</a></li>
+              </ul>
+            </li>
+            <li><a href="#spacing">Spacing</a>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <script src="../../assets/vendor/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="../../assets/vendor/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script src="../../assets/vendor/feather.min.js"></script>
+    <script src="../assets/vendor/clipboard.min.js"></script>
+
+    <script src="../../assets/js/es5/done.min.js"></script>
+    <script src="../assets/js/doc.js"></script>
+  </body>
+</html>

@@ -149,7 +149,7 @@ pre {
     width: $secondary-sidebar-width;
     top: $header-height;
     right: 0;
-    border-left: 1px solid $gray-300;
+    border-left: 1px solid $border-color;
     margin-top: 2rem;
     padding: .25rem 1rem;
     ul {
@@ -170,6 +170,9 @@ pre {
         }
         ul {
           padding-left: 1rem;
+          a {
+            font-size: rem(13);
+          }
         }
       }
     }

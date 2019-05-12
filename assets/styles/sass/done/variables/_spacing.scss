@@ -1,2 +1,23 @@
+$spaces: (
+  xxxs: .0625rem,
+  xxs: .125rem,
+  xs: .25rem,
+  sm: .5rem,
+  md: 1rem,
+  lg: 1.5rem,
+  xl: 2rem,
+  xxl: 2.5rem,
+  xxxl: 3rem
+);
+
+$spacing-xxxs:                map-get($spaces, xxxs) !default;
+$spacing-xxs:                 map-get($spaces, xxs) !default;
+$spacing-xs:                  map-get($spaces, xs) !default;
+$spacing-sm:                  map-get($spaces, sm) !default;
+$spacing-lg:                  map-get($spaces, lg) !default;
+$spacing-xl:                  map-get($spaces, xl) !default;
+$spacing-xxl:                 map-get($spaces, xxl) !default;
+$spacing-xxxl:                map-get($spaces, xxxl) !default;
+
 $margin-base-vertical:         15px !default;
 $margin-base-horizontal:       15px !default;
