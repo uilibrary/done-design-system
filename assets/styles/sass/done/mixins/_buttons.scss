@@ -27,6 +27,7 @@
     color: $focus-color !important;
     box-shadow: none !important;
     background-color: $focus-background !important;
+    border-color: $focus-background !important;
   }
 
   &.active,
@@ -84,7 +85,7 @@
     $lighten, // focus-border
     $lighten, // active-border
     none,      // shadow
-    shadow-2dp($color) // hover-shadow
+    shadow-4dp($color) // hover-shadow
   );
 }
 
@@ -101,12 +102,12 @@
     $color, // focus-border
     $color,  // active-border
     none,   // shadow
-    shadow-2dp($color) // hover-shadow
+    shadow-4dp($color) // hover-shadow
   );
 }
 // Raised button
 @mixin button-raised($color) {
-  @include shadow-4dp-color($color); // Raised button default shadow
+  // @include shadow-8dp-color($color); // Raised button default shadow
   $lighten: lighten($color, 5);
   @include button-variant(
     $white,   // color
@@ -118,8 +119,8 @@
     $color,   // border
     $lighten, // focus-border
     $lighten,  // active-border
-    shadow-2dp($color), // shadow
-    shadow-4dp($color) // hover-shadow
+    shadow-4dp($color), // shadow
+    shadow-6dp($color) // hover-shadow
   );
 }
 
