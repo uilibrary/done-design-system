@@ -32,7 +32,7 @@ $(document).ready(function() {
   clipboard.on("error", function(e) {});
 
   // Load Sidebar
-  $.get("assets/template-parts/sidebar-nav.html", function(data) {
+  $.get("/arpon-design-system/docs/assets/template-parts/sidebar-nav.html", function(data) {
     var $sidebar = $(".doc-content__sidebar").html(data);
     var path = window.location.pathname;
     var page = path.split("/").pop();
