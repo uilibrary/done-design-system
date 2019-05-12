@@ -37,7 +37,7 @@ $(document).ready(function() {
     var $sidebar = $(".doc-content__sidebar").html(data);
     var path = window.location.pathname;
     var page = path.split("/").pop();
-    $sidebar.find('.sidebar__list [href="'+ page +'"]').addClass("active");
+    $sidebar.find('.sidebar__list [href="'+ path +'"]').addClass("active");
   });
 });
 
