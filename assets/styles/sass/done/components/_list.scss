@@ -9,12 +9,12 @@
     padding: rem(30) rem(40);
     border: 0;
     border-radius: 0 !important;
-    border-left: 3px solid transparent;
+    border-left: $border-width-lg solid transparent;
     @include transition-all();
 
     &:hover {
       box-shadow: shadow-4dp($gray-400);
-      border-left: 3px solid $primary;
+      border-left: $border-width-lg solid $primary;
       z-index: $z-index-docked;
       .item-action {
         .btn {

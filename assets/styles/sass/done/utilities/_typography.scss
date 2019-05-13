@@ -101,7 +101,7 @@ h6,
 
   small {
     font-weight: $font-weight-semi;
-    font-size: $font-size-small;
+    font-size: $font-size-sm;
   }
   @each $name, $value in $theme-colors {
     &.blockquote-#{$name} {
@@ -124,5 +124,5 @@ h6,
 
 small,
 .text-small {
-  font-size: $font-size-small;
+  font-size: $font-size-sm;
 }
