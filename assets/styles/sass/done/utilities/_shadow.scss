@@ -1,9 +1,52 @@
+.shadow-1dp {
+  @include shadow-1dp();
+}
 .shadow-2dp {
-  box-shadow: shadow-2dp($gray-400);
+  @include shadow-2dp();
 }
 .shadow-3dp {
-  box-shadow: shadow-3dp($gray-400);
+  @include shadow-3dp();
 }
 .shadow-4dp {
-  box-shadow: shadow-4dp($gray-400);
+  @include shadow-4dp();
+}
+.shadow-6dp {
+  @include shadow-6dp();
+}
+.shadow-8dp {
+  @include shadow-8dp();
+}
+.shadow-16dp {
+  @include shadow-16dp();
+}
+.shadow-24dp {
+  @include shadow-24dp();
+}
+
+
+@each $name, $value in $theme-colors {
+  .shadow-1dp-#{$name} {
+    @include shadow-1dp-color($value);
+  }
+  .shadow-2dp-#{$name} {
+    @include shadow-2dp-color($value);
+  }
+  .shadow-3dp-#{$name} {
+    @include shadow-3dp-color($value);
+  }
+  .shadow-4dp-#{$name} {
+    @include shadow-4dp-color($value);
+  }
+  .shadow-6dp-#{$name} {
+    @include shadow-6dp-color($value);
+  }
+  .shadow-8dp-#{$name} {
+    @include shadow-8dp-color($value);
+  }
+  .shadow-16dp-#{$name} {
+    @include shadow-16dp-color($value);
+  }
+  .shadow-24dp-#{$name} {
+    @include shadow-24dp-color($value);
+  }
 }

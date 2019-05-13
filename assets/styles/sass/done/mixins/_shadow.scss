@@ -39,9 +39,16 @@
 //       0 7px 12px -5px rgba($color, 0.46);
 //   }
 // }
+@mixin shadow-1dp() {
+  box-shadow: shadow-1dp(#000000);
+}
 
 @mixin shadow-2dp() {
   box-shadow: shadow-2dp(#000000);
+}
+
+@mixin shadow-3dp() {
+  box-shadow: shadow-3dp(#000000);
 }
 
 @mixin shadow-4dp() {
@@ -60,14 +67,25 @@
   box-shadow: shadow-16dp(#000000);
 }
 
+@mixin shadow-24dp() {
+  box-shadow: shadow-24dp(#000000);
+}
+
+@mixin shadow-1dp-color($color) {
+  box-shadow: shadow-1dp($color);
+}
 @mixin shadow-2dp-color($color) {
   box-shadow: shadow-2dp($color);
 }
-
+@mixin shadow-3dp-color($color) {
+  box-shadow: shadow-3dp($color);
+}
 @mixin shadow-4dp-color($color) {
   box-shadow: shadow-4dp($color);
 }
-
+@mixin shadow-6dp-color($color) {
+  box-shadow: shadow-6dp($color);
+}
 @mixin shadow-8dp-color($color) {
   box-shadow: shadow-8dp($color);
 }
@@ -76,8 +94,10 @@
   box-shadow: shadow-16dp($color);
 }
 
+@mixin shadow-24dp-color($color) {
+  box-shadow: shadow-24dp($color);
+}
 
 @mixin button-shadow-color($color) {
   box-shadow: button-shadow-color($color);
 }
-

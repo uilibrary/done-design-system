@@ -450,7 +450,7 @@
             <h3 class="doc-section-title" id="z-index">
               Z index
               <a href="#z-index" class="section-link"></a>
-          </h3>
+            </h3>
 
           <table class="table">
               <thead class="thead-light">
@@ -516,6 +516,146 @@
               </tbody>
           </table>
 
+          <h3 class="doc-section-title" id="shadow">
+            Shadow
+            <a href="#shadow" class="section-link"></a>
+          </h3>
+          <p>Shadows are defined as <code>@function</code> & <code>@mixin</code>. 
+          All shadow <code>@function</code>s & few <code>@mixin</code>s require <code>$color</code> parameter to be passed in.</p>
+        
+        <h4 class="doc-section-title" id="shadow-mixin">
+          How to use shadow mixins
+          <a href="#shadow-mixin" class="section-link"></a>
+        </h4>
+        <div class="copy-code">
+          <button
+            class="btn btn-sm btn-primary btn-clipboard"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Copy to clipboard"
+          >
+            Copy
+          </button>
+        </div>
+        <pre>
+          <code
+          class="code"
+          data-code='.custom-card {
+  @include shadow-4dp();
+}'
+        >
+        </code>
+        </pre>
+        <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Variable name</th>
+                <th scope="col">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>shadow-1dp()</code></td>
+                <td><div style="height: 20px; width: 60px" class="shadow-1dp rounded"></div></td>
+              </tr>
+              <tr>
+                <td><code>shadow-2dp()</code></td>
+                <td><div style="height: 20px; width: 60px" class="shadow-2dp rounded"></div></td>
+              </tr>
+              <tr>
+                <td><code>shadow-3dp()</code></td>
+                <td><div style="height: 20px; width: 60px" class="shadow-3dp rounded"></div></td>
+              </tr>
+              <tr>
+                <td><code>shadow-4dp()</code></td>
+                <td><div style="height: 20px; width: 60px" class="shadow-4dp rounded"></div></td>
+              </tr>
+              <tr>
+                <td><code>shadow-6dp()</code></td>
+                <td><div style="height: 20px; width: 60px" class="shadow-6dp rounded"></div></td>
+              </tr>
+              <tr>
+                <td><code>shadow-8dp()</code></td>
+                <td><div style="height: 20px; width: 60px" class="shadow-8dp rounded"></div></td>
+              </tr>
+              <tr>
+                <td><code>shadow-16dp()</code></td>
+                <td><div style="height: 20px; width: 60px" class="shadow-16dp rounded"></div></td>
+              </tr>
+              <tr>
+                <td><code>shadow-24dp()</code></td>
+                <td><div style="height: 20px; width: 60px" class="shadow-24dp rounded"></div></td>
+              </tr>
+            </tbody>
+        </table>
+
+        <h4 class="doc-section-title" id="colored-shadow-mixin">
+            Using colored shadow mixins
+            <a href="#colored-shadow-mixin" class="section-link"></a>
+          </h4>
+          <p></p>
+          <div class="copy-code">
+            <button
+              class="btn btn-sm btn-primary btn-clipboard"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Copy to clipboard"
+            >
+              Copy
+            </button>
+          </div>
+          <pre>
+            <code
+            class="code"
+            data-code='.custom-card-primary {
+    @include shadow-4dp-color($primary);
+}'
+          >
+          </code>
+          </pre>
+          <table class="table">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Variable name</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>shadow-1dp-color($primary)</code></td>
+                  <td><div style="height: 20px; width: 60px" class="shadow-1dp-primary rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>shadow-2dp-color($success)</code></td>
+                  <td><div style="height: 20px; width: 60px" class="shadow-2dp-success rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>shadow-3dp-color($warning)</code></td>
+                  <td><div style="height: 20px; width: 60px" class="shadow-3dp-warning rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>shadow-4dp-color($danger)</code></td>
+                  <td><div style="height: 20px; width: 60px" class="shadow-4dp-danger rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>shadow-6dp-color($info)</code></td>
+                  <td><div style="height: 20px; width: 60px" class="shadow-6dp-info rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>shadow-8dp-color($primary)</code></td>
+                  <td><div style="height: 20px; width: 60px" class="shadow-8dp-primary rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>shadow-16dp-color($success)</code></td>
+                  <td><div style="height: 20px; width: 60px" class="shadow-16dp-success rounded"></div></td>
+                </tr>
+                <tr>
+                  <td><code>shadow-24dp-color($info)</code></td>
+                  <td><div style="height: 20px; width: 60px" class="shadow-24dp-info rounded"></div></td>
+                </tr>
+                
+              </tbody>
+          </table>
           </div>
 
           
@@ -533,10 +673,17 @@
                 <li><a href="#font-size">Font size</a></li>
               </ul>
             </li>
-            <li><a href="#border">Border</a>
-            <li><a href="#spacing">Spacing</a>
-            <li><a href="#z-index">Z index</a>
 
+            <li><a href="#border">Border</a></li>
+            <li><a href="#spacing">Spacing</a></li>
+            <li><a href="#shadow">Shadow</a>
+              <ul>
+                  <li><a href="#shadow-mixin">Black shadow</a></li>
+                  <li><a href="#colored-shadow-mixin">Colored shadow</a></li>
+                </ul>
+            </li>
+            <li><a href="#z-index">Z index</a></li>
+            
 
           </ul>
         </div>

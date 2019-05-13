@@ -1,5 +1,5 @@
 @function shadow-1dp($color) {
-  @return 0 1px 4px 0 rgba($color, .2);
+  @return 0 1px 4px 0 rgba($color, .6);
 }
 @function shadow-2dp($color) {
   @return 0 2px 12px 0 rgba($color, .6);
