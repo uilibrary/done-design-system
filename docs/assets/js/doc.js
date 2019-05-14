@@ -1,13 +1,13 @@
 $(document).ready(function() {
   // hilight
   var $codes = $(".code");
-  hljs.configure({ useBR: true, tabReplace: '  ' });
+  hljs.configure({ useBR: true, tabReplace: '  '});
 
   $codes.each(function(e) {
     var $code = $(this);
     var code = $code.data("code");
     var highlighted = hljs.highlightAuto(code);
-    $code.addClass("hljs xml");
+    $code.addClass("hljs");
     $code.html(hljs.fixMarkup(highlighted.value));
     // $code.wrap('<figure></figure>');
   });

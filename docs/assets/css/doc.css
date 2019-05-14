@@ -4135,6 +4135,14 @@ pre {
 .code {
   margin-bottom: 1rem; }
 
+.hljs {
+  background: #f2f2f4; }
+
+.doc-example {
+  padding: 1.5rem;
+  border: 3px solid #f2f2f4;
+  border-bottom: none; }
+
 .doc-section-title {
   margin: 1.5rem 0 1rem 0; }
   .doc-section-title::before {

@@ -3,7 +3,7 @@
 $header-height: rem(60);
 $sidebar-width: 240px;
 $secondary-sidebar-width: 200px;
-
+$hljs-bg: $border-color-light;
 /*
   Code viewer
 */
@@ -22,7 +22,17 @@ pre {
 .code {
   margin-bottom: 1rem;
 }
+.hljs {
+  background: $hljs-bg;
+}
+.doc-example {
+  padding: $spacing-lg;
+  border: $border-width-lg solid $border-color-light;
+  border-bottom: none;
+}
 
+
+// 
 .doc-section-title {
   margin: 1.5rem 0 1rem 0;
   &::before {
