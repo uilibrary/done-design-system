@@ -1,0 +1,19 @@
+.alert {
+  padding: $alert-padding-y $alert-padding-x;
+  color: $alert-text-color !important;
+  border: 1px solid transparent !important;
+  .alert-link {
+    color: $alert-link-color;
+  }
+  
+  @each $name, $value in $theme-colors {
+    &.alert-#{$name} {
+      background-color: $value;
+    }
+    &.alert-raised-#{$name} {
+      background-color: $value;
+      @include shadow-2dp-color($value);
+    }
+  }
+}
+

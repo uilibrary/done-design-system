@@ -9,7 +9,7 @@ $(document).ready(function() {
     var highlighted = hljs.highlightAuto(code);
     $code.addClass("hljs");
     $code.html(hljs.fixMarkup(highlighted.value));
-    // $code.wrap('<figure></figure>');
+    $code.wrap('<pre></pre>');
   });
 
   // copy to clipboard

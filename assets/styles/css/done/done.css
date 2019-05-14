@@ -1560,14 +1560,268 @@ small,
 .border-dark {
   border-color: #494858 !important; }
 
+.shadow-1dp {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.6); }
+
 .shadow-2dp {
-  box-shadow: 0 2px 12px 0 rgba(187, 186, 198, 0.6); }
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.6); }
 
 .shadow-3dp {
-  box-shadow: 0 3px 20px 0 rgba(187, 186, 198, 0.6); }
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.6); }
 
 .shadow-4dp {
-  box-shadow: 0 4px 20px 0 rgba(187, 186, 198, 0.6); }
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.6); }
+
+.shadow-6dp {
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.6); }
+
+.shadow-8dp {
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.6); }
+
+.shadow-16dp {
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.6); }
+
+.shadow-24dp {
+  box-shadow: 0 24px 20px 0 rgba(0, 0, 0, 0.6); }
+
+.shadow-1dp-primary {
+  box-shadow: 0 1px 4px 0 rgba(115, 103, 240, 0.6); }
+
+.shadow-2dp-primary {
+  box-shadow: 0 2px 12px 0 rgba(115, 103, 240, 0.6); }
+
+.shadow-3dp-primary {
+  box-shadow: 0 3px 20px 0 rgba(115, 103, 240, 0.6); }
+
+.shadow-4dp-primary {
+  box-shadow: 0 4px 20px 0 rgba(115, 103, 240, 0.6); }
+
+.shadow-6dp-primary {
+  box-shadow: 0 6px 20px 0 rgba(115, 103, 240, 0.6); }
+
+.shadow-8dp-primary {
+  box-shadow: 0 8px 20px 0 rgba(115, 103, 240, 0.6); }
+
+.shadow-16dp-primary {
+  box-shadow: 0 16px 20px 0 rgba(115, 103, 240, 0.6); }
+
+.shadow-24dp-primary {
+  box-shadow: 0 24px 20px 0 rgba(115, 103, 240, 0.6); }
+
+.shadow-1dp-secondary {
+  box-shadow: 0 1px 4px 0 rgba(92, 90, 110, 0.6); }
+
+.shadow-2dp-secondary {
+  box-shadow: 0 2px 12px 0 rgba(92, 90, 110, 0.6); }
+
+.shadow-3dp-secondary {
+  box-shadow: 0 3px 20px 0 rgba(92, 90, 110, 0.6); }
+
+.shadow-4dp-secondary {
+  box-shadow: 0 4px 20px 0 rgba(92, 90, 110, 0.6); }
+
+.shadow-6dp-secondary {
+  box-shadow: 0 6px 20px 0 rgba(92, 90, 110, 0.6); }
+
+.shadow-8dp-secondary {
+  box-shadow: 0 8px 20px 0 rgba(92, 90, 110, 0.6); }
+
+.shadow-16dp-secondary {
+  box-shadow: 0 16px 20px 0 rgba(92, 90, 110, 0.6); }
+
+.shadow-24dp-secondary {
+  box-shadow: 0 24px 20px 0 rgba(92, 90, 110, 0.6); }
+
+.shadow-1dp-success {
+  box-shadow: 0 1px 4px 0 rgba(40, 199, 110, 0.6); }
+
+.shadow-2dp-success {
+  box-shadow: 0 2px 12px 0 rgba(40, 199, 110, 0.6); }
+
+.shadow-3dp-success {
+  box-shadow: 0 3px 20px 0 rgba(40, 199, 110, 0.6); }
+
+.shadow-4dp-success {
+  box-shadow: 0 4px 20px 0 rgba(40, 199, 110, 0.6); }
+
+.shadow-6dp-success {
+  box-shadow: 0 6px 20px 0 rgba(40, 199, 110, 0.6); }
+
+.shadow-8dp-success {
+  box-shadow: 0 8px 20px 0 rgba(40, 199, 110, 0.6); }
+
+.shadow-16dp-success {
+  box-shadow: 0 16px 20px 0 rgba(40, 199, 110, 0.6); }
+
+.shadow-24dp-success {
+  box-shadow: 0 24px 20px 0 rgba(40, 199, 110, 0.6); }
+
+.shadow-1dp-info {
+  box-shadow: 0 1px 4px 0 rgba(74, 144, 226, 0.6); }
+
+.shadow-2dp-info {
+  box-shadow: 0 2px 12px 0 rgba(74, 144, 226, 0.6); }
+
+.shadow-3dp-info {
+  box-shadow: 0 3px 20px 0 rgba(74, 144, 226, 0.6); }
+
+.shadow-4dp-info {
+  box-shadow: 0 4px 20px 0 rgba(74, 144, 226, 0.6); }
+
+.shadow-6dp-info {
+  box-shadow: 0 6px 20px 0 rgba(74, 144, 226, 0.6); }
+
+.shadow-8dp-info {
+  box-shadow: 0 8px 20px 0 rgba(74, 144, 226, 0.6); }
+
+.shadow-16dp-info {
+  box-shadow: 0 16px 20px 0 rgba(74, 144, 226, 0.6); }
+
+.shadow-24dp-info {
+  box-shadow: 0 24px 20px 0 rgba(74, 144, 226, 0.6); }
+
+.shadow-1dp-warning {
+  box-shadow: 0 1px 4px 0 rgba(233, 125, 35, 0.6); }
+
+.shadow-2dp-warning {
+  box-shadow: 0 2px 12px 0 rgba(233, 125, 35, 0.6); }
+
+.shadow-3dp-warning {
+  box-shadow: 0 3px 20px 0 rgba(233, 125, 35, 0.6); }
+
+.shadow-4dp-warning {
+  box-shadow: 0 4px 20px 0 rgba(233, 125, 35, 0.6); }
+
+.shadow-6dp-warning {
+  box-shadow: 0 6px 20px 0 rgba(233, 125, 35, 0.6); }
+
+.shadow-8dp-warning {
+  box-shadow: 0 8px 20px 0 rgba(233, 125, 35, 0.6); }
+
+.shadow-16dp-warning {
+  box-shadow: 0 16px 20px 0 rgba(233, 125, 35, 0.6); }
+
+.shadow-24dp-warning {
+  box-shadow: 0 24px 20px 0 rgba(233, 125, 35, 0.6); }
+
+.shadow-1dp-danger {
+  box-shadow: 0 1px 4px 0 rgba(241, 64, 4, 0.6); }
+
+.shadow-2dp-danger {
+  box-shadow: 0 2px 12px 0 rgba(241, 64, 4, 0.6); }
+
+.shadow-3dp-danger {
+  box-shadow: 0 3px 20px 0 rgba(241, 64, 4, 0.6); }
+
+.shadow-4dp-danger {
+  box-shadow: 0 4px 20px 0 rgba(241, 64, 4, 0.6); }
+
+.shadow-6dp-danger {
+  box-shadow: 0 6px 20px 0 rgba(241, 64, 4, 0.6); }
+
+.shadow-8dp-danger {
+  box-shadow: 0 8px 20px 0 rgba(241, 64, 4, 0.6); }
+
+.shadow-16dp-danger {
+  box-shadow: 0 16px 20px 0 rgba(241, 64, 4, 0.6); }
+
+.shadow-24dp-danger {
+  box-shadow: 0 24px 20px 0 rgba(241, 64, 4, 0.6); }
+
+.shadow-1dp-light {
+  box-shadow: 0 1px 4px 0 rgba(165, 163, 180, 0.6); }
+
+.shadow-2dp-light {
+  box-shadow: 0 2px 12px 0 rgba(165, 163, 180, 0.6); }
+
+.shadow-3dp-light {
+  box-shadow: 0 3px 20px 0 rgba(165, 163, 180, 0.6); }
+
+.shadow-4dp-light {
+  box-shadow: 0 4px 20px 0 rgba(165, 163, 180, 0.6); }
+
+.shadow-6dp-light {
+  box-shadow: 0 6px 20px 0 rgba(165, 163, 180, 0.6); }
+
+.shadow-8dp-light {
+  box-shadow: 0 8px 20px 0 rgba(165, 163, 180, 0.6); }
+
+.shadow-16dp-light {
+  box-shadow: 0 16px 20px 0 rgba(165, 163, 180, 0.6); }
+
+.shadow-24dp-light {
+  box-shadow: 0 24px 20px 0 rgba(165, 163, 180, 0.6); }
+
+.shadow-1dp-dark {
+  box-shadow: 0 1px 4px 0 rgba(73, 72, 88, 0.6); }
+
+.shadow-2dp-dark {
+  box-shadow: 0 2px 12px 0 rgba(73, 72, 88, 0.6); }
+
+.shadow-3dp-dark {
+  box-shadow: 0 3px 20px 0 rgba(73, 72, 88, 0.6); }
+
+.shadow-4dp-dark {
+  box-shadow: 0 4px 20px 0 rgba(73, 72, 88, 0.6); }
+
+.shadow-6dp-dark {
+  box-shadow: 0 6px 20px 0 rgba(73, 72, 88, 0.6); }
+
+.shadow-8dp-dark {
+  box-shadow: 0 8px 20px 0 rgba(73, 72, 88, 0.6); }
+
+.shadow-16dp-dark {
+  box-shadow: 0 16px 20px 0 rgba(73, 72, 88, 0.6); }
+
+.shadow-24dp-dark {
+  box-shadow: 0 24px 20px 0 rgba(73, 72, 88, 0.6); }
+
+.alert {
+  padding: 1rem 1.5rem;
+  color: #fff !important;
+  border: 1px solid transparent !important; }
+  .alert .alert-link {
+    color: #dcdbe2; }
+  .alert.alert-primary {
+    background-color: #7367F0; }
+  .alert.alert-raised-primary {
+    background-color: #7367F0;
+    box-shadow: 0 2px 12px 0 rgba(115, 103, 240, 0.6); }
+  .alert.alert-secondary {
+    background-color: #5c5a6e; }
+  .alert.alert-raised-secondary {
+    background-color: #5c5a6e;
+    box-shadow: 0 2px 12px 0 rgba(92, 90, 110, 0.6); }
+  .alert.alert-success {
+    background-color: #28C76E; }
+  .alert.alert-raised-success {
+    background-color: #28C76E;
+    box-shadow: 0 2px 12px 0 rgba(40, 199, 110, 0.6); }
+  .alert.alert-info {
+    background-color: #4A90E2; }
+  .alert.alert-raised-info {
+    background-color: #4A90E2;
+    box-shadow: 0 2px 12px 0 rgba(74, 144, 226, 0.6); }
+  .alert.alert-warning {
+    background-color: #e97d23; }
+  .alert.alert-raised-warning {
+    background-color: #e97d23;
+    box-shadow: 0 2px 12px 0 rgba(233, 125, 35, 0.6); }
+  .alert.alert-danger {
+    background-color: #F14004; }
+  .alert.alert-raised-danger {
+    background-color: #F14004;
+    box-shadow: 0 2px 12px 0 rgba(241, 64, 4, 0.6); }
+  .alert.alert-light {
+    background-color: #a5a3b4; }
+  .alert.alert-raised-light {
+    background-color: #a5a3b4;
+    box-shadow: 0 2px 12px 0 rgba(165, 163, 180, 0.6); }
+  .alert.alert-dark {
+    background-color: #494858; }
+  .alert.alert-raised-dark {
+    background-color: #494858;
+    box-shadow: 0 2px 12px 0 rgba(73, 72, 88, 0.6); }
 
 .card {
   box-shadow: 0 2px 12px 0 rgba(142, 141, 162, 0.6);
@@ -3286,7 +3540,7 @@ html [type="button"],
 .form-control {
   font-size: 0.875rem;
   height: 2.5rem;
-  border-color: #bbbac6;
+  border-color: #dcdbe2;
   border-width: 1px;
   background: transparent;
   transition: all 0.2s ease-in-out !important; }
@@ -3367,7 +3621,7 @@ html [type="button"],
   .input-group [class*=" ti-"] {
     color: #5c5a6e; }
   .input-group.input-light {
-    box-shadow: 0 1px 4px 0 rgba(73, 72, 88, 0.2); }
+    box-shadow: 0 1px 4px 0 rgba(73, 72, 88, 0.6); }
   .input-rounded .input-group, .input-group.input-rounded {
     border-radius: 1.875rem; }
   .input-group.input-group-focus {
@@ -3387,7 +3641,7 @@ html [type="button"],
 
 .input-group-text {
   font-size: 0.875rem;
-  border-color: #bbbac6;
+  border-color: #dcdbe2;
   border-width: 1px;
   background: transparent;
   border-right: 0;
@@ -3805,7 +4059,7 @@ html [type="button"],
       border-radius: 0.25rem; }
     .list-1 .list-group-item .item-icon {
       background: #f2f2f4;
-      border: 1px solid #dcdbe2;
+      border: 1px solid #f2f2f4;
       color: #8e8da2;
       font-size: 1.5rem;
       display: flex;

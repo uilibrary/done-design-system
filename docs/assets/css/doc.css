@@ -4121,9 +4121,6 @@ html [type="button"],
 /*
   Code viewer
 */
-pre {
-  margin-top: -38px; }
-
 .copy-code {
   position: relative; }
   .copy-code .btn-clipboard {
