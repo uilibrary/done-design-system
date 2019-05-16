@@ -1,19 +1,19 @@
 .dropdown-menu {
   border: 0;
-  box-shadow: shadow-4dp($gray-400);
-  top: 100% !important;
+
+  // top: 100% !important;
   font-size: $font-size-base;
   padding: 0;
-  overflow: hidden;
+  // overflow: hidden;
   // @include transition-all();
-
+  @include shadow-4dp();
   .dropdown & {
     
   }
   .dropdown.show &,
   &.open {
-    transform: translateY(-2px) !important;
-    opacity: 1;
+    // transform: translateY(-2px) !important;
+    // opacity: 1;
   }
 
   .dropdown-header {

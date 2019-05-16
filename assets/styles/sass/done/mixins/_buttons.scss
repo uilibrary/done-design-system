@@ -2,7 +2,7 @@
   $color,
   $focus-color,
   $active-color,
-  $background,
+  $body-bg,
   $focus-background,
   $active-background,
   $border,
@@ -12,7 +12,7 @@
   $hover-shadow
 ) {
   color: $color;
-  background-color: $background;
+  background-color: $body-bg;
   border-color: $border;
   box-shadow: $shadow;
 
@@ -48,7 +48,7 @@
 
   .open > &.dropdown-toggle.btn-icon {
     color: inherit;
-    background-color: $background;
+    background-color: $body-bg;
 
     &:hover {
       background-color: $focus-background;
@@ -59,11 +59,11 @@
   &:disabled {
     &:focus,
     &.focus {
-      background-color: $background !important;
+      background-color: $body-bg !important;
       border-color: $border !important;
     }
     @include hover {
-      background-color: $background !important;
+      background-color: $body-bg !important;
       border-color: $border !important;
       box-shadow: none !important;
       transform: none !important;
@@ -138,7 +138,7 @@
   }
   &.btn-white {
     background: $white;
-    color: $foreground;
+    color: $body-color;
     box-shadow: shadow-2dp($gray-400);
   }
 }

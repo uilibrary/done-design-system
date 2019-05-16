@@ -1,33 +1,35 @@
-$font-size-h1:                 2.125em     !default; // ~ 34px
-$font-size-h2:                 1.8125em    !default; // ~ 29px
-$font-size-h3:                 1.5em       !default; // ~ 24px
-$font-size-h4:                 1.25em      !default; // ~ 20px
-$font-size-h5:                 1.0625em    !default; // ~ 17px
-$font-size-h6:                 .8125em     !default; // ~ 13px
+$font-size-h1:                 rem(36)     !default; // ~ 34px
+$font-size-h2:                 rem(32)    !default; // ~ 29px
+$font-size-h3:                 rem(28)       !default; // ~ 24px
+$font-size-h4:                 rem(24)      !default; // ~ 20px
+$font-size-h5:                 rem(20)    !default; // ~ 17px
+$font-size-h6:                 rem(16)    !default; // ~ 13px
 
-$font-size-display-1:          4.6875em    !default; // ~75px
-$font-size-display-2:          3.75em      !default; // ~60px
-$font-size-display-3:          2.8125em    !default; // ~45px
-$font-size-display-4:          2.1875em    !default; // ~35px
+$font-size-display-1:          rem(52)    !default; // ~75px
+$font-size-display-2:          rem(44)    !default; // ~60px
+$font-size-display-3:          rem(36)    !default; // ~45px
+$font-size-display-4:          rem(28)    !default; // ~35px
 
-$font-size-title:              $font-size-base !default; // ~14px
-$font-size-subtitle:           .875em      !default; // ~14px
 
-$font-size-paragraph:          1em          !default; // ~16px
-$font-size-navbar:             1em          !default;
-$font-size-xs:               0.7142em     !default;
-$font-size-sm:              0.8571em     !default;
-$font-size-lg:              1em          !default;
+$font-size-heading:            rem(15)    !default; // ~14px
+$font-size-heading-title:      rem(22)    !default; // ~14px
+$font-size-lead:               rem(20)      !default; // ~14px
+
+$font-size-paragraph:          $font-size-base          !default; // ~16px
+$font-size-navbar:             $font-size-base          !default;
+$font-size-xs:                 rem(12)      !default;
+$font-size-sm:                 rem(13)      !default;
+$font-size-lg:                 rem(16)      !default;
 $font-size-large-navbar:       20px         !default;
-$font-size-blockquote:         1em          !default; // ~ 15px
+$font-size-blockquote:         rem(16)      !default; // ~ 15px
 
 $font-weight-light:             300         !default;
 $font-weight-normal:            400         !default;
 $font-weight-semi:              500         !default;
 $font-weight-bold:              700         !default;
 
-$line-height-general:        1.5            !default;
-$line-height-nav-link:       1.625rem       !default;
-$btn-icon-line-height:       2.4em          !default;
-$line-height:                1.35em         !default;
-$line-height-lg:             54px           !default;
+// $line-height-general:        1.5            !default;
+// $line-height-nav-link:       1.625rem       !default;
+// $btn-icon-line-height:       2.4em          !default;
+// $line-height:                1.35em         !default;
+// $line-height-lg:             54px           !default;

@@ -1,0 +1,17 @@
+.accordion {
+  .card {
+    margin-bottom: $spacing-md;
+    border-radius: $border-radius !important;
+  }
+  .card-header {
+    cursor: pointer;
+    .i-arrow {
+      @include transition-all();
+    }
+    &.collapsed {
+      .i-arrow {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}

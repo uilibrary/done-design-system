@@ -3,6 +3,9 @@
   border: 0;
   // color: $gray-600;
   .card-header {
+    display: flex;
+    align-items: center;
+    padding: $spacing-md $spacing-lg;
     background: $card-header-bg;
   }
   .card-footer {

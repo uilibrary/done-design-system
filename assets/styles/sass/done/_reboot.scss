@@ -3,8 +3,8 @@ body {
   font-size: $font-size-base;
   line-height: $line-height-base;
   letter-spacing: $letter-spacing-base;
-  background: $background;
-  color: $foreground;
+  background: $body-bg;
+  color: $body-color;
   overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

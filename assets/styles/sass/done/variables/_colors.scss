@@ -3,6 +3,7 @@
 */
 $solid-colors: (
     "blue": #4A90E2,
+    "dark-blue": #3930d8,
     "midnight-blue": #0C0C3C,
     "indigo": #3F51B5,
     "dark-purple": #322740,
@@ -38,6 +39,7 @@ $gradient-colors: (
 );
 
 $blue:    map-get($solid-colors, 'blue') !default;
+$dark-blue:    map-get($solid-colors, 'dark-blue') !default;
 $indigo:  map-get($solid-colors, 'indigo') !default;
 $purple:  map-get($solid-colors, 'purple') !default;
 $pink:    map-get($solid-colors, 'pink') !default;
@@ -55,29 +57,13 @@ $white:    #fff !default;
 $gray-100: lighten($gray-base, 36) !default;
 $gray-200: lighten($gray-base, 28) !default;
 $gray-300: lighten($gray-base, 20) !default;
-$gray-400: lighten($gray-base, 8) !default;
+$gray-400: lighten($gray-base, 8)  !default;
 $gray-500: $gray-base !default;
-$gray-600: darken($gray-base, 8) !default;
+$gray-600: darken($gray-base, 8)  !default;
 $gray-700: darken($gray-base, 20) !default;
 $gray-800: darken($gray-base, 28) !default;
 $gray-900: darken($gray-base, 36) !default;
-$black:    $gray-900 !default;
-
-
-// $white:    #fff !default;
-// $gray-100: #ffffff !default;
-// $gray-200: #fafaf9 !default;
-// $gray-300: #f3f2f2 !default;
-// $gray-400: #ecebea !default;
-// $gray-500: #dddbda !default;
-// $gray-600: #c9c7c5 !default;
-// $gray-700: #b0adab !default;
-// $gray-800: #969492 !default;
-// $gray-900: #706e6b !default;
-// $gray-1000: #514f4d !default;
-// $gray-1100: #3e3e3c !default;
-// $gray-1200: #2b2826 !default;
-// $black:    $gray-1200 !default;
+$black:    darken(desaturate($purple, 50), 40) !default;
 
 
 $primary:       $purple !default;
@@ -88,8 +74,7 @@ $warning:       $orange !default;
 $danger:        $red !default;
 $light:         $gray-500 !default;
 $dark:          $gray-900 !default;
-$background:    $white !default;
-$foreground:    $black !default;
+
 
 $theme-colors: (
   primary: $primary,
@@ -116,8 +101,12 @@ $twitter: map-get($social-colors, 'twitter');
 
 
 /* 
-  Color Tokens 
+  Color Design Tokens 
 */
+$body-bg: $white;
+$body-color: darken(desaturate($purple, 60), 30) !default;;
+$heading-color: $black;
+$text-muted-color: $gray-600;
 
 $primary-active: darken($primary, 10);
 $primary-dark: darken($primary, 15);

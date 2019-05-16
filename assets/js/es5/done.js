@@ -58,8 +58,9 @@ $(document).ready(function () {
   */
   $(".bootstrap-slider").slider({});
 
-  // Bootstrap Tooltip
+  // Bootstrap Tooltip & popover
   $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
 
   // Form group focus class
   $(".form-control").on("focus", function () {

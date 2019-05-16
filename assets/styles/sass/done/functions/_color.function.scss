@@ -1,6 +1,6 @@
 @function get-contrast-color($color) {
   @if(lightness($color) < 40) {
-    @return $black;
+    @return $gray-900;
   } @else {
     @return $white;
   }
