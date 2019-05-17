@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Arpon Design System</title>
+    <title>Done Design System</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700"
       rel="stylesheet"
@@ -189,6 +189,7 @@
         </div>
       </div>
     </section>
+    <!-- ================ End buttons ================= -->
 
     <section class="section py-xxl">
       <div class="container">
@@ -410,7 +411,7 @@
                 checked
               />
               <label class="custom-control-label" for="customCheck2">
-                Checkbox primary
+               primary
               </label>
             </div>
             <div
@@ -423,7 +424,7 @@
                 checked
               />
               <label class="custom-control-label" for="customCheck3">
-                Checkbox secondary
+               secondary
               </label>
             </div>
             <div class="mb-sm custom-control custom-checkbox checkbox-success">
@@ -434,7 +435,7 @@
                 checked
               />
               <label class="custom-control-label" for="customCheck4">
-                Checkbox success
+               success
               </label>
             </div>
             <div class="mb-sm custom-control custom-checkbox checkbox-danger">
@@ -445,7 +446,7 @@
                 checked
               />
               <label class="custom-control-label" for="customCheck5">
-                Checkbox danger
+               danger
               </label>
             </div>
             <div class="mb-sm custom-control custom-checkbox checkbox-info">
@@ -456,7 +457,7 @@
                 checked
               />
               <label class="custom-control-label" for="customCheck6">
-                Checkbox info
+               info
               </label>
             </div>
             <div class="mb-sm custom-control custom-checkbox checkbox-light">
@@ -467,7 +468,7 @@
                 checked
               />
               <label class="custom-control-label" for="customCheck7">
-                Checkbox light
+               light
               </label>
             </div>
             <div class="mb-sm custom-control custom-checkbox checkbox-dark">
@@ -478,7 +479,7 @@
                 checked
               />
               <label class="custom-control-label" for="customCheck8">
-                Checkbox dark
+               dark
               </label>
             </div>
             <div class="mb-sm custom-control custom-checkbox checkbox-dark">
@@ -490,7 +491,7 @@
                 checked
               />
               <label class="custom-control-label" for="customCheck9">
-                Checkbox Disabled (Nedded to be fixed)
+               Disabled
               </label>
             </div>
           </div>
@@ -646,10 +647,52 @@
     </section>
     <!-- ================= End form controls ================= -->
 
-    <section class="py-xxl">
+    <section class="py-xxxl">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12">
+            <h2>Bootstrap Select</h2>
+          </div>
+
+          <div class="col-md-4">
+            <p class="text-uppercase font-weight-bold text-small text-muted">
+              Single select
+            </p>
+            <select class="selectpicker" data-style="btn-white">
+              <option>Mustard</option>
+              <option>Ketchup</option>
+              <option>Barbecue</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <p class="text-uppercase font-weight-bold text-small text-muted">
+              Multi select
+            </p>
+            <select
+              class="selectpicker"
+              data-selected-text-format="count"
+              data-style="btn-white"
+              multiple
+            >
+              <option>Mustard</option>
+              <option>Ketchup</option>
+              <option>Barbecue</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End Bootstrap Select ========== -->
+
+    <section class="py-xxl gray-200">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold text-small text-muted">
+              Tabs
+            </p>
+          </div>
+          <div class="col-6 mb-lg">
             <div class="nav-tabs-primary">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
@@ -717,7 +760,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-6 mb-lg">
             <div class="nav-pills-primary">
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item">
@@ -785,31 +828,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-xxl">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <p class="text-uppercase font-weight-bold text-small">
-              Progress
-            </p>
-            <div class="progress mb-md">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <div class="progress mb-md">
-              <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <div class="progress mb-md">
-              <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <div class="progress mb-md">
-              <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-            <p class="text-uppercase font-weight-bold text-small">
+          <div class="col-md-6">
+            <p class="text-uppercase font-weight-bold text-small text-muted">
               Accordion
             </p>
             <div class="accordion" id="accordionExample">
@@ -822,7 +842,7 @@
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  <h5 class="m-0">
+                  <h5 class="heading m-0">
                     Collapsible Group Item #1
                   </h5>
                   <span class="flex-grow-1"></span>
@@ -831,22 +851,22 @@
 
                 <div
                   id="collapseOne"
-                  class="collapse show"
+                  class="collapse"
                   aria-labelledby="headingOne"
                   data-parent="#accordionExample"
                 >
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid. 3 wolf moon officia
-                    aute, non cupidatat skateboard dolor brunch. Food truck
-                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                    sunt aliqua put a bird on it squid single-origin coffee
-                    nulla assumenda shoreditch et. Nihil anim keffiyeh
-                    helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table, raw denim
-                    aesthetic synth nesciunt you probably haven't heard of them
-                    accusamus labore sustainable VHS.
+                    <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                        accusamus terry richardson ad squid. 3 wolf moon officia
+                        aute, non cupidatat skateboard dolor brunch. Food truck
+                        quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                        sunt aliqua put a bird on it squid single-origin coffee
+                        nulla assumenda shoreditch et. Nihil anim keffiyeh
+                        helvetica, craft beer labore wes anderson cred nesciunt
+                        sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                        Leggings occaecat craft beer farm-to-table, raw denim
+                        aesthetic synth nesciunt you probably haven't heard of them
+                        accusamus labore sustainable VHS.</p>
                   </div>
                 </div>
               </div>
@@ -859,7 +879,7 @@
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  <h5 class="m-0">
+                  <h5 class="heading m-0">
                     Collapsible Group Item #2
                   </h5>
                   <span class="flex-grow-1"></span>
@@ -872,17 +892,17 @@
                   data-parent="#accordionExample"
                 >
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid. 3 wolf moon officia
-                    aute, non cupidatat skateboard dolor brunch. Food truck
-                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                    sunt aliqua put a bird on it squid single-origin coffee
-                    nulla assumenda shoreditch et. Nihil anim keffiyeh
-                    helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table, raw denim
-                    aesthetic synth nesciunt you probably haven't heard of them
-                    accusamus labore sustainable VHS.
+                    <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                        accusamus terry richardson ad squid. 3 wolf moon officia
+                        aute, non cupidatat skateboard dolor brunch. Food truck
+                        quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                        sunt aliqua put a bird on it squid single-origin coffee
+                        nulla assumenda shoreditch et. Nihil anim keffiyeh
+                        helvetica, craft beer labore wes anderson cred nesciunt
+                        sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                        Leggings occaecat craft beer farm-to-table, raw denim
+                        aesthetic synth nesciunt you probably haven't heard of them
+                        accusamus labore sustainable VHS.</p>
                   </div>
                 </div>
               </div>
@@ -895,7 +915,7 @@
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  <h5 class="mb-0">
+                  <h5 class="heading mb-0">
                     Collapsible Group Item #3
                   </h5>
                   <span class="flex-grow-1"></span>
@@ -908,19 +928,202 @@
                   data-parent="#accordionExample"
                 >
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid. 3 wolf moon officia
-                    aute, non cupidatat skateboard dolor brunch. Food truck
-                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                    sunt aliqua put a bird on it squid single-origin coffee
-                    nulla assumenda shoreditch et. Nihil anim keffiyeh
-                    helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table, raw denim
-                    aesthetic synth nesciunt you probably haven't heard of them
-                    accusamus labore sustainable VHS.
+                    <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                        accusamus terry richardson ad squid. 3 wolf moon officia
+                        aute, non cupidatat skateboard dolor brunch. Food truck
+                        quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                        sunt aliqua put a bird on it squid single-origin coffee
+                        nulla assumenda shoreditch et. Nihil anim keffiyeh
+                        helvetica, craft beer labore wes anderson cred nesciunt
+                        sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                        Leggings occaecat craft beer farm-to-table, raw denim
+                        aesthetic synth nesciunt you probably haven't heard of them
+                        accusamus labore sustainable VHS.</p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End Tabs ========= -->
+
+    <section class="py-xxxl">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-2">
+            <p class="text-uppercase font-weight-bold text-small text-muted">
+              Fancy List
+            </p>
+            <div class="list-group list-1">
+              <div class="list-group-item">
+                <img
+                  src="./assets/images/faces/1.jpg"
+                  alt=""
+                  class="item-thumbnail"
+                />
+                <div class="item-content">
+                  <h4>
+                    Restaurant General Manager.
+                  </h4>
+                  <div class="item-footer">
+                    <span> <i class="far fa-building"></i>King </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>San Francisco
+                    </span>
+                    <span> <i class="fas fa-male"></i>Full Time </span>
+                    <span> <i class="far fa-clock"></i>2 days ago </span>
+                  </div>
+                </div>
+                <div class="item-action">
+                  <button class="btn btn-raised btn-raised-light">
+                    apply now
+                  </button>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <img
+                  src="./assets/images/faces/1.jpg"
+                  alt=""
+                  class="item-thumbnail"
+                />
+                <div class="item-content">
+                  <h4>
+                    Restaurant General Manager.
+                  </h4>
+                  <div class="item-footer">
+                    <span> <i class="fas fa-map-marker-alt"></i>King </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>San Francisco
+                    </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>Full Time
+                    </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>2 days ago
+                    </span>
+                  </div>
+                </div>
+                <div class="item-action">
+                  <button class="btn btn-raised btn-raised-light">
+                    apply now
+                  </button>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <span class="item-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <div class="item-content">
+                  <h4>
+                    Restaurant General Manager.
+                  </h4>
+                  <div class="item-footer">
+                    <span> <i class="fas fa-map-marker-alt"></i>King </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>San Francisco
+                    </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>Full Time
+                    </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>2 days ago
+                    </span>
+                  </div>
+                </div>
+                <div class="item-action">
+                  <button class="btn btn-raised btn-raised-light">
+                    apply now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End Lists ========= -->
+
+    <section class="py-xxxl">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold text-small text-muted">
+              Cards
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="card mb-xxl">
+              <img
+                class="card-img-top"
+                src="./assets/images/photo-wide-1.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-raised btn-raised-primary"
+                  >Go somewhere</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card image-bg">
+              <img src="./assets/images/cities/city-2.jpg" alt="" />
+              <div class="image-bg-content">
+                <div class="flex-grow-1"></div>
+                <div class="image-bg-footer">
+                  <h4>
+                    New York <br />
+                    <span class="badge badge-white">250 Jobs</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-xxl">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <p class="text-uppercase font-weight-bold text-small">
+              Progress
+            </p>
+
+            <div class="progress-wrapper mb-xl">
+                <div class="progress-info">
+                  <span></span>
+                  <div class="progress-percentage">
+                    <span>80%</span>
+                  </div>
+                </div>
+                <div class="progress mb-md">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            <div class="progress-wrapper mb-xl">
+              <div class="progress-info">
+                <span></span>
+                <div class="progress-percentage">
+                  <span>50%</span>
+                </div>
+              </div>
+              <div class="progress mb-md">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
@@ -1035,7 +1238,7 @@
         </div>
       </div>
     </section>
-
+    <!-- ============= End progress ================ -->
     <section class="py-xxl">
       <div class="container">
         <div class="row">
@@ -1279,6 +1482,7 @@
           </div>
       </div>
     </section>
+    <!-- ========= End carousel =========== -->
     <section class="py-xxl">
       <div class="container">
         <div class="row">
@@ -1596,6 +1800,7 @@
    
       </div>
     </section>
+    <!-- ============ End Typography ============= -->
     <script src="./assets/vendor/jquery-3.4.1.min.js"></script>
 
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

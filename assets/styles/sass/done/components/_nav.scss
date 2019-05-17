@@ -1,7 +1,5 @@
 @include tab-colors();
 
-
-
 .nav-link {
   display: block;
   padding: $nav-link-padding-y $nav-link-padding-x;
@@ -68,6 +66,7 @@
 
 .tab-content {
   padding: 1rem;
+  background-color: $tab-content-bg;
   [class^="nav-tabs-"] &,
   [class*=" nav-tabs-"] & {
     border-top: 0 !important;

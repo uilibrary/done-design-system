@@ -1,60 +1,60 @@
-// Background Grey colors
-.grey-100 {
+// Background gray colors
+.gray-100 {
   background-color: $gray-100;
 }
-.grey-200 {
+.gray-200 {
   background-color: $gray-200;
 }
-.grey-300 {
+.gray-300 {
   background-color: $gray-300;
 }
-.grey-400 {
+.gray-400 {
   background-color: $gray-400;
 }
-.grey-500 {
+.gray-500 {
   background-color: $gray-500;
 }
-.grey-600 {
+.gray-600 {
   background-color: $gray-600;
 }
-.grey-700 {
+.gray-700 {
   background-color: $gray-700;
 }
-.grey-800 {
+.gray-800 {
   background-color: $gray-800;
 }
-.grey-900 {
+.gray-900 {
   background-color: $gray-900;
 }
 .black {
   background-color: $black;
 }
-// Text Grey colors
-.text-grey-100 {
+// Text gray colors
+.text-gray-100 {
   color: $gray-100;
 }
-.text-grey-200 {
+.text-gray-200 {
   color: $gray-200;
 }
-.text-grey-300 {
+.text-gray-300 {
   color: $gray-300;
 }
-.text-grey-400 {
+.text-gray-400 {
   color: $gray-400;
 }
-.text-grey-500 {
+.text-gray-500 {
   color: $gray-500;
 }
-.text-grey-600 {
+.text-gray-600 {
   color: $gray-600;
 }
-.text-grey-700 {
+.text-gray-700 {
   color: $gray-700;
 }
-.text-grey-800 {
+.text-gray-800 {
   color: $gray-800;
 }
-.text-grey-900 {
+.text-gray-900 {
   color: $gray-900;
 }
 .text-black {
@@ -84,10 +84,10 @@
 
 
 // background color opacity 
-@each $colorName, $map in $opacity-map {
-  @each $name, $value in $map {
-    .#{$colorName}-#{$name} {
-      background-color: $value;
-    }
-  }
-}
+// @each $colorName, $map in $opacity-map {
+//   @each $name, $value in $map {
+//     .#{$colorName}-#{$name} {
+//       background-color: $value;
+//     }
+//   }
+// }

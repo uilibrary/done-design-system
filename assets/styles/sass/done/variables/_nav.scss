@@ -7,8 +7,10 @@ $nav-tabs-border-width: 1px !default;
 $nav-tabs-border-radius: $border-radius !default;
 $nav-tabs-link-hover-border-color: transparent !default;
 $nav-tabs-link-color: $gray-600 !default;
-$nav-tabs-link-active-bg: $white !default;
+$nav-tabs-link-active-bg: $body-bg !default;
 $nav-pills-border-radius: $border-radius !default;
 $nav-pills-link-active-color: $component-active-color !default;
 $nav-divider-color: $gray-200 !default;
 $nav-divider-margin-y: ($spacer / 2) !default;
+
+$tab-content-bg:                    $body-bg !default;

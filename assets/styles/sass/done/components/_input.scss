@@ -63,3 +63,7 @@
     }
   }
 }
+
+input[disabled]+.custom-control-label::before {
+  opacity: .25;
+}

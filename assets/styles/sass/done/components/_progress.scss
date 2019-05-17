@@ -1,0 +1,23 @@
+.progress-wrapper {
+  padding-top: $spacing-md;
+}
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+}
+.progress-percentage {
+  font-size: $font-size-sm;
+  color: $text-muted-color;
+  font-weight: $font-weight-semi;
+}
+
+.progress {
+  height: $progress-height;
+  background-color: $progress-bg;
+  border-radius: $progress-border-radius;
+  box-shadow: $progress-box-shadow; 
+}
+
+.progress-bar {
+  background-color: $progress-bar-bg;
+}
