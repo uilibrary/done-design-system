@@ -1,74 +1,33 @@
-// @mixin shadow-big() {
-//   box-shadow: 0 16px 38px -12px rgba(0, 0, 0, $shadow-penumbra-opacity * 4),
-//     0 4px 25px 0px rgba(0, 0, 0, $shadow-ambient-opacity),
-//     0 8px 10px -5px rgba(0, 0, 0, $shadow-umbra-opacity);
-// }
-
-// @mixin shadow-big-image() {
-//   // new box shadow optimized for Tables and Phones
-//   box-shadow: 0 5px 15px -8px rgba(0, 0, 0, $shadow-ambient-opacity * 2),
-//     0 8px 10px -5px rgba(0, 0, 0, $shadow-umbra-opacity);
-// }
-
-// @mixin shadow-big-navbar() {
-//   box-shadow: 0 10px 20px -12px rgba(0, 0, 0, $shadow-penumbra-opacity * 3),
-//     0 3px 20px 0px rgba(0, 0, 0, $shadow-ambient-opacity),
-//     0 8px 10px -5px rgba(0, 0, 0, $shadow-umbra-opacity);
-// }
-
-// @mixin shadow-big-color($color) {
-//   // new box shadow optimized for Tables and Phones
-//   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2),
-//     0 13px 24px -11px rgba($color, 0.6);
-// }
-
-// @mixin shadow-small-color($color) {
-//   // new box shadow optimized for Tablets and Phones
-//   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14),
-//     0 7px 10px -5px rgba($color, 0.4);
-// }
-
-// @mixin shadow-navbar-color($color) {
-//   // new box shadow optimized for Tablets and Phones
-
-//   @if ($color == $white-color) {
-//     box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12),
-//       0 7px 10px -5px rgba(0, 0, 0, 0.15);
-//   } @else {
-//     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14),
-//       0 7px 12px -5px rgba($color, 0.46);
-//   }
-// }
 @mixin shadow-1dp() {
-  box-shadow: shadow-1dp(#000000);
+  box-shadow: shadow-1dp($shadow-black-color);
 }
 
 @mixin shadow-2dp() {
-  box-shadow: shadow-2dp(#000000);
+  box-shadow: shadow-2dp($shadow-black-color);
 }
 
 @mixin shadow-3dp() {
-  box-shadow: shadow-3dp(#000000);
+  box-shadow: shadow-3dp($shadow-black-color);
 }
 
 @mixin shadow-4dp() {
-  box-shadow: shadow-4dp(#000000);
+  box-shadow: shadow-4dp($shadow-black-color);
 }
 
 @mixin shadow-6dp() {
-  box-shadow: shadow-6dp(#000000);
+  box-shadow: shadow-6dp($shadow-black-color);
 }
 
 @mixin shadow-8dp() {
-  box-shadow: shadow-8dp(#000000);
+  box-shadow: shadow-8dp($shadow-black-color);
 }
 
 @mixin shadow-16dp() {
-  box-shadow: shadow-16dp(#000000);
+  box-shadow: shadow-16dp($shadow-black-color);
 }
 
 @mixin shadow-24dp() {
-  box-shadow: shadow-24dp(#000000);
+  box-shadow: shadow-24dp($shadow-black-color);
 }
 
 @mixin shadow-1dp-color($color) {
@@ -98,6 +57,9 @@
   box-shadow: shadow-24dp($color);
 }
 
+@mixin button-shadow() {
+  box-shadow: button-shadow($shadow-black-color);
+}
 @mixin button-shadow-color($color) {
-  box-shadow: button-shadow-color($color);
+  box-shadow: button-shadow($color);
 }

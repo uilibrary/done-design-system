@@ -15,6 +15,13 @@
   }
 }
 
+@mixin active-focus {
+  &:focus,
+  &:active {
+    @content;
+  }
+}
+
 @mixin plain-hover-focus {
   &,
   &:hover,

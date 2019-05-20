@@ -9,5 +9,19 @@ $input-border-color: $border-color;
 $input-border-width: 1px;
 
 // checkbox
-$checkbox-height: rem(17.6);
-$checkbox-width: rem(17.6);
+$checkbox-height: rem(20);
+$checkbox-width: rem(20);
+
+
+// switch
+
+$switch-padding-left:             rem(56) !default;
+$switch-height:                   1rem !default;
+$switch-slider-width:             rem(42) !default;
+$switch-slider-radius:            rem(30) !default;
+$switch-slider-bg:                $gray-300 !default;
+$switch-handle-height:            1.5rem !default;
+$switch-handle-width:             1.5rem !default;
+$switch-handle-width:             1.5rem !default;
+$switch-handle-checked-position:  1.5rem !default;
+$switch-handle-disabled-color:    $gray-500 !default;

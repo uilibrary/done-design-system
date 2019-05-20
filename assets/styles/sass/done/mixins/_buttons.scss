@@ -85,7 +85,7 @@
     $lighten, // focus-border
     $lighten, // active-border
     none,      // shadow
-    shadow-4dp($color) // hover-shadow
+    button-shadow-hover($button-shadow-color) // hover-shadow
   );
 }
 
@@ -102,7 +102,7 @@
     $color, // focus-border
     $color,  // active-border
     none,   // shadow
-    shadow-4dp($color) // hover-shadow
+    button-shadow-hover($button-shadow-color) // hover-shadow
   );
 }
 // Raised button
@@ -119,8 +119,8 @@
     $color,   // border
     $lighten, // focus-border
     $lighten,  // active-border
-    shadow-4dp($color), // shadow
-    shadow-6dp($color) // hover-shadow
+    button-shadow($button-shadow-color), // shadow
+    button-shadow-hover($button-shadow-color) // hover-shadow
   );
 }
 
@@ -136,10 +136,27 @@
       @include button-raised($value);
     }
   }
-  &.btn-white {
+  &.btn-default {
     background: $white;
-    color: $body-color;
-    box-shadow: shadow-2dp($gray-400);
+    color: $heading-color;
+    @include hover {
+      box-shadow: button-shadow-hover($button-shadow-color);
+    }
+    @include active-focus {
+      box-shadow: none;
+    }
+  }
+  &.btn-raised-default {
+    background: $white;
+    color: $heading-color;
+    box-shadow: button-shadow($button-shadow-color);
+    @include hover {
+      box-shadow: button-shadow-hover($button-shadow-color);
+    }
+    @include active-focus {
+      box-shadow: none;
+      border-color: $gray-200;
+    }
   }
 }
 

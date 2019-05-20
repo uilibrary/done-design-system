@@ -63,7 +63,82 @@
     }
   }
 }
-
+// Disabled
 input[disabled]+.custom-control-label::before {
   opacity: .25;
+}
+
+// SWITCH
+.switch {
+  position: relative;
+  display: inline-block;
+  padding-left: $switch-padding-left;
+  height: $switch-height;
+  span:not(.slider) {
+    position: relative;
+    top: -2px;
+    cursor: pointer;
+  }
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    width: $switch-slider-width;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: $switch-slider-radius;
+    background-color: $switch-slider-bg;
+    @include transition-all();
+  }
+  // Slider Handle
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: $switch-handle-height;
+    width: $switch-handle-width;
+    left: -.125rem;
+    bottom: -.25rem;
+    background-color: $body-bg;
+    border-radius: $border-radius-circle;
+    @include button-shadow();
+    @include transition-all();
+  }
+  input:checked + .slider {
+    background-color: $primary;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px $primary;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX($switch-handle-checked-position);
+    -ms-transform: translateX($switch-handle-checked-position);
+    transform: translateX($switch-handle-checked-position);
+  }
+}
+
+@each $name, $value in $theme-colors {
+  .switch-#{$name} {
+    input:checked + .slider {
+      background-color: $value;
+    }
+    input:focus + .slider {
+      box-shadow: 0 0 1px $value;
+    }
+  }
+}
+
+// Switch Disabled
+input[disabled]+.slider,
+input[disabled]+.slider {
+  opacity: .4;
+  &::before {
+    background-color: $switch-handle-disabled-color;
+    @include button-shadow-color($gray-500);
+  }
 }
