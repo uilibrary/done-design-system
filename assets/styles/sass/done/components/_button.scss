@@ -19,7 +19,8 @@ html [type="button"],
   @include button-socials();
   @include button-sizes();
   @include button-icon-style();
-
+  @include button-link();
+  
   &.rounded,
   &.btn-rounded {
     border-radius: $button-rounded-radius !important;

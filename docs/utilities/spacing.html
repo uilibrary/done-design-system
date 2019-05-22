@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spacing | Done! Design System Documentation by UI Lib</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/fonts/themify-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/bootstrap-select/css/bootstrap-select.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/doc.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="doc-header">
+        <div class="brand">
+          <a href="#">Done!</a>
+          <small>v1.0.0</small>
+        </div>
+        <a href="#" class="btn btn-raised btn-raised-success">download</a>
+      </div>
+
+      <div class="doc-content clearfix">
+        <div class="doc-content__sidebar"></div>
+
+        <div class="doc-content__body">
+          <h1 class="doc-section-title" id="spacing">
+            Spacing
+            <a href="#shadow" class="section-link"></a>
+          </h1>
+          <p class="lead">
+            Custom spacing classes. You can also use bootstrap default <a href="https://getbootstrap.com/docs/4.3/utilities/spacing/" target="_blank">spacing classes</a>
+          </p>
+
+          <h2 class="doc-section-title" id="notation">
+            Custom spacing notation
+            <a href="#notation" class="section-link"></a>
+          </h2>
+
+          <p>The classes are named using the format <code>{property}{sides}-{size}</code></p>
+          <p>Where <code>property</code> is one of:</p>
+          <ul>
+              <li><code>m</code> - for classes that set <code>margin</code></li>
+              <li><code>p</code> - for classes that set <code>padding</code></li>
+          </ul>
+          <p>Where <code>sides</code> is one of:</p>
+          <ul>
+              <li><code>t</code> - for classes that set <code>margin-top</code> or <code>padding-top</code></li>
+              <li><code>b</code> - for classes that set <code>margin-bottom</code> or <code>padding-bottom</code></li>
+              <li><code>l</code> - for classes that set <code>margin-left</code> or <code>padding-left</code></li>
+              <li><code>r</code> - for classes that set <code>margin-right</code> or <code>padding-right</code></li>
+              <li><code>x</code> - for classes that set both <code>*-left</code> and <code>*-right</code></li>
+              <li><code>y</code> - for classes that set both <code>*-top</code> and <code>*-bottom</code></li>
+              <li>blank - for classes that set a <code>margin</code> or <code>padding</code> on all 4 sides of the element</li>
+          </ul>
+
+          <p>Where <code>size</code> is one of:</p>
+          <ul>
+            <li><code>0</code> - for classes that eliminate the <code>margin</code> or <code>padding</code> by setting it to <code>0</code></li>
+            <li><code>xxxs</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>.0625rem</code></li>
+            <li><code>xxs</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>.125rem</code></li>
+            <li><code>xs</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>.25rem</code></li>
+            <li><code>sm</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>.5rem</code></li>
+            <li><code>md</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>1rem</code></li>
+            <li><code>lg</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>1.5rem</code></li>
+            <li><code>xl</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>2rem</code></li>
+            <li><code>xxl</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>2.5rem</code></li>
+            <li><code>xxxl</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>3rem</code></li>
+            <li><code>auto</code> - for classes that set the <code>margin</code> to auto</li>
+          </ul>
+
+          <h2 class="doc-section-title" id="example">
+            Examples
+            <a href="#example" class="section-link"></a>
+          </h2>
+
+          <div class="doc-example">
+            <div class="mr-xl d-inline-block"><code>.mr-xl</code> Margin right 2rem</div>
+            <div class="d-inline-block">Lorem ipsum dolor sit amet</div>
+          </div>
+  
+          <div class="copy-code">
+            <button
+              class="btn btn-sm btn-primary btn-clipboard"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Copy to clipboard"
+            >
+              Copy
+            </button>
+          </div>
+          <code
+            class="code"
+            data-code='<div class="mr-xl d-inline-block"><code>.mr-xl</code> Margin right 2rem</div>
+<div class="d-inline-block">Lorem ipsum dolor sit amet</div>
+            '>
+          </code>
+
+            
+          <div class="doc-example">
+            <div class="mb-xxxl"><code>.mb-xxxl</code> Margin bottom 3rem</div>
+            <div class="">Lorem ipsum dolor sit amet</div>
+          </div>
+  
+            <div class="copy-code">
+              <button
+                class="btn btn-sm btn-primary btn-clipboard"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Copy to clipboard"
+              >
+                Copy
+              </button>
+            </div>
+            <code
+              class="code"
+              data-code='<div class="mb-xxxl"><code>.mb-xxxl</code> Margin bottom 3rem</div>
+<div class="">Lorem ipsum dolor sit amet</div>
+              '>
+            </code>
+
+            <div class="doc-example">
+              <div class="mx-auto" style="max-width: 250px"><code>.mx-auto</code> Margin left & right <code>auto</code></div>
+            </div>
+    
+              <div class="copy-code">
+                <button
+                  class="btn btn-sm btn-primary btn-clipboard"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Copy to clipboard"
+                >
+                  Copy
+                </button>
+              </div>
+              <code
+                class="code"
+                data-code='<div class="mx-auto" style="max-width: 250px"><code>.mx-auto</code> Margin left & right <code>auto</code></div>
+                '>
+              </code>
+          </div>
+
+
+        </div>
+
+        <div class="doc-content__secondary-sidebar">
+          <ul>
+            <li><a href="#spacing">Spacing</a>
+              <ul>
+                  <li><a href="#notation">Notation</a></li>
+                  <li><a href="#example">Examples</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../../assets/vendor/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="../../assets/vendor/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script src="../../assets/vendor/feather.min.js"></script>
+    <script src="../assets/vendor/clipboard.min.js"></script>
+
+    <script src="../../assets/js/es5/done.min.js"></script>
+    <script src="../assets/js/doc.js"></script>
+  </body>
+</html>

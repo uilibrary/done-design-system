@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Typography | Done! Design System Documentation by UI Lib</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/fonts/themify-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/bootstrap-select/css/bootstrap-select.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/doc.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="doc-header">
+        <div class="brand">
+          <a href="#">Done!</a>
+          <small>v1.0.0</small>
+        </div>
+        <a href="#" class="btn btn-raised btn-raised-success">download</a>
+      </div>
+
+      <div class="doc-content clearfix">
+        <div class="doc-content__sidebar"></div>
+
+        <div class="doc-content__body">
+            <h1 class="doc-section-title" id="typography">
+              Typography
+              <a href="#typography" class="section-link"></a>
+            </h1>
+            <p class="lead">
+                Documentation and examples for Bootstrap typography, 
+                including global settings, headings, body text, and more.
+            </p>
+
+
+
+            <h2 class="doc-section-title" id="global">
+              Global settings
+              <a href="#global" class="section-link"></a>
+            </h2>
+            <p>Done! sets basic global display, typography, and link styles. When more control is needed, 
+              check out the <a href="/docs/4.3/utilities/text/" target="_blank">textual utility classes</a>.</p>
+            <ul>
+              <li>For a more inclusive and accessible type scale, we assume the browser default root <code>font-size</code> (typically 16px) so visitors can customize their browser defaults as needed.</li>
+              <li>Use the <code>$font-family-base</code>, <code>$font-size-base</code>, and <code>$line-height-base</code> attributes as our typographic base applied to the <code>&lt;body&gt;</code>.</li>
+              <li>Set the global link color via <code>$link-color</code> and apply link underlines only on <code>:hover</code>.</li>
+              <li>Use <code>$body-bg</code> to set a <code>background-color</code> on the <code>&lt;body&gt;</code> (<code>#fff</code> by default).</li>
+            </ul>
+
+            <h2 class="doc-section-title" id="heading">
+              Headings
+              <a href="#heading" class="section-link"></a>
+            </h2>
+            <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</p>
+            
+            <div class="doc-example">
+                <p class="h1">h1. Done! heading</p>
+                <p class="h2">h2. Done! heading</p>
+                <p class="h3">h3. Done! heading</p>
+                <p class="h4">h4. Done! heading</p>
+                <p class="h5">h5. Done! heading</p>
+                <p class="h6">h6. Done! heading</p>
+            </div>
+    
+            <div class="copy-code">
+              <button
+                class="btn btn-sm btn-primary btn-clipboard"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Copy to clipboard"
+              >
+                Copy
+              </button>
+            </div>
+            <code
+              class="code"
+              data-code='<h1>h1. Done! heading</h1>
+<h2>h2. Done! heading</h2>
+<h3>h3. Done! heading</h3>
+<h4>h4. Done! heading</h4>
+<h5>h5. Done! heading</h5>
+<h6>h6. Done! heading</h6>'>
+            </code>
+            <h2 class="doc-section-title" id="display">
+              Display headings
+              <a href="#display" class="section-link"></a>
+            </h2>
+            <p>Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a 
+              <strong>display heading</strong>—a larger, slightly more opinionated heading style.</p>
+            
+            <div class="doc-example">
+                <p class="display-1">Display 1</p>
+                <p class="display-2">Display 2</p>
+                <p class="display-3">Display 3</p>
+                <p class="display-4">Display 4</p>
+            </div>
+            <div class="copy-code">
+              <button
+                class="btn btn-sm btn-primary btn-clipboard"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Copy to clipboard"
+              >
+                Copy
+              </button>
+            </div>
+            <code
+              class="code"
+              data-code='<h1 class="display-1">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3">Display 3</h1>
+<h1 class="display-4">Display 4</h1>'>
+            </code>
+          
+            <h2 class="doc-section-title" id="heading-title">
+              Heading & title
+              <a href="#heading-title" class="section-link"></a>
+            </h2>
+            <p>Heading and title for special use case</p>
+            <div class="doc-example">
+                <h3 class="heading">
+                  Done! Heading  
+                </h3>
+                <h3 class="heading-title">
+                    Done! Heading Title  
+                </h3>
+            </div>
+            <div class="copy-code">
+              <button
+                class="btn btn-sm btn-primary btn-clipboard"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Copy to clipboard"
+              >
+                Copy
+              </button>
+            </div>
+            <code
+              class="code"
+              data-code='<h3 class="heading">Done! Heading</h3>
+<h3 class="heading-title">Done! Heading Title</h3>
+              '>
+            </code>
+          
+            <h2 class="doc-section-title" id="lead">
+              Lead
+              <a href="#lead" class="section-link"></a>
+            </h2>
+            <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+            <div class="doc-example">
+                <p class="lead">
+                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                  </p>
+            </div>
+            <div class="copy-code">
+              <button
+                class="btn btn-sm btn-primary btn-clipboard"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Copy to clipboard"
+              >
+                Copy
+              </button>
+            </div>
+            <code
+              class="code"
+              data-code='<p class="lead">
+  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+</p>'>
+            </code>
+
+            <h2 class="doc-section-title" id="inline-text">
+                Inline text elements
+              <a href="#inline-text" class="section-link"></a>
+            </h2>
+            <p>Styling for common inline HTML5 elements.</p>
+            <div class="doc-example">
+                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                <p><u>This line of text will render as underlined</u></p>
+                <p><small>This line of text is meant to be treated as fine print.</small></p>
+                <p><strong>This line rendered as bold text.</strong></p>
+                <p><em>This line rendered as italicized text.</em></p>
+            </div>
+            <div class="copy-code">
+              <button
+                class="btn btn-sm btn-primary btn-clipboard"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Copy to clipboard"
+              >
+                Copy
+              </button>
+            </div>
+            <code
+              class="code"
+              data-code='<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+<p><del>This line of text is meant to be treated as deleted text.</del></p>
+<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+<p><u>This line of text will render as underlined</u></p>
+<p><small>This line of text is meant to be treated as fine print.</small></p>
+<p><strong>This line rendered as bold text.</strong></p>
+<p><em>This line rendered as italicized text.</em></p>
+'>
+            </code>
+
+            <h2 class="doc-section-title" id="blockquotes">
+                Blockquotes
+              <a href="#blockquotes" class="section-link"></a>
+            </h2>
+            <p>Add a <code>&lt;footer class="blockquote-footer"&gt;</code> for identifying the source. Wrap the name of the source work in 
+              <code>&lt;cite&gt;</code>.</p>
+            <div class="doc-example">
+              <blockquote class="blockquote">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+              <blockquote class="blockquote blockquote-primary">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                    distinctio possimus ducimus ex quos eaque nobis, doloribus ut
+                    quae? Facere sint consequatur eos soluta iusto excepturi
+                    laudantium deserunt cum fugiat.
+                  </p>
+                  <footer class="blockquote-footer">Jhone Will</footer>
+                </blockquote>
+            </div>
+            <div class="copy-code">
+              <button
+                class="btn btn-sm btn-primary btn-clipboard"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Copy to clipboard"
+              >
+                Copy
+              </button>
+            </div>
+            <code
+              class="code"
+              data-code='<blockquote class="blockquote">
+  <p class="mb-0">Lorem ipsum dolor sit amet, 
+    consectetur adipiscing elit. Integer posuere erat a ante.
+  </p>
+  <footer class="blockquote-footer">
+    Someone famous in 
+    <cite title="Source Title">Source Title</cite>
+  </footer>
+</blockquote>
+
+<blockquote class="blockquote blockquote-primary">
+  <p class="mb-0">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+    distinctio possimus ducimus ex quos eaque nobis, doloribus ut
+    quae? Facere sint consequatur eos soluta iusto excepturi
+    laudantium deserunt cum fugiat.
+  </p>
+  <footer class="blockquote-footer">Jhone Will</footer>
+</blockquote>
+'>
+            </code>
+          
+          </div>
+
+        <div class="doc-content__secondary-sidebar"></div>
+      </div>
+
+    </div>
+
+    <script src="../../assets/vendor/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="../../assets/vendor/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script src="../../assets/vendor/feather.min.js"></script>
+    <script src="../assets/vendor/clipboard.min.js"></script>
+
+    <script src="../../assets/js/es5/done.min.js"></script>
+    <script src="../assets/js/doc.js"></script>
+  </body>
+</html>

@@ -85,7 +85,7 @@
     $lighten, // focus-border
     $lighten, // active-border
     none,      // shadow
-    button-shadow-hover($button-shadow-color) // hover-shadow
+    shadow-button-hover($shadow-button-color) // hover-shadow
   );
 }
 
@@ -102,7 +102,7 @@
     $color, // focus-border
     $color,  // active-border
     none,   // shadow
-    button-shadow-hover($button-shadow-color) // hover-shadow
+    shadow-button-hover($shadow-button-color) // hover-shadow
   );
 }
 // Raised button
@@ -119,9 +119,32 @@
     $color,   // border
     $lighten, // focus-border
     $lighten,  // active-border
-    button-shadow($button-shadow-color), // shadow
-    button-shadow-hover($button-shadow-color) // hover-shadow
+    shadow-button($shadow-button-color), // shadow
+    shadow-button-hover($shadow-button-color) // hover-shadow
   );
+}
+
+@mixin button-link() {
+  &.btn-link {
+    position: relative;
+    background-color: $button-link-bg;
+    padding: $button-link-padding;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      width: 0;
+      left: 0;
+      height: $button-link-border-width;
+      @include transition-all();
+    }
+    &:hover {
+      text-decoration: none;
+      &::after{
+        width: 100%;
+      }
+    }
+  }
 }
 
 @mixin button-colors() {
@@ -135,12 +158,18 @@
     &.btn-raised-#{$name} {
       @include button-raised($value);
     }
+    &.btn-link-#{$name} {
+      color: $value !important;
+      &::after {
+        background-color: $value !important;
+      }
+    }
   }
   &.btn-default {
     background: $white;
     color: $heading-color;
     @include hover {
-      box-shadow: button-shadow-hover($button-shadow-color);
+      box-shadow: shadow-button-hover($shadow-button-color);
     }
     @include active-focus {
       box-shadow: none;
@@ -149,9 +178,9 @@
   &.btn-raised-default {
     background: $white;
     color: $heading-color;
-    box-shadow: button-shadow($button-shadow-color);
+    box-shadow: shadow-button($shadow-button-color);
     @include hover {
-      box-shadow: button-shadow-hover($button-shadow-color);
+      box-shadow: shadow-button-hover($shadow-button-color);
     }
     @include active-focus {
       box-shadow: none;

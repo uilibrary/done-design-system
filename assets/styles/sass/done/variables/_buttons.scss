@@ -15,7 +15,7 @@ $button-lg-font-size: rem(18);
 $button-semi-rounded-radius: rem(10);
 $button-rounded-radius: rem(40);
 
-$button-shadow-color: $gray-600;
+$shadow-button-color: $gray-600;
 
 // Icon button vars
 $button-icon-padding: rem(12) rem(12);
@@ -31,3 +31,10 @@ $button-icon-lg-padding: rem(18) rem(36);
 $button-fa-icon-font-size: rem(16);
 $button-fa-icon-sm-font-size: rem(12); 
 $button-fa-icon-lg-font-size: rem(18); 
+
+
+
+// Button Link
+$button-link-padding:                   .2rem .3rem;
+$button-link-bg:                        transparent !default;
+$button-link-border-width:              rem(2) !default;

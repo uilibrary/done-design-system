@@ -123,7 +123,9 @@ h6,
   color: $text-muted-color !important;
 }
 
-small,
+small {
+  font-size: 80%;
+}
 .text-small {
   font-size: $font-size-sm;
 }

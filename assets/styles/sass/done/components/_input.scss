@@ -106,7 +106,7 @@ input[disabled]+.custom-control-label::before {
     bottom: -.25rem;
     background-color: $body-bg;
     border-radius: $border-radius-circle;
-    @include button-shadow();
+    @include shadow-button();
     @include transition-all();
   }
   input:checked + .slider {
@@ -139,6 +139,6 @@ input[disabled]+.slider {
   opacity: .4;
   &::before {
     background-color: $switch-handle-disabled-color;
-    @include button-shadow-color($gray-500);
+    @include shadow-button-color($gray-500);
   }
 }

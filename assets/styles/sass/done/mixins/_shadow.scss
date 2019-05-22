@@ -57,9 +57,12 @@
   box-shadow: shadow-24dp($color);
 }
 
-@mixin button-shadow() {
-  box-shadow: button-shadow($shadow-black-color);
+@mixin shadow-button() {
+  box-shadow: shadow-button($shadow-button-color);
 }
-@mixin button-shadow-color($color) {
-  box-shadow: button-shadow($color);
+@mixin shadow-button-hover() {
+  box-shadow: shadow-button-hover($shadow-button-color);
+}
+@mixin shadow-button-color($color) {
+  box-shadow: shadow-button($color);
 }

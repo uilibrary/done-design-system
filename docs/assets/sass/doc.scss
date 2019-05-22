@@ -152,6 +152,11 @@ pre {
     width: calc(100% - #{$sidebar-width} - #{$secondary-sidebar-width});
     left: $sidebar-width;
     z-index: 96;
+    ul {
+      li {
+        margin-bottom: $spacing-xs;
+      }
+    }
   }
 
   &__secondary-sidebar {

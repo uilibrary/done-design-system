@@ -22,6 +22,12 @@
 .shadow-24dp {
   @include shadow-24dp();
 }
+.shadow-button {
+  @include shadow-button();
+}
+.shadow-button-hover {
+  @include shadow-button-hover();
+}
 
 
 @each $name, $value in $theme-colors {
