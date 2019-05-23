@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pagination | Done! Design System Documentation by UI Lib</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/fonts/themify-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/bootstrap-select/css/bootstrap-select.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/doc.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="doc-header">
+        <div class="brand">
+          <a href="#">Done!</a>
+          <small>v1.0.0</small>
+        </div>
+        <a href="#" class="btn btn-raised btn-raised-success">download</a>
+      </div>
+
+      <div class="doc-content clearfix">
+        <div class="doc-content__sidebar"></div>
+
+        <div class="doc-content__body">
+          
+          <h1 class="doc-section-title" id="pagination">
+            Pagination
+            <a href="#pagination" class="section-link"></a>
+          </h1>
+          <p class="lead">Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.</p>
+
+          <h2 class="doc-section-title" id="example">
+            Example
+            <a href="#example" class="section-link"></a>
+          </h2>
+          <div class="doc-example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                  <i class="ti-angle-left"></i>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  <i class="ti-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="copy-code">
+            <button
+              class="btn btn-sm btn-primary btn-clipboard"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Copy to clipboard"
+            >
+              Copy
+            </button>
+          </div>
+
+          <code
+            class="code"
+            data-code='<ul class="pagination">
+  <li class="page-item">
+    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+      <i class="ti-angle-left"></i>
+    </a>
+  </li>
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item active" aria-current="page">
+    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+  </li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item">
+    <a class="page-link" href="#">
+      <i class="ti-angle-right"></i>
+    </a>
+  </li>
+</ul>'
+          >
+          </code>
+
+          <h2 class="doc-section-title" id="size">
+            Sizes
+            <a href="#size" class="section-link"></a>
+          </h2>
+
+
+          <div class="doc-example">
+            <!-- small -->
+            <nav aria-label="navigation" class="mb-xl">
+              <ul class="pagination pagination-sm">
+                <li class="page-item">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                    <i class="ti-angle-left"></i>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <i class="ti-angle-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Large -->
+            <nav aria-label="navigation" class="mb-xl">
+              <ul class="pagination pagination-lg">
+                <li class="page-item">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                    <i class="ti-angle-left"></i>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <i class="ti-angle-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="copy-code">
+            <button
+              class="btn btn-sm btn-primary btn-clipboard"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Copy to clipboard"
+            >
+              Copy
+            </button>
+          </div>
+
+          <code
+            class="code"
+            data-code='<!-- small -->
+<nav aria-label="navigation" class="mb-xl">
+  <ul class="pagination pagination-sm">
+    <li class="page-item">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+        <i class="ti-angle-left"></i>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <i class="ti-angle-right"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Large -->
+<nav aria-label="navigation" class="mb-xl">
+  <ul class="pagination pagination-lg">
+    <li class="page-item">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+        <i class="ti-angle-left"></i>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <i class="ti-angle-right"></i>
+      </a>
+    </li>
+  </ul>
+</nav>'
+          >
+          </code>
+        </div>
+
+        <div class="doc-content__secondary-sidebar">
+          <ul>
+            <li><a href="#pagination">Pagination</a></li>
+            <li><a href="#example">Example</a></li>
+            <li><a href="#size">Sizes</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../../assets/vendor/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="../../assets/vendor/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script src="../../assets/vendor/feather.min.js"></script>
+    <script src="../assets/vendor/clipboard.min.js"></script>
+
+    <script src="../../assets/js/es5/done.min.js"></script>
+    <script src="../assets/js/doc.js"></script>
+  </body>
+</html>
