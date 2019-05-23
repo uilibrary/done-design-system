@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Forms | Done! Design System Documentation by UI Lib</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/fonts/themify-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/bootstrap-select/css/bootstrap-select.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/doc.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="doc-header">
+        <div class="brand">
+          <a href="#">Done!</a>
+          <small>v1.0.0</small>
+        </div>
+        <a href="#" class="btn btn-raised btn-raised-success">download</a>
+      </div>
+
+      <div class="doc-content clearfix">
+        <div class="doc-content__sidebar"></div>
+
+        <div class="doc-content__body">
+          <h1 class="doc-section-title" id="overview">
+            Overview
+            <a href="#overview" class="section-link"></a>
+          </h1>
+          <p class="lead">
+            Examples and usage guidelines for form control styles, and custom form components
+          </p>
+          <h2 class="doc-section-title" id="form-control">
+            Form controls
+            <a href="#form-control" class="section-link"></a>
+          </h2>
+
+          <div class="doc-example">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="input-group input-light mb-3">
+                    <input type="text" class="form-control" placeholder="Username" value="No icon" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+      
+                  <div class="input-group input-light mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fas fa-user"></i>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" value="With icon" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  
+                  <div class="input-group input-light">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text far fa-keyboard"></i>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea">Textarea</textarea>
+                  </div>
+                </div>
+                <!-- End Default controls -->
+
+                <!-- Rounded controls -->
+                <div class="col-md-6">
+                  <div class="input-group input-rounded input-light mb-3">
+                    <input type="text" class="form-control" placeholder="Username" value="No icon" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+      
+                  <div class="input-group input-rounded input-light mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fas fa-user"></i>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" value="With icon rounded" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+      
+                  <div class="input-group input-rounded input-light">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text far fa-keyboard"></i>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea">Textarea rounded</textarea>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="copy-code">
+            <button
+              class="btn btn-sm btn-primary btn-clipboard"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Copy to clipboard"
+            >
+              Copy
+            </button>
+          </div>
+          <code
+            class="code"
+            data-code='<div class="row">
+  <div class="col-md-6">
+    <div class="input-group input-light mb-3">
+      <input type="text" class="form-control" placeholder="Username" value="No icon" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group input-light mb-3">
+      <div class="input-group-prepend">
+        <i class="input-group-text fas fa-user"></i>
+      </div>
+      <input type="text" class="form-control" placeholder="Username" value="With icon" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    
+    <div class="input-group input-light">
+      <div class="input-group-prepend">
+        <i class="input-group-text far fa-keyboard"></i>
+      </div>
+      <textarea class="form-control" aria-label="With textarea">Textarea</textarea>
+    </div>
+  </div>
+  <!-- End Default controls -->
+
+  <!-- Rounded controls -->
+  <div class="col-md-6">
+    <div class="input-group input-rounded input-light mb-3">
+      <input type="text" class="form-control" placeholder="Username" value="No icon" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group input-rounded input-light mb-3">
+      <div class="input-group-prepend">
+        <i class="input-group-text fas fa-user"></i>
+      </div>
+      <input type="text" class="form-control" placeholder="Username" value="With icon rounded" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group input-rounded input-light">
+      <div class="input-group-prepend">
+        <i class="input-group-text far fa-keyboard"></i>
+      </div>
+      <textarea class="form-control" aria-label="With textarea">Textarea rounded</textarea>
+    </div>
+  </div>
+</div>'
+          >
+          </code>
+
+
+          <h2 class="doc-section-title" id="control-states">
+            Form control states
+            <a href="#control-states" class="section-link"></a>
+          </h2>
+          
+          <div class="doc-example">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group has-success input-light mb-3">
+                  <div class="input-group-prepend">
+                    <i class="input-group-text far fa-file-alt"></i>
+                  </div>
+                  <input value="Success" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group has-error input-light mb-3">
+                  <div class="input-group-prepend">
+                    <i class="input-group-text far fa-file-alt"></i>
+                  </div>
+                  <input value="Error" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group has-warning input-light mb-3">
+                  <div class="input-group-prepend">
+                    <i class="input-group-text far fa-file-alt"></i>
+                  </div>
+                  <input value="Warning" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>              
+            </div>
+          </div>
+
+          <div class="copy-code">
+            <button
+              class="btn btn-sm btn-primary btn-clipboard"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Copy to clipboard"
+            >
+              Copy
+            </button>
+          </div>
+
+          <code
+            class="code"
+            data-code='<div class="row">
+  <div class="col-md-6">
+    <div class="input-group has-success input-light mb-3">
+      <div class="input-group-prepend">
+        <i class="input-group-text far fa-file-alt"></i>
+      </div>
+      <input value="Success" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="input-group has-error input-light mb-3">
+      <div class="input-group-prepend">
+        <i class="input-group-text far fa-file-alt"></i>
+      </div>
+      <input value="Error" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="input-group has-warning input-light mb-3">
+      <div class="input-group-prepend">
+        <i class="input-group-text far fa-file-alt"></i>
+      </div>
+      <input value="Warning" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+  </div>              
+</div>'
+          >
+          </code>
+
+          <h2 class="doc-section-title" id="outline">
+            Outline
+            <a href="#outline" class="section-link"></a>
+          </h2>
+
+          <div class="doc-example">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text ti-email" id="basic-addon1"></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Outline" value="Outline default" aria-label="Email" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group input-rounded mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text ti-user" id="basic-addon1"></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Rounded" value="Rounded" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="copy-code">
+            <button
+              class="btn btn-sm btn-primary btn-clipboard"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Copy to clipboard"
+            >
+              Copy
+            </button>
+          </div>
+
+          <code
+            class="code"
+            data-code='<div class="row">
+  <div class="col-md-6">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text ti-email" id="basic-addon1"></span>
+      </div>
+      <input type="text" class="form-control" placeholder="Outline" value="Outline default" aria-label="Email" aria-describedby="basic-addon1">
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="input-group input-rounded mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text ti-user" id="basic-addon1"></span>
+      </div>
+      <input type="text" class="form-control" placeholder="Rounded" value="Rounded" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+  </div>
+</div>'
+          >
+          </code>
+
+          <h2 class="doc-section-title" id="checkbox">
+            Checkboxes
+            <a href="#checkbox" class="section-link"></a>
+          </h2>
+
+          <div class="doc-example">
+            <div class="mb-md custom-control custom-checkbox checkbox-primary mb-md">
+              <input type="checkbox" class="custom-control-input" id="customCheck2" checked="">
+              <label class="custom-control-label" for="customCheck2">
+                Primary
+              </label>
+            </div>
+            <div class="mb-md custom-control custom-checkbox checkbox-secondary">
+              <input type="checkbox" class="custom-control-input" id="customCheck3" checked="">
+              <label class="custom-control-label" for="customCheck3">
+                Secondary
+              </label>
+            </div>
+            <div class="mb-md custom-control custom-checkbox checkbox-success">
+              <input type="checkbox" class="custom-control-input" id="customCheck4" checked="">
+              <label class="custom-control-label" for="customCheck4">
+                Success
+              </label>
+            </div>
+            <div class="mb-md custom-control custom-checkbox checkbox-danger">
+              <input type="checkbox" class="custom-control-input" id="customCheck5" checked="">
+              <label class="custom-control-label" for="customCheck5">
+                Danger
+              </label>
+            </div>
+            <div class="mb-md custom-control custom-checkbox checkbox-info">
+              <input type="checkbox" class="custom-control-input" id="customCheck6" checked="">
+              <label class="custom-control-label" for="customCheck6">
+                Info
+              </label>
+            </div>
+            <div class="mb-md custom-control custom-checkbox checkbox-light">
+              <input type="checkbox" class="custom-control-input" id="customCheck7" checked="">
+              <label class="custom-control-label" for="customCheck7">
+                Light
+              </label>
+            </div>
+            <div class="mb-md custom-control custom-checkbox checkbox-dark">
+              <input type="checkbox" class="custom-control-input" id="customCheck8" checked="">
+              <label class="custom-control-label" for="customCheck8">
+                Dark
+              </label>
+            </div>
+            <div class="mb-md custom-control custom-checkbox checkbox-dark">
+              <input type="checkbox" class="custom-control-input" id="customCheck9" disabled="" checked="">
+              <label class="custom-control-label" for="customCheck9">
+                Disabled
+              </label>
+            </div>
+          </div>
+
+          <div class="copy-code">
+            <button
+              class="btn btn-sm btn-primary btn-clipboard"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Copy to clipboard"
+            >
+              Copy
+            </button>
+          </div>
+
+          <code
+            class="code"
+            data-code='<div class="mb-md custom-control custom-checkbox checkbox-primary mb-md">
+  <input type="checkbox" class="custom-control-input" id="customCheck2" checked="">
+  <label class="custom-control-label" for="customCheck2">
+    Primary
+  </label>
+</div>
+<div class="mb-md custom-control custom-checkbox checkbox-secondary">
+  <input type="checkbox" class="custom-control-input" id="customCheck3" checked="">
+  <label class="custom-control-label" for="customCheck3">
+    Secondary
+  </label>
+</div>
+<div class="mb-md custom-control custom-checkbox checkbox-success">
+  <input type="checkbox" class="custom-control-input" id="customCheck4" checked="">
+  <label class="custom-control-label" for="customCheck4">
+    Success
+  </label>
+</div>
+<div class="mb-md custom-control custom-checkbox checkbox-danger">
+  <input type="checkbox" class="custom-control-input" id="customCheck5" checked="">
+  <label class="custom-control-label" for="customCheck5">
+    Danger
+  </label>
+</div>
+<div class="mb-md custom-control custom-checkbox checkbox-info">
+  <input type="checkbox" class="custom-control-input" id="customCheck6" checked="">
+  <label class="custom-control-label" for="customCheck6">
+    Info
+  </label>
+</div>
+<div class="mb-md custom-control custom-checkbox checkbox-light">
+  <input type="checkbox" class="custom-control-input" id="customCheck7" checked="">
+  <label class="custom-control-label" for="customCheck7">
+    Light
+  </label>
+</div>
+<div class="mb-md custom-control custom-checkbox checkbox-dark">
+  <input type="checkbox" class="custom-control-input" id="customCheck8" checked="">
+  <label class="custom-control-label" for="customCheck8">
+    Dark
+  </label>
+</div>
+<div class="mb-md custom-control custom-checkbox checkbox-dark">
+  <input type="checkbox" class="custom-control-input" id="customCheck9" disabled="" checked="">
+  <label class="custom-control-label" for="customCheck9">
+    Disabled
+  </label>
+</div>'
+          >
+          </code>
+
+          <h2 class="doc-section-title" id="radio">
+            Radio
+            <a href="#radio" class="section-link"></a>
+          </h2>
+
+          <div class="doc-example">
+            <div class="custom-control custom-radio radio-primary mb-md">
+              <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input" checked="">
+              <label class="custom-control-label" for="customRadioInline1">
+                Primary
+              </label>
+            </div>
+            <div class="custom-control custom-radio radio-secondary mb-md">
+              <input type="radio" id="customRadioInline3" name="customRadioInline" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline3">
+                Secondary
+              </label>
+            </div>
+            <div class="custom-control custom-radio radio-success mb-md">
+              <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline2">
+                Success
+              </label>
+            </div>
+
+            <div class="custom-control custom-radio radio-warning mb-md">
+              <input type="radio" id="customRadioInline4" name="customRadioInline" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline4">
+                Warning
+              </label>
+            </div>
+            <div class="custom-control custom-radio radio-danger mb-md">
+              <input type="radio" id="customRadioInline5" name="customRadioInline" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline5">
+                Danger
+              </label>
+            </div>
+            <div class="custom-control custom-radio radio-info mb-md">
+              <input type="radio" id="customRadioInline6" name="customRadioInline" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline6">
+                Info
+              </label>
+            </div>
+            <div class="custom-control custom-radio radio-light mb-md">
+              <input type="radio" id="customRadioInline7" name="customRadioInline" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline7">
+                Light
+              </label>
+            </div>
+            <div class="custom-control custom-radio radio-dark mb-md">
+              <input type="radio" id="customRadioInline8" name="customRadioInline" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline8">
+                Dark
+              </label>
+            </div>
+            <div class="custom-control custom-radio radio-dark mb-md">
+              <input type="radio" id="customRadioInline9" name="customRadioInline" class="custom-control-input" disabled="">
+              <label class="custom-control-label" for="customRadioInline9">
+                Disabled
+              </label>
+            </div>
+          </div>
+
+          <div class="copy-code">
+            <button
+              class="btn btn-sm btn-primary btn-clipboard"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Copy to clipboard"
+            >
+              Copy
+            </button>
+          </div>
+
+          <code
+            class="code"
+            data-code='<div class="custom-control custom-radio radio-primary mb-md">
+  <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input" checked="">
+  <label class="custom-control-label" for="customRadioInline1">
+    Primary
+  </label>
+</div>
+<div class="custom-control custom-radio radio-secondary mb-md">
+  <input type="radio" id="customRadioInline3" name="customRadioInline" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline3">
+    Secondary
+  </label>
+</div>
+<div class="custom-control custom-radio radio-success mb-md">
+  <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline2">
+    Success
+  </label>
+</div>
+
+<div class="custom-control custom-radio radio-warning mb-md">
+  <input type="radio" id="customRadioInline4" name="customRadioInline" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline4">
+    Warning
+  </label>
+</div>
+<div class="custom-control custom-radio radio-danger mb-md">
+  <input type="radio" id="customRadioInline5" name="customRadioInline" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline5">
+    Danger
+  </label>
+</div>
+<div class="custom-control custom-radio radio-info mb-md">
+  <input type="radio" id="customRadioInline6" name="customRadioInline" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline6">
+    Info
+  </label>
+</div>
+<div class="custom-control custom-radio radio-light mb-md">
+  <input type="radio" id="customRadioInline7" name="customRadioInline" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline7">
+    Light
+  </label>
+</div>
+<div class="custom-control custom-radio radio-dark mb-md">
+  <input type="radio" id="customRadioInline8" name="customRadioInline" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline8">
+    Dark
+  </label>
+</div>
+<div class="custom-control custom-radio radio-dark mb-md">
+  <input type="radio" id="customRadioInline9" name="customRadioInline" class="custom-control-input" disabled="">
+  <label class="custom-control-label" for="customRadioInline9">
+    Disabled
+  </label>
+</div>'
+          >
+          </code>
+
+          <h2 class="doc-section-title" id="switch">
+            Switch
+            <a href="#switch" class="section-link"></a>
+          </h2>
+
+          <div class="doc-example">
+            <label class="switch switch-primary my-md">
+                <span>Primary</span>
+                <input type="checkbox" checked="">
+                <span class="slider"></span>
+            </label>
+            <br>
+            <label class="switch switch-secondary my-md">
+                <span>Secondary</span>
+                <input type="checkbox" checked="">
+                <span class="slider"></span>
+            </label>
+            <br>
+            <label class="switch switch-success my-md">
+                <span>Success</span>
+                <input type="checkbox" checked="">
+                <span class="slider"></span>
+            </label>
+            <br>
+            <label class="switch switch-warning my-md">
+                <span>Warning</span>
+                <input type="checkbox" checked="">
+                <span class="slider"></span>
+            </label>
+            <br>
+            <label class="switch switch-danger my-md">
+                <span>Danger</span>
+                <input type="checkbox" checked="">
+                <span class="slider"></span>
+            </label>
+            <br>
+            <label class="switch switch-light my-md">
+                <span>Light</span>
+                <input type="checkbox" checked="">
+                <span class="slider"></span>
+            </label>
+            <br>
+            <label class="switch switch-dark my-md">
+                <span>Dark</span>
+                <input type="checkbox" checked="">
+                <span class="slider"></span>
+            </label>
+            <br>
+            <label class="switch switch-dark my-md">
+              <span>Disabled</span>
+              <input type="checkbox" disabled="">
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="copy-code">
+            <button
+              class="btn btn-sm btn-primary btn-clipboard"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Copy to clipboard"
+            >
+              Copy
+            </button>
+          </div>
+
+          <code
+            class="code"
+            data-code='<label class="switch switch-primary my-md">
+    <span>Primary</span>
+    <input type="checkbox" checked="">
+    <span class="slider"></span>
+</label>
+<br>
+<label class="switch switch-secondary my-md">
+    <span>Secondary</span>
+    <input type="checkbox" checked="">
+    <span class="slider"></span>
+</label>
+<br>
+<label class="switch switch-success my-md">
+    <span>Success</span>
+    <input type="checkbox" checked="">
+    <span class="slider"></span>
+</label>
+<br>
+<label class="switch switch-warning my-md">
+    <span>Warning</span>
+    <input type="checkbox" checked="">
+    <span class="slider"></span>
+</label>
+<br>
+<label class="switch switch-danger my-md">
+    <span>Danger</span>
+    <input type="checkbox" checked="">
+    <span class="slider"></span>
+</label>
+<br>
+<label class="switch switch-light my-md">
+    <span>Light</span>
+    <input type="checkbox" checked="">
+    <span class="slider"></span>
+</label>
+<br>
+<label class="switch switch-dark my-md">
+    <span>Dark</span>
+    <input type="checkbox" checked="">
+    <span class="slider"></span>
+</label>
+<br>
+<label class="switch switch-dark my-md">
+  <span>Disabled</span>
+  <input type="checkbox" disabled="">
+  <span class="slider"></span>
+</label>'
+          >
+          </code>
+
+
+
+        </div>
+
+        <div class="doc-content__secondary-sidebar">
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#form-control">Form control</a></li>
+            <li><a href="#control-states">Control states</a></li>
+            <li><a href="#outline">Outline</a></li>
+            <li><a href="#checkbox">Checkboxs</a></li>
+            <li><a href="#radio">Radio</a></li>
+            <li><a href="#switch">Switch</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../../assets/vendor/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="../../assets/vendor/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script src="../../assets/vendor/feather.min.js"></script>
+    <script src="../assets/vendor/clipboard.min.js"></script>
+
+    <script src="../../assets/js/es5/done.min.js"></script>
+    <script src="../assets/js/doc.js"></script>
+  </body>
+</html>
