@@ -104,6 +104,7 @@ pre {
     left: 0;
     border-right: 1px solid $gray-300;
     background: rgba($gray-200, 0.5);
+    overflow-y: scroll;
     z-index: 98;
     .sidebar__list {
       list-style: none;

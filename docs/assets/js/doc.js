@@ -1,11 +1,25 @@
 $(document).ready(function() {
+
+  var $examples = $('.doc-example');
+
+  // $examples.each(function(e) {
+  //   var $example = $(this);
+  //   var $exampleHTML = $example.html();
+  //   $example.next().next().data('code', $exampleHTML);
+
+  // });
+
   // hilight
   var $codes = $(".code");
   hljs.configure({ useBR: true, tabReplace: '  '});
 
   $codes.each(function(e) {
     var $code = $(this);
+    // var $example = $code.prev().prev();
     var code = $code.data("code");
+
+    // $example.html(code);
+
     var highlighted = hljs.highlightAuto(code);
     $code.addClass("hljs");
     $code.html(hljs.fixMarkup(highlighted.value));

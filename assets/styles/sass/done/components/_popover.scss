@@ -1,12 +1,34 @@
-// .popover {
-//     border: none;
-//     // animation-name: zoomIn;
-//     // animation-duration: 0.3s;
-//     // animation-timing-function: ease-in-out;
-//     box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08);
-//     .arrow {
-//         &::before {
-//             border-color: rgba(0, 0, 0, 0);
-//         }
-//     }
-// }
+.popover {
+    border: none;
+    @include shadow-2dp();
+
+    .arrow {
+        &::before {
+            border-color: rgba(0, 0, 0, 0);
+        }
+    }
+}
+
+@each $name, $value in $theme-colors {
+  .popover-#{$name} {
+    background-color: $value;
+    color: $white;
+    .popover-body {
+      color: $white;
+    }
+    &.bs-popover-top>.arrow::after {
+      border-top-color: $value;
+    }
+    &.bs-popover-right>.arrow::after {
+      border-right-color: $value;
+    }
+    &.bs-popover-bottom>.arrow::after {
+      border-bottom-color: $value;
+    }
+    &.bs-popover-left>.arrow::after {
+      border-left-color: $value;
+    }
+  }
+}
+
+.bs-popover-auto[x-placement^=right]>.arrow::after, .bs-popover-right>.arrow::after {}
