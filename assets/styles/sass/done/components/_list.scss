@@ -21,7 +21,6 @@
           background: $primary !important;
           border-color: $primary !important;
           color: $white;
-          // box-shadow: 
         }
       }
     }
@@ -29,6 +28,9 @@
       height: rem(56);
       width: rem(56);
       border-radius: $border-radius;
+    }
+    .item-thumbnail {
+      padding: .5rem;
     }
     .item-icon {
       background: $background-light;
@@ -56,7 +58,7 @@
         // justify-content: space-between;
         span {
           color: $gray-600;
-          font-weight: $font-weight-semi;
+          // font-weight: $font-weight-semi;
           padding-right: rem(20);
           font-size: rem(13);
           i,
@@ -72,6 +74,9 @@
         background: $white !important;
         border-color: $white;
         color: $gray-900;
+        &:focus {
+          color: $gray-900 !important;
+        }
       }
     }
   }

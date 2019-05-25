@@ -17,3 +17,16 @@
     color: darken($value, 10);
   }
 }
+
+
+.close {
+  text-shadow: none;
+  i {
+    font-size: $icon-close-font-size;
+  }
+  @each $name, $value in $theme-colors {
+    .alert-#{$name} & {
+      color: $white;
+    }
+  }
+}

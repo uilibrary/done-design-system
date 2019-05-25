@@ -36,7 +36,7 @@
   }
   
   @include icons {
-    color: $gray-800;
+    color: $input-icon-color;
   }
   @include input-group-light-bg();
   @include rounded-input();

@@ -1,0 +1,40 @@
+.pricing1 {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  max-width: 280px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  @include transition-all();
+  .card-img {
+    width: auto;
+    max-height: rem(160);
+  }
+  .heading {
+    color: $primary-active;
+    font-weight: $font-weight-light;
+    letter-spacing: rem(3);
+  }
+  &:hover {
+    @include hover-scale();
+  }
+  .price {
+    font-size: 3rem;
+    font-weight: $font-weight-semi;
+    color: $primary;
+    line-height: $line-height-heading;
+    &+small {
+      display: inline-block;
+      color: $text-muted-color;
+      margin-bottom: $spacing-lg;
+      margin-top: -#{$spacing-xs};
+    }
+  }
+  .features {
+    p {
+      // font-weight: $font-weight-normal;
+    }
+  }
+}

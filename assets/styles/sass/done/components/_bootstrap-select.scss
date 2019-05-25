@@ -10,11 +10,17 @@
   // }
   &.show-tick .dropdown-menu .selected span.check-mark {
     top: 9px;
+    &::after {
+      width: 7px;
+      height: 14px;
+      border-width: 0 2px 2px 0;
+    }
   }
   .dropdown-menu {
     box-shadow: $bootstrap-select-shadow !important;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    margin: 0;
   }
   .dropdown-toggle:focus {
     outline: none !important;

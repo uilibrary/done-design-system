@@ -1,7 +1,6 @@
 .card {
-  box-shadow: shadow-2dp($gray-600);
   border: 0;
-  // color: $gray-600;
+  @include shadow-2dp();
   .card-header {
     display: flex;
     align-items: center;

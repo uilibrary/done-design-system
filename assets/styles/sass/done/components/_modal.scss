@@ -1,0 +1,18 @@
+.modal-content {
+  border: 0;
+}
+.modal-backdrop {
+  &.show {
+    opacity: .2;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-sm {
+    max-width: 380px;
+  }
+
+  .modal-content {
+    @include shadow-16dp();
+  }
+}
