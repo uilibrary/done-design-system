@@ -31,6 +31,66 @@
     <link rel="stylesheet" href="./assets/styles/css/done/done.min.css" />
   </head>
   <body>
+      <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top main-navbar"
+      data-color-on-scroll="on-scroll shadow-2dp"
+      data-scroll-distance="200"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Done!</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto mr-md">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Components <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Documentation</a>
+            </li>
+            
+          </ul>
+          <a class="btn btn-sm btn-raised btn-raised-danger" href="">Download</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section section-header">
+      <!-- <div
+        class="section-header-image"
+      ></div> -->
+
+      <div class="container section-header-content">
+        <div class="row">
+          <div class="col-sm-6">
+              <h1 class="display-2 mb-8 mt-sm-5">Done! Design System</h1>
+              <h3 class="font-weight-light">An Open source design system for everyone!</h3>
+              <div class="my-lg"></div>
+              <a class="btn btn-raised btn-raised-primary move-up" href="">Get Started</a>
+              <div class="my-xl"></div>
+              <p class="text-muted">Design and coded by UI Lib</p>
+          </div>
+          <div class="col-sm-6 p-xxl">
+              <img class="card-img px-lg mb-md" src="./assets/images/illustrations/done.svg" alt="">
+          </div>
+        </div>
+        <div class="brand mb-16">
+          <!-- <img src="./assets/images/bootstrap-logo.png" alt=""> -->
+        </div>
+        
+      </div>
+    </section>
     <section class="section py-xxl">
       <div class="container">
         <div class="row">
@@ -905,7 +965,7 @@
 
                 <div
                   id="collapseOne"
-                  class="collapse"
+                  class="collapse show"
                   aria-labelledby="headingOne"
                   data-parent="#accordionExample"
                 >
@@ -1159,6 +1219,7 @@
         </div>
       </div>
     </section>
+    <!-- ========== End Pricings ========= -->
 
     <section class="py-xxxl">
       <div class="container">
@@ -1389,50 +1450,75 @@
           </div>
         </div>
       </div>
+    </section>
+    <!-- ================== End Alerts ============== -->
 
-      <div class="container mt-md">
+    <section class="py-xxl">
+      <div class="container">
         <div class="row">
           <div class="col-12">
             <p class="text-uppercase font-weight-bold text-small">
-              Full width Alerts
+              Nav bar
             </p>
           </div>
-        </div>
-      </div>
-      <div class="alert alert-primary rounded-0" role="alert">
-        <div class="container">
-          A full width primary alert—check it out!
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <i class="ti-close"></i>
-          </button>
-        </div>
-      </div>
-      <div class="alert alert-success rounded-0" role="alert">
-        <div class="container">
-          A full width success alert—check it out!
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <i class="ti-close"></i>
-          </button>
-        </div>
-      </div>
-      <div class="alert alert-danger rounded-0" role="alert">
-        <div class="container">
-          A full width danger alert—check it out!
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <i class="ti-close"></i>
-          </button>
-        </div>
-      </div>
-      <div class="alert alert-warning rounded-0" role="alert">
-        <div class="container">
-          A full width warning alert—check it out!
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <i class="ti-close"></i>
-          </button>
+          <div class="col-6 mb-xxl">
+              <nav
+                class="navbar navbar-expand-lg navbar-dark bg-primary shadow-4dp rounded"
+              >
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"
+                        >Home <span class="sr-only">(current)</span></a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Dropdown link
+                      </a>
+                      <div
+                        class="dropdown-menu dropdown-primary"
+                        aria-labelledby="navbarDropdownMenuLink"
+                      >
+                        <a class="dropdown-header" href="#">Dropdown Header</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
         </div>
       </div>
     </section>
-    <!-- ================== End Alerts ============== -->
 
     <section class="py-xxl">
       <div class="container">

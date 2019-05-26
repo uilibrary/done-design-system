@@ -13,13 +13,34 @@
 
 
 .navbar-nav {
+  font-size: $font-size-base * .75;
   .nav-item {
     .nav-link {
-      font-weight: $font-weight-semi;
+      text-transform: uppercase;
     }
     .feather {
       height: 18px;
       width: 18px;
+    }
+  }
+}
+.navbar-dark {
+  .nav-item {
+    .nav-link {
+      color: $white;
+      &:hover {
+        // color: $heading-color;
+      }
+    }
+  }
+}
+.navbar-light {
+  .nav-item {
+    .nav-link {
+      color: $body-color;
+      &:hover {
+        // color: $heading-color;
+      }
     }
   }
 }
