@@ -7,6 +7,7 @@
   // color: $white;
   height: 100vh;
   min-height: 650px;
+  padding-top: 120px;
   .section-header-image {
     position: absolute;
     height: 100%;
@@ -31,3 +32,4 @@
 }
 
 @import "demo";
+@import "header-animated";
