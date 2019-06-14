@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Done Design System</title>
+    <title>Arpon Design System</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700"
       rel="stylesheet"
@@ -31,13 +31,13 @@
     <link rel="stylesheet" href="./assets/styles/css/done/done.min.css" />
   </head>
   <body>
-      <nav
+    <nav
       class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar"
-      data-color-on-scroll="on-scroll bg-dark shadow-2dp"
-      data-scroll-distance="200"
+      data-color-on-scroll="on-scroll bg-primary shadow-4dp"
+      data-scroll-distance="400"
     >
       <div class="container">
-        <a class="navbar-brand" href="#">Done!</a>
+        <a class="navbar-brand" href="#">Arpon</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -50,287 +50,411 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto mr-md">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#"
-                >Components <span class="sr-only">(current)</span></a
+                >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Documentation</a>
+              <a class="nav-link" href="#">Features</a>
             </li>
-            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <div
+                class="dropdown-menu dropdown-primary"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-header" href="#">Dropdown Header</a>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
           </ul>
-          <a class="btn btn-sm btn-raised btn-raised-danger" href="">Download</a>
         </div>
       </div>
     </nav>
-    <!-- <section>
-      <div class="header-container">
-	
-        
-        <div class="bird-container bird-container--one">
-          <div class="bird bird--one"></div>
-        </div>
-        
-        <div class="bird-container bird-container--two">
-          <div class="bird bird--two"></div>
-        </div>
-        
-        <div class="bird-container bird-container--three">
-          <div class="bird bird--three"></div>
-        </div>
-        
-        <div class="bird-container bird-container--four">
-          <div class="bird bird--four"></div>
-        </div>
-        
-      </div>      
-    </section> -->
 
-    <section class="section section-header header-container">
-      <!-- <div
+    <section class="section section-header text-center">
+      <div
         class="section-header-image"
-      ></div> -->
-      <div class="bird-container bird-container--one">
-        <div class="bird bird--one"></div>
-      </div>
-      
-      <div class="bird-container bird-container--two">
-        <div class="bird bird--two"></div>
-      </div>
-      
-      <div class="bird-container bird-container--three">
-        <div class="bird bird--three"></div>
-      </div>
-      
-      <div class="bird-container bird-container--four">
-        <div class="bird bird--four"></div>
-      </div>
-      <div class="container section-header-content">
-        <div class="row">
-          <div class="col-sm-6">
-              <h1 class="display-2 mb-8 mt-sm-5 text-white">Done! Design System tfda</h1>
-              <h3 class="font-weight-light text-white">An Open source design system for everyone!</h3>
-              <div class="my-lg"></div>
-              <a class="btn btn-raised btn-raised-danger move-up" href="">Get Started</a>
-              <div class="my-xl"></div>
-              <p class="text-small text-white">Design and coded by UI Lib</p>
-          </div>
-          <div class="col-sm-6 p-xxl">
-              <!-- <img class="card-img px-lg mb-md" src="./assets/images/illustrations/done.svg" alt=""> -->
-          </div>
-        </div>
+        style="background-image: url(./assets/images/photo-wide-3.jpg)"
+      ></div>
+
+      <div class="container d-flex flex-column section-header-content">
         <div class="brand mb-16">
           <!-- <img src="./assets/images/bootstrap-logo.png" alt=""> -->
         </div>
-        
+        <h1 class="display-2 text-uppercase mb-8">Arpon Design system</h1>
+        <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+        <div class="my-32"></div>
+        <p>Design and coded by UI Lib</p>
       </div>
     </section>
+    
+
     <section class="section py-xxl">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2>Basic Elements</h2>
-            <h3>Buttons</h3>
-          </div>
-          <div class="col-12 mb-lg">
-            <p class="text-uppercase font-weight-bold text-small">
-              Button variations
-            </p>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-primary btn-rounded">
-              Default rounded
-            </button>
-            
-            <button class="btn btn-primary">
-              <i class="fas fa-download"></i>Fontawesome
-            </button>
-            <button class="btn btn-google">
-              <i class="fab fa-google"></i> Google
-            </button>
-            <button class="btn btn-primary btn-icon">
-              <i class="fas fa-download"></i>
-            </button>
-            <button class="btn btn-primary rounded-circle btn-icon">
-              <i class="fas fa-download"></i>
-            </button>
-          </div>
-          <div class="col-12 mb-lg">
-            <p class="text-uppercase font-weight-bold text-small">
-              Button colors
-            </p>
-            
-            <button type="button" class="btn btn-default">Default</button>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-success">Success</button>
-            <button type="button" class="btn btn-danger">Danger</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-light">Light</button>
-            <button type="button" class="btn btn-dark">Dark</button>
-          </div>
-          <div class="col-12 mb-lg">
-            <p class="text-uppercase font-weight-bold text-small">
-              Button raised
-            </p>
-            <button type="button" class="btn btn-raised btn-raised-default">Default</button>
-            <button type="button" class="btn btn-raised btn-raised-primary">
-              Primary
-            </button>
-            <button type="button" class="btn btn-raised btn-raised-info">
-              Info
-            </button>
-            <button type="button" class="btn btn-raised btn-raised-success">
-              Success
-            </button>
-            <button type="button" class="btn btn-raised btn-raised-danger">
-              Danger
-            </button>
-            <button type="button" class="btn btn-raised btn-raised-warning">
-              Warning
-            </button>
-            <button type="button" class="btn btn-raised btn-raised-light">
-              Light
-            </button>
-            <button type="button" class="btn btn-raised btn-raised-dark">
-              Dark
-            </button>
-          </div>
-          <div class="col-12 mb-lg">
-            <p class="text-uppercase font-weight-bold text-small">
-              Button outline
-            </p>
-            
-            <button type="button" class="btn btn-outline btn-outline-primary">
-              Primary
-            </button>
-            <button type="button" class="btn btn-outline btn-outline-info">
-              Info
-            </button>
-            <button type="button" class="btn btn-outline btn-outline-success">
-              Success
-            </button>
-            <button type="button" class="btn btn-outline btn-outline-danger">
-              Danger
-            </button>
-            <button type="button" class="btn btn-outline btn-outline-warning">
-              Warning
-            </button>
-            <button type="button" class="btn btn-outline btn-outline-light">
-              Light
-            </button>
-            <button type="button" class="btn btn-outline btn-outline-dark">
-              Dark
-            </button>
-          </div>
-          <div class="col-12 mb-lg">
-            <p class="text-uppercase font-weight-bold text-small">
-              Button sizes
-            </p>
-            <button type="button" class="btn btn-primary btn-sm">
-              Small button
-            </button>
-            <button type="button" class="btn btn-primary">
-              Default button
-            </button>
-            <button type="button" class="btn btn-primary btn-lg">
-              Large button
-            </button>
+        <div class="mb-xxl">
+          <p class="title text-muted">Headings</p>
+          <h1>The Arpon Design System heading 1</h1>
+          <h2>The Arpon Design System heading 2</h2>
+          <h3>The Arpon Design System heading 3</h3>
+          <h4>The Arpon Design System heading 4</h4>
+          <h5>The Arpon Design System heading 5</h5>
+          <h6>The Arpon Design System heading 6</h6>
+        </div>
 
-            <button
-              class="btn btn-raised btn-raised-primary rounded-circle btn-sm btn-icon"
-            >
-              <i class="fas fa-download"></i>
-            </button>
-            <button
-              class="btn btn-raised btn-raised-primary rounded-circle btn-icon"
-            >
-              <i class="fas fa-download"></i>
-            </button>
-            <button
-              class="btn btn-raised btn-raised-primary rounded-circle btn-lg btn-icon"
-            >
-              <i class="fas fa-download"></i>
-            </button>
-          </div>
-          <div class="col-12 mb-lg">
-            <p class="text-uppercase font-weight-bold text-small">
-              Button socials
+        <div class="mb-xxl">
+          <h1 class="display-1">Display 1</h1>
+          <h1 class="display-2">Display 2</h1>
+          <h1 class="display-3">Display 3</h1>
+          <h1 class="display-4">Display 4</h1>
+          <h3 class="title">The Arpon Design System Title</h3>
+          <h3 class="subtitle">The Arpon Design System subtitle</h3>
+        </div>
+
+        <div class="mb-xxxl">
+          <p class="title text-muted">Text Colors</p>
+          <p class="text-muted">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, hic!
+          </p>
+          <p class="text-primary">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, hic!
+          </p>
+          <p class="text-success">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, hic!
+          </p>
+          <p class="text-info">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, hic!
+          </p>
+          <p class="text-warning">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, hic!
+          </p>
+          <p class="text-danger">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, hic!
+          </p>
+        </div>
+
+        <small class="text-small">Small text</small>
+        <div class="row mb-32">
+          <div class="col-6">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+              eligendi corporis eum accusamus, provident dolorem optio vero
+              quisquam rem, beatae veritatis. Eaque repellat porro, adipisci
+              reiciendis atque doloribus asperiores vero.
             </p>
-            <button class="btn btn-google mb-md">
-              <i class="fab fa-google"></i> Google
-            </button>
-            <button class="btn btn-facebook mb-md">
-              <i class="fab fa-facebook-f"></i>Facebook
-            </button>
-            <button class="btn btn-twitter mb-md">
-              <i class="fab fa-twitter"></i>Twitter
-            </button>
-            <br />
-            <button class="btn btn-google btn-outline">
-              <i class="fab fa-google"></i>Google
-            </button>
-            <button class="btn btn-outline btn-facebook">
-              <i class="fab fa-facebook-f"></i>Facebook
-            </button>
-            <button class="btn btn-twitter btn-outline">
-              <i class="fab fa-twitter"></i>Twitter
-            </button>
           </div>
-          <div class="col-12 mb-lg">
-            <p class="text-uppercase font-weight-bold text-small">Links</p>
-            <button class="btn btn-link btn-link-primary ">Primary</button>
-            <button class="btn btn-link btn-link-info">Info</button>
-            <button class="btn btn-link btn-link-success">Success</button>
-            <button class="btn btn-link btn-link-warning">Warning</button>
-            <button class="btn btn-link btn-link-danger">Danger</button>
-            <button class="btn btn-link btn-link-light">Light</button>
-            <button class="btn btn-link btn-link-dark">Dark</button>
+        </div>
+        <div class="row mb-32">
+          <div class="col-4">
+            <blockquote class="blockquote blockquote-primary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              distinctio possimus ducimus ex quos eaque nobis, doloribus ut
+              quae? Facere sint consequatur eos soluta iusto excepturi
+              laudantium deserunt cum fugiat.
+              <br />
+              <br />
+              <small>- Name</small>
+            </blockquote>
+          </div>
+          <div class="col-4">
+            <blockquote class="blockquote blockquote-success">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              distinctio possimus ducimus ex quos eaque nobis, doloribus ut
+              quae? Facere sint consequatur eos soluta iusto excepturi
+              laudantium deserunt cum fugiat.
+              <br />
+              <br />
+              <small>- Name</small>
+            </blockquote>
           </div>
         </div>
       </div>
     </section>
-    <!-- ================ End buttons ================= -->
 
-    <section class="section py-xxl">
+    <section class="py-48">
+      <div class="container">
+        <div class="mb-xxl">
+          <!-- <p class="title text-muted">Default flat buttons</p> -->
+          <button class="btn btn-primary mx-4">Button</button>
+          <button class="btn btn-primary btn-rounded mx-4">Button</button>
+          <button class="btn btn-primary btn-semi-rounded mx-4">Button</button>
+          <button class="btn btn-secondary move-up mx-4">Button</button>
+          <button class="btn btn-success mx-4">Button</button>
+          <button class="btn btn-warning mx-4">Button</button>
+          <button class="btn btn-info mx-4">Button</button>
+          <button class="btn btn-danger mx-4">Button</button>
+          <button class="btn btn-dark mx-4">Button</button>
+
+          <button disabled class="btn btn-primary m-4">Disabled Button</button>
+          <button class="btn btn-primary active m-4">Active Button</button>
+
+          <button class="btn btn-primary btn-sm mx-4">Small</button>
+          <button class="btn btn-primary btn-sm btn-rounded mx-4">Small</button>
+          <button class="btn btn-primary btn-lg mx-4">Button</button>
+          <button class="btn btn-primary btn-lg btn-rounded mx-4">
+            Button
+          </button>
+        </div>
+
+        <div class="mb-xxl">
+          <!-- <p class="title text-muted">Outline buttons</p> -->
+
+          <button class="btn btn-outline btn-outline-primary mx-4">
+            Button
+          </button>
+          <button class="btn btn-outline btn-outline-secondary mx-4">
+            Button
+          </button>
+          <button class="btn btn-outline btn-outline-success mx-4">
+            Button
+          </button>
+          <button class="btn btn-outline btn-outline-dark mx-4">Button</button>
+          <button class="btn btn-outline btn-outline-primary btn-sm mx-4">
+            Button
+          </button>
+          <button class="btn btn-outline btn-outline-primary btn-lg mx-4">
+            Button
+          </button>
+
+          <button
+            class="btn btn-outline btn-outline-primary btn-sm btn-rounded mx-4"
+          >
+            Button
+          </button>
+          <button
+            class="btn btn-outline btn-outline-primary btn-lg btn-rounded mx-4"
+          >
+            Button
+          </button>
+        </div>
+
+        <div class="mb-xxl">
+          <!-- <p class="title text-muted">Raised buttons</p> -->
+
+          <button class="btn btn-raised btn-raised-primary mx-4">Button</button>
+          <button class="btn btn-raised btn-raised-success mx-4">Button</button>
+          <button class="btn btn-raised btn-raised-secondary mx-4">
+            Button
+          </button>
+          <button class="btn btn-raised btn-raised-warning mx-4">Button</button>
+          <button class="btn btn-raised btn-raised-danger mx-4">Button</button>
+          <button class="btn btn-raised btn-raised-light mx-4">Button</button>
+          <button class="btn btn-raised btn-raised-dark mx-4">Button</button>
+
+          <button class="btn btn-raised btn-raised-warning btn-sm mx-4">
+            Button
+          </button>
+          <button class="btn btn-raised btn-raised-warning btn-lg mx-4">
+            Button
+          </button>
+          <button
+            class="btn btn-raised btn-raised-warning btn-sm btn-rounded mx-4"
+          >
+            Button
+          </button>
+          <button
+            class="btn btn-raised btn-raised-warning btn-lg btn-rounded mx-4"
+          >
+            Button
+          </button>
+        </div>
+
+        <div class="mb-xxl">
+          <!-- <p class="title text-muted">Link buttons</p> -->
+
+          <button class="btn btn-link mx-4">Button</button>
+          <button class="btn btn-link btn-link-primary mx-4">Button</button>
+          <button class="btn btn-link btn-link-secondary mx-4">Button</button>
+          <button class="btn btn-link btn-link-success mx-4">Button</button>
+        </div>
+
+        <div class="mb-xxl">
+          <!-- <p class="title text-muted">Link buttons</p> -->
+          <button class="btn btn-google m-sm">
+            <i class="fab fa-google"></i> Google
+          </button>
+          <button class="btn btn-facebook m-sm">
+            <i class="fab fa-facebook-f"></i>Facebook
+          </button>
+          <button class="btn btn-twitter m-sm">
+            <i class="fab fa-twitter"></i>Twitter
+          </button>
+          <br />
+          <button class="btn btn-google btn-raised m-sm">Google</button>
+          <button class="btn btn-facebook btn-raised m-sm">Facebook</button>
+          <button class="btn btn-twitter btn-raised m-sm">Twitter</button>
+          <br />
+          <button class="btn btn-google btn-outline m-sm">
+            <i class="fab fa-google"></i>Google
+          </button>
+          <button class="btn btn-outline btn-facebook m-sm">
+            <i class="fab fa-facebook-f"></i>Facebook
+          </button>
+          <button class="btn btn-twitter btn-outline m-sm">
+            <i class="fab fa-twitter"></i>Twitter
+          </button>
+        </div>
+
+        <div class="mb-xxl">
+          <button
+            class="btn btn-raised btn-raised-primary rounded-circle btn-icon btn-lg mx-4"
+          >
+            <i class="ti-save-alt"></i>
+          </button>
+          <button
+            class="btn btn-raised btn-raised-primary rounded-circle btn-icon mx-4"
+          >
+            <i class="ti-save-alt"></i>
+          </button>
+          <button
+            class="btn btn-raised btn-raised-primary rounded-circle btn-icon btn-sm mx-4"
+          >
+            <i class="ti-save-alt"></i>
+          </button>
+          <button class="btn btn-primary btn-icon">
+            <i data-feather="bell-off"></i>
+          </button>
+          <button class="btn btn-primary rounded-circle btn-lg btn-icon">
+            <i data-feather="bell-off"></i>
+          </button>
+
+          <button class="btn btn-primary rounded-circle btn-icon">
+            <i data-feather="bell-off"></i>
+          </button>
+
+          <button class="btn btn-primary rounded-circle btn-sm btn-icon">
+            <i data-feather="bell-off"></i>
+          </button>
+
+          <button class="btn btn-primary mx-4">
+            <i class="ti-save-alt"></i> Themify Icon
+          </button>
+          <button class="btn btn-primary ">
+            <i data-feather="bell-off"></i> Feather Icon
+          </button>
+          <button class="btn btn-primary rounded">
+            <i data-feather="bell-off"></i> Feather Icon
+          </button>
+        </div>
+
+        <div class="row mb-xxxl">
+          <div class="col-12">
+            <h3>Icons</h3>
+          </div>
+          <div class="col-6">
+            <i data-feather="aperture"></i>
+            <i class="ti-save-alt"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="col-6">
+            <span class="icon-light-bg-primary m-sm"
+              ><i data-feather="aperture"></i
+            ></span>
+            <span class="icon-light-bg-warning m-sm"
+              ><i class="ti-save-alt"></i
+            ></span>
+            <span class="icon-light-bg-info m-sm"
+              ><i class="fab fa-twitter"></i
+            ></span>
+          </div>
+          <div class="col-6">
+            <span class="icon-light-bg-primary rounded-circle m-sm"
+              ><i data-feather="aperture"></i
+            ></span>
+            <span class="icon-light-bg-success rounded-circle m-sm"
+              ><i class="ti-save-alt"></i
+            ></span>
+            <span class="icon-light-bg-warning rounded-circle m-sm"
+              ><i class="ti-save-alt"></i
+            ></span>
+            <span class="icon-light-bg-info rounded-circle m-sm"
+              ><i class="fab fa-twitter"></i
+            ></span>
+            <span class="icon-light-bg-light rounded-circle m-sm"
+              ><i class="fab fa-twitter"></i
+            ></span>
+            <span class="icon-light-bg-dark rounded-circle m-sm"
+              ><i class="fab fa-twitter"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="mb-xxl">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input
+                type="radio"
+                name="options"
+                id="option1"
+                autocomplete="off"
+                checked
+              />
+              Active
+            </label>
+            <label class="btn btn-primary">
+              <input
+                type="radio"
+                name="options"
+                id="option2"
+                autocomplete="off"
+              />
+              Radio
+            </label>
+            <label class="btn btn-primary">
+              <input
+                type="radio"
+                name="options"
+                id="option3"
+                autocomplete="off"
+              />
+              Radio
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-xxl">
+          <div class="dropdown">
+            <button
+              class="btn btn-primary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-48">
       <div class="container">
         <div class="row mb-xxl">
-          <div class="col-12">
-            <h3>Form Elements</h3>
-            <p class="text-uppercase font-weight-bold text-small">
-              Form control variations
-            </p>
-          </div>
-
           <div class="col-6 mb-xxl">
-            <div class="input-group mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Outline default"
-                value="No icon"
-                aria-label="Email"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span
-                  class="input-group-text ti-email"
-                  id="basic-addon1"
-                ></span>
-              </div>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Outline default"
-                value="Outline default"
-                aria-label="Email"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-
             <div class="input-group input-rounded mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text ti-user" id="basic-addon1"></span>
@@ -338,17 +462,16 @@
               <input
                 type="text"
                 class="form-control"
-                placeholder="Rounded"
-                value="Rounded"
+                placeholder="Username"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
               />
             </div>
 
-            <div class="input-group has-success mb-3">
+            <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span
-                  class="input-group-text ti-email"
+                  class="input-group-text ti-save-alt"
                   id="basic-addon1"
                 ></span>
               </div>
@@ -356,7 +479,19 @@
                 type="text"
                 class="form-control"
                 placeholder="Username"
-                value="Success"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <div class="input-group has-success mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text ti-user" id="basic-addon1"></span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Username"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
               />
@@ -365,7 +500,7 @@
             <div class="input-group has-error mb-3">
               <div class="input-group-prepend">
                 <span
-                  class="input-group-text ti-email"
+                  class="input-group-text ti-save-alt"
                   id="basic-addon1"
                 ></span>
               </div>
@@ -373,7 +508,6 @@
                 type="text"
                 class="form-control"
                 placeholder="Username"
-                value="Error"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
               />
@@ -381,28 +515,28 @@
 
             <div class="input-group has-warning mb-3">
               <div class="input-group-prepend">
-                <span class="input-group-text ti-lock" id="basic-addon1"></span>
+                <span
+                  class="input-group-text ti-save-alt"
+                  id="basic-addon1"
+                ></span>
               </div>
               <input
-                type="password"
+                type="text"
                 class="form-control"
                 placeholder="Username"
-                value="Warning"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
               />
             </div>
 
-            <div class="input-group">
+            <div class="input-group input-rounded has-error">
               <div class="input-group-prepend">
-                <span
-                  class="input-group-text ti-agenda"
-                  id="basic-addon1"
-                ></span>
+                <span class="input-group-text ti-user" id="basic-addon1"></span>
               </div>
-              <textarea class="form-control" aria-label="With textarea">
-    Textarea</textarea
-              >
+              <textarea
+                class="form-control"
+                aria-label="With textarea"
+              ></textarea>
             </div>
           </div>
           <div class="col-6 mb-xxl">
@@ -411,21 +545,21 @@
                 type="text"
                 class="form-control"
                 placeholder="Username"
-                value="No icon"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
               />
             </div>
-
             <div class="input-group input-light mb-3">
               <div class="input-group-prepend">
-                <i class="input-group-text fas fa-user"></i>
+                <i
+                  class="input-group-text fas fa-map-marker-alt"
+                  id="basic-addon1"
+                ></i>
               </div>
               <input
                 type="text"
                 class="form-control"
                 placeholder="Username"
-                value="Shadow default"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
               />
@@ -438,7 +572,22 @@
                 type="text"
                 class="form-control"
                 placeholder="Username"
-                value="Rounded"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <div class="input-group input-light mb-3">
+              <div class="input-group-prepend">
+                <span
+                  class="input-group-text ti-save-alt"
+                  id="basic-addon1"
+                ></span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Username"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
               />
@@ -446,10 +595,10 @@
 
             <div class="input-group has-success input-light mb-3">
               <div class="input-group-prepend">
-                <i class="input-group-text far fa-file-alt"></i>
+                <i class="input-group-text fas fa-user"></i>
               </div>
               <input
-                value="Success"
+                value="UI Lib"
                 type="text"
                 class="form-control"
                 placeholder="Username"
@@ -460,10 +609,13 @@
 
             <div class="input-group has-error input-light mb-3">
               <div class="input-group-prepend">
-                <i class="input-group-text far fa-file-alt"></i>
+                <span
+                  class="input-group-text ti-save-alt"
+                  id="basic-addon1"
+                ></span>
               </div>
               <input
-                value="Error"
+                value="UI Lib"
                 type="text"
                 class="form-control"
                 placeholder="Username"
@@ -474,10 +626,13 @@
 
             <div class="input-group has-warning input-light mb-3">
               <div class="input-group-prepend">
-                <i class="input-group-text far fa-file-alt"></i>
+                <span
+                  class="input-group-text ti-save-alt"
+                  id="basic-addon1"
+                ></span>
               </div>
               <input
-                value="Warning"
+                value="UI Lib"
                 type="text"
                 class="form-control"
                 placeholder="Username"
@@ -486,784 +641,142 @@
               />
             </div>
 
-            <div class="input-group input-light">
+            <div class="input-group has-success input-rounded input-light mb-3">
               <div class="input-group-prepend">
-                <i class="input-group-text far fa-keyboard"></i>
+                <span class="input-group-text ti-user" id="basic-addon1"></span>
               </div>
-              <textarea class="form-control" aria-label="With textarea">
-    Textarea</textarea
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Username"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <div class="input-group has-error input-rounded input-light mb-3">
+              <div class="input-group-prepend">
+                <span
+                  class="input-group-text ti-save-alt"
+                  id="basic-addon1"
+                ></span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Username"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <div class="input-group has-warning input-rounded input-light mb-3">
+              <div class="input-group-prepend">
+                <span
+                  class="input-group-text ti-save-alt"
+                  id="basic-addon1"
+                ></span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Username"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <div class="input-group input-rounded input-light has-error">
+              <div class="input-group-prepend">
+                <span class="input-group-text ti-user" id="basic-addon1"></span>
+              </div>
+              <textarea
+                class="form-control"
+                aria-label="With textarea"
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- Radio & checkbox -->
+
+          <div class="col-6 mb-xxl">
+            <div class="mb-sm custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="customCheck1"
+              />
+              <label class="custom-control-label" for="customCheck1"
+                >checkbox default</label
               >
             </div>
           </div>
-        </div>
-        <!-- ================= End form controls ================= -->
 
-        <div class="row">
-          <div class="col-3">
-            <p class="text-uppercase font-weight-bold text-small">
-              Checkbox
-            </p>
-            <div
-              class="mb-md custom-control custom-checkbox checkbox-primary mb-md"
-            >
+          <div class="col-6 mb-xxl">
+            <div class="mb-sm custom-control custom-checkbox checkbox-primary">
               <input
                 type="checkbox"
                 class="custom-control-input"
                 id="customCheck2"
-                checked
               />
-              <label class="custom-control-label" for="customCheck2">
-               primary
-              </label>
+              <label class="custom-control-label" for="customCheck2"
+                >checkbox primary</label
+              >
             </div>
-            <div
-              class="mb-md custom-control custom-checkbox checkbox-secondary"
-            >
+          </div>
+
+          <div class="col-6 mb-xxl">
+            <div class="mb-sm custom-control custom-checkbox checkbox-success">
               <input
                 type="checkbox"
                 class="custom-control-input"
                 id="customCheck3"
-                checked
               />
-              <label class="custom-control-label" for="customCheck3">
-               secondary
-              </label>
+              <label class="custom-control-label" for="customCheck3"
+                >checkbox success</label
+              >
             </div>
-            <div class="mb-md custom-control custom-checkbox checkbox-success">
+          </div>
+
+          <div class="col-6 mb-xxl">
+            <div class="mb-sm custom-control custom-checkbox checkbox-warning">
               <input
                 type="checkbox"
                 class="custom-control-input"
                 id="customCheck4"
-                checked
               />
-              <label class="custom-control-label" for="customCheck4">
-               success
-              </label>
-            </div>
-            <div class="mb-md custom-control custom-checkbox checkbox-danger">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="customCheck5"
-                checked
-              />
-              <label class="custom-control-label" for="customCheck5">
-               danger
-              </label>
-            </div>
-            <div class="mb-md custom-control custom-checkbox checkbox-info">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="customCheck6"
-                checked
-              />
-              <label class="custom-control-label" for="customCheck6">
-               info
-              </label>
-            </div>
-            <div class="mb-md custom-control custom-checkbox checkbox-light">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="customCheck7"
-                checked
-              />
-              <label class="custom-control-label" for="customCheck7">
-               light
-              </label>
-            </div>
-            <div class="mb-md custom-control custom-checkbox checkbox-dark">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="customCheck8"
-                checked
-              />
-              <label class="custom-control-label" for="customCheck8">
-               dark
-              </label>
-            </div>
-            <div class="mb-md custom-control custom-checkbox checkbox-dark">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="customCheck9"
-                disabled
-                checked
-              />
-              <label class="custom-control-label" for="customCheck9">
-               Disabled
-              </label>
+              <label class="custom-control-label" for="customCheck4"
+                >checkbox warning</label
+              >
             </div>
           </div>
-          <div class="col-3">
-            <p class="text-uppercase font-weight-bold text-small">
-              Radio
-            </p>
-            <div class="custom-control custom-radio radio-primary mb-md">
+
+          <!-- Radio -->
+          <div class="col-6 mb-xxl">
+            <div class="custom-control custom-radio custom-control-inline">
               <input
                 type="radio"
                 id="customRadioInline1"
                 name="customRadioInline1"
                 class="custom-control-input"
-                checked
               />
-              <label class="custom-control-label" for="customRadioInline1">
-                Primary
-              </label>
+              <label class="custom-control-label" for="customRadioInline1"
+                >Toggle this custom radio</label
+              >
             </div>
-            <div class="custom-control custom-radio radio-secondary mb-md">
-              <input
-                type="radio"
-                id="customRadioInline3"
-                name="customRadioInline3"
-                class="custom-control-input"
-                checked
-              />
-              <label class="custom-control-label" for="customRadioInline3">
-                Secondary
-              </label>
-            </div>
-            <div class="custom-control custom-radio radio-success mb-md">
+            <div
+              class="custom-control custom-radio radio-success custom-control-inline"
+            >
               <input
                 type="radio"
                 id="customRadioInline2"
-                name="customRadioInline2"
+                name="customRadioInline1"
                 class="custom-control-input"
-                checked
               />
-              <label class="custom-control-label" for="customRadioInline2">
-                Success
-              </label>
+              <label class="custom-control-label" for="customRadioInline2"
+                >Or toggle this other custom radio</label
+              >
             </div>
-
-            <div class="custom-control custom-radio radio-warning mb-md">
-              <input
-                type="radio"
-                id="customRadioInline4"
-                name="customRadioInline4"
-                class="custom-control-input"
-                checked
-              />
-              <label class="custom-control-label" for="customRadioInline4">
-                Warning
-              </label>
-            </div>
-            <div class="custom-control custom-radio radio-danger mb-md">
-              <input
-                type="radio"
-                id="customRadioInline5"
-                name="customRadioInline5"
-                class="custom-control-input"
-                checked
-              />
-              <label class="custom-control-label" for="customRadioInline5">
-                Danger
-              </label>
-            </div>
-            <div class="custom-control custom-radio radio-info mb-md">
-              <input
-                type="radio"
-                id="customRadioInline6"
-                name="customRadioInline6"
-                class="custom-control-input"
-                checked
-              />
-              <label class="custom-control-label" for="customRadioInline6">
-                Info
-              </label>
-            </div>
-            <div class="custom-control custom-radio radio-light mb-md">
-              <input
-                type="radio"
-                id="customRadioInline7"
-                name="customRadioInline7"
-                class="custom-control-input"
-                checked
-              />
-              <label class="custom-control-label" for="customRadioInline7">
-                Light
-              </label>
-            </div>
-            <div class="custom-control custom-radio radio-dark mb-md">
-              <input
-                type="radio"
-                id="customRadioInline8"
-                name="customRadioInline8"
-                class="custom-control-input"
-                checked
-              />
-              <label class="custom-control-label" for="customRadioInline8">
-                Dark
-              </label>
-            </div>
-            <div class="custom-control custom-radio radio-dark mb-md">
-              <input
-                type="radio"
-                id="customRadioInline9"
-                name="customRadioInline9"
-                class="custom-control-input"
-                disabled
-              />
-              <label class="custom-control-label" for="customRadioInline9">
-                Disabled
-              </label>
-            </div>
-          </div>
-          <!-- Switch -->
-          <div class="col-3">
-            <p class="text-uppercase font-weight-bold text-small">
-              Switch
-            </p>
-            <label class="switch switch-primary my-md">
-                <span>Primary</span>
-                <input type="checkbox" checked="">
-                <span class="slider"></span>
-            </label>
-            <br>
-            <label class="switch switch-secondary my-md">
-                <span>Secondary</span>
-                <input type="checkbox" checked="">
-                <span class="slider"></span>
-            </label>
-            <br>
-            <label class="switch switch-success my-md">
-                <span>Success</span>
-                <input type="checkbox" checked="">
-                <span class="slider"></span>
-            </label>
-            <br>
-            <label class="switch switch-warning my-md">
-                <span>Warning</span>
-                <input type="checkbox" checked="">
-                <span class="slider"></span>
-            </label>
-            <br>
-            <label class="switch switch-danger my-md">
-                <span>Danger</span>
-                <input type="checkbox" checked="">
-                <span class="slider"></span>
-            </label>
-            <br>
-            <label class="switch switch-light my-md">
-                <span>Light</span>
-                <input type="checkbox" checked="">
-                <span class="slider"></span>
-            </label>
-            <br>
-            <label class="switch switch-dark my-md">
-                <span>Dark</span>
-                <input type="checkbox" checked="">
-                <span class="slider"></span>
-            </label>
-            <br>
-            <label class="switch switch-dark my-md">
-              <span>Disabled</span>
-              <input type="checkbox" disabled>
-              <span class="slider"></span>
-            </label>
-          </div>
-          <div class="col-3">
-            <p class="text-uppercase font-weight-bold text-small">
-              Slider
-            </p>
-            <div class="my-lg">
-              <input
-                class="bootstrap-slider"
-                data-slider-id="ex1Slider"
-                type="text"
-                data-slider-min="0"
-                data-slider-max="100"
-                data-slider-step="1"
-                data-slider-value="40"
-              />
-            </div>
-            <div class="my-xxxl">
-              <input
-                type="text"
-                class="bootstrap-slider"
-                value=""
-                data-slider-tooltip="always"
-                data-slider-min="10"
-                data-slider-max="1000"
-                data-slider-step="5"
-                data-slider-value="[250,450]"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ================= End form controls ================= -->
-
-    <section class="py-xxxl">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2>Bootstrap Select</h2>
-          </div>
-
-          <div class="col-md-4">
-            <p class="text-uppercase font-weight-bold text-small text-muted">
-              Single select
-            </p>
-            <select class="selectpicker" data-style="btn-raised-default">
-              <option>Mustard</option>
-              <option>Ketchup</option>
-              <option>Barbecue</option>
-            </select>
-          </div>
-          <div class="col-md-4">
-            <p class="text-uppercase font-weight-bold text-small text-muted">
-              Multi select
-            </p>
-            <select
-              class="selectpicker"
-              data-selected-text-format="count"
-              data-style="btn-raised-default"
-              multiple
-            >
-              <option>Mustard</option>
-              <option>Ketchup</option>
-              <option>Barbecue</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ========== End Bootstrap Select ========== -->
-
-    <section class="py-xxl gray-200">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p class="text-uppercase font-weight-bold text-small text-muted">
-              Tabs
-            </p>
-          </div>
-          <div class="col-6 mb-lg">
-            <div class="nav-tabs-primary">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    id="home-tab"
-                    data-toggle="tab"
-                    href="#home"
-                    role="tab"
-                    aria-controls="home"
-                    aria-selected="true"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="profile-tab"
-                    data-toggle="tab"
-                    href="#profile"
-                    role="tab"
-                    aria-controls="profile"
-                    aria-selected="false"
-                    >Profile</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="contact-tab"
-                    data-toggle="tab"
-                    href="#contact"
-                    role="tab"
-                    aria-controls="contact"
-                    aria-selected="false"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-              <div class="tab-content p-16" id="myTabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="home"
-                  role="tabpanel"
-                  aria-labelledby="home-tab"
-                >
-                  <p>Lorem, ipsum dolor. 1</p>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="profile"
-                  role="tabpanel"
-                  aria-labelledby="profile-tab"
-                >
-                  <p>Lorem, ipsum dolor. 2</p>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="contact"
-                  role="tabpanel"
-                  aria-labelledby="contact-tab"
-                >
-                  <p>Lorem, ipsum dolor. 3</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 mb-lg">
-            <div class="nav-pills-primary">
-              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    id="pills-home-tab"
-                    data-toggle="pill"
-                    href="#pills-home"
-                    role="tab"
-                    aria-controls="pills-home"
-                    aria-selected="true"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="pills-profile-tab"
-                    data-toggle="pill"
-                    href="#pills-profile"
-                    role="tab"
-                    aria-controls="pills-profile"
-                    aria-selected="false"
-                    >Profile</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="pills-contact-tab"
-                    data-toggle="pill"
-                    href="#pills-contact"
-                    role="tab"
-                    aria-controls="pills-contact"
-                    aria-selected="false"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-              <div class="tab-content" id="pills-tabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="pills-home"
-                  role="tabpanel"
-                  aria-labelledby="pills-home-tab"
-                >
-                  <p>Lorem, ipsum dolor. 1</p>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-profile"
-                  role="tabpanel"
-                  aria-labelledby="pills-profile-tab"
-                >
-                  <p>Lorem, ipsum dolor. 2</p>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-contact"
-                  role="tabpanel"
-                  aria-labelledby="pills-contact-tab"
-                >
-                  <p>Lorem, ipsum dolor. 3</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <p class="text-uppercase font-weight-bold text-small text-muted">
-              Accordion
-            </p>
-            <div class="accordion" id="accordionExample">
-              <div class="card">
-                <div
-                  class="card-header"
-                  id="headingOne"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  <h5 class="heading m-0">
-                    Collapsible Group Item #1
-                  </h5>
-                  <span class="flex-grow-1"></span>
-                  <i class="i-arrow ti-angle-down"></i>
-                </div>
-
-                <div
-                  id="collapseOne"
-                  class="collapse show"
-                  aria-labelledby="headingOne"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life
-                        accusamus terry richardson ad squid. 3 wolf moon officia
-                        aute, non cupidatat skateboard dolor brunch. Food truck
-                        quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                        sunt aliqua put a bird on it squid single-origin coffee
-                        nulla assumenda shoreditch et. Nihil anim keffiyeh
-                        helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                        Leggings occaecat craft beer farm-to-table, raw denim
-                        aesthetic synth nesciunt you probably haven't heard of them
-                        accusamus labore sustainable VHS.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div
-                  class="card-header"
-                  id="headingTwo"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  <h5 class="heading m-0">
-                    Collapsible Group Item #2
-                  </h5>
-                  <span class="flex-grow-1"></span>
-                  <i class="i-arrow ti-angle-down"></i>
-                </div>
-                <div
-                  id="collapseTwo"
-                  class="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life
-                        accusamus terry richardson ad squid. 3 wolf moon officia
-                        aute, non cupidatat skateboard dolor brunch. Food truck
-                        quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                        sunt aliqua put a bird on it squid single-origin coffee
-                        nulla assumenda shoreditch et. Nihil anim keffiyeh
-                        helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                        Leggings occaecat craft beer farm-to-table, raw denim
-                        aesthetic synth nesciunt you probably haven't heard of them
-                        accusamus labore sustainable VHS.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div
-                  class="card-header"
-                  id="headingThree"
-                  data-toggle="collapse"
-                  data-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  <h5 class="heading mb-0">
-                    Collapsible Group Item #3
-                  </h5>
-                  <span class="flex-grow-1"></span>
-                  <i class="i-arrow ti-angle-down"></i>
-                </div>
-                <div
-                  id="collapseThree"
-                  class="collapse"
-                  aria-labelledby="headingThree"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life
-                        accusamus terry richardson ad squid. 3 wolf moon officia
-                        aute, non cupidatat skateboard dolor brunch. Food truck
-                        quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                        sunt aliqua put a bird on it squid single-origin coffee
-                        nulla assumenda shoreditch et. Nihil anim keffiyeh
-                        helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                        Leggings occaecat craft beer farm-to-table, raw denim
-                        aesthetic synth nesciunt you probably haven't heard of them
-                        accusamus labore sustainable VHS.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ========== End Tabs ========= -->
-
-    <section class="py-xxxl">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 offset-1">
-            <p class="text-uppercase font-weight-bold text-small text-muted">
-              Fancy List
-            </p>
-            <div class="list-group list-1">
-              <div class="list-group-item">
-                <img
-                  class="item-thumbnail"
-                  src="./assets/images/logos/logo-8.png"
-                  alt=""
-                />
-                <div class="item-content">
-                  <h4>
-                    Full Stack Javascript Engineer.
-                  </h4>
-                  <div class="item-footer">
-                    <span> <i class="fas fa-building"></i>On site </span>
-                    <span>
-                      <i class="fas fa-map-marker-alt"></i>Hyderabad
-                    </span>
-                    <span> <i class="fas fa-user-clock"></i>Full Time </span>
-                    <span> <i class="fas fa-clock"></i>2 days ago </span>
-                  </div>
-                </div>
-                <div class="item-action">
-                  <button class="btn btn-raised btn-raised-light">
-                    apply now
-                  </button>
-                </div>
-              </div>
-              <div class="list-group-item">
-                <span class="item-icon">
-                  <i class="fas fa-user-tie"></i>
-                </span>
-                <div class="item-content">
-                  <h4>
-                    Vertual Assistance
-                  </h4>
-                  <div class="item-footer">
-                    <span> <i class="fas fa-globe"></i>Remote </span>
-                    <span>
-                      <i class="fas fa-map-marker-alt"></i>Delhi
-                    </span>
-                    <span> <i class="fas fa-user-clock"></i>Part Time </span>
-                    <span> <i class="fas fa-clock"></i>7 days ago </span>
-                  </div>
-                </div>
-                <div class="item-action">
-                  <button class="btn btn-raised btn-raised-light">
-                    apply now
-                  </button>
-                </div>
-              </div>
-              <div class="list-group-item">
-                <img
-                  class="item-thumbnail"
-                  src="./assets/images/logos/logo-4.png"
-                  alt=""
-                />
-                <div class="item-content">
-                  <h4>
-                    Front End Developer (React)
-                  </h4>
-                  <div class="item-footer">
-                    <span> <i class="fas fa-globe"></i>Remote </span>
-                    <span>
-                      <i class="fas fa-map-marker-alt"></i>San Francisco
-                    </span>
-                    <span> <i class="fas fa-user-clock"></i>Full Time </span>
-                    <span> <i class="fas fa-clock"></i>3 days ago </span>
-                  </div>
-                </div>
-                <div class="item-action">
-                  <button class="btn btn-raised btn-raised-light">
-                    apply now
-                  </button>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ========== End Lists ========= -->
-
-    <section class="py-xxxl">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mb-md">
-            <p class="text-uppercase font-weight-bold text-small text-muted">
-              Pricing table
-            </p>
-          </div>
-
-          <div class="col-4">
-            <div class="card pricing1">
-              <img class="card-img px-lg mb-md" src="./assets/images/illustrations/baby.svg" alt="">
-              <div class="heading">Starter</div>
-              <div class="price">$75</div>
-              <small>Monthly</small>
-
-              <div class="features mb-md">
-                <p>Complete CRM Service</p>
-                <p>100GB Disk Space</p>
-                <p>Upto 5 Users</p>
-              </div>
-              <span class="flex-grow-1"></span>
-              <div class="">
-                <button class="btn btn-sm btn-raised btn-raised-primary">Sign Up</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card pricing1">
-              <img class="card-img px-lg mb-md" src="./assets/images/illustrations/rocket.svg" alt="">
-              <div class="heading">Growing</div>
-              <div class="price">$195</div>
-              <small>Monthly</small>
-
-              <div class="features mb-md">
-                <p>Complete CRM Service</p>
-                <p>1000GB Disk Space</p>
-                <p>Upto 15 Users</p>
-              </div>
-              <span class="flex-grow-1"></span>
-              <div class="card-action">
-                <button class="btn btn-sm btn-raised btn-raised-primary">Sign Up</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card pricing1">
-              <img class="card-img px-lg mb-md" src="./assets/images/illustrations/business_deal.svg" alt="">
-              <div class="heading">Enterprice</div>
-              <div class="price">$495</div>
-              <small>Monthly</small>
-
-              <div class="features mb-md">
-                <p>Complete CRM Service</p>
-                <p>10TB Disk Space</p>
-                <p>Upto 100 Users</p>
-              </div>
-              <span class="flex-grow-1"></span>
-              <div class="card-action">
-                <button class="btn btn-sm btn-raised btn-raised-primary">Sign Up</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ========== End Pricings ========= -->
-
-    <section class="py-xxxl">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p class="text-uppercase font-weight-bold text-small text-muted">
-              Cards
-            </p>
           </div>
         </div>
 
@@ -1286,9 +799,536 @@
                 >
               </div>
             </div>
+            <div class="card mb-xxl">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-header">
+                Featured
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+              <div class="card-footer text-muted">
+                2 days ago
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nav bar -->
+        <div class="row">
+          <div class="col-6 mb-xxl">
+            <nav
+              class="navbar navbar-expand-lg navbar-dark bg-primary shadow-4dp rounded"
+            >
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"
+                      >Home <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Dropdown link
+                    </a>
+                    <div
+                      class="dropdown-menu dropdown-primary"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                      <a class="dropdown-header" href="#">Dropdown Header</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-6 mb-xxl">
+            <nav
+              class="navbar navbar-expand-lg navbar-dark bg-info shadow-4dp rounded"
+            >
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"
+                      ><i data-feather="home"></i>
+                      <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i data-feather="chrome"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i data-feather="box"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i data-feather="user"></i>
+                    </a>
+                    <div
+                      class="dropdown-menu dropdown-primary"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                      <a class="dropdown-header" href="#">Dropdown Header</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col-6 mb-xxl">
+            <nav
+              class="navbar navbar-expand-lg navbar-dark bg-info shadow-4dp rounded"
+            >
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"
+                      ><i class="fas fa-home"></i>
+                      <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fab fa-chrome"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-briefcase"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-cog"></i>
+                    </a>
+                    <div
+                      class="dropdown-menu dropdown-primary"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                      <a class="dropdown-header" href="#">Dropdown Header</a>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <div class="row mb-xxxl">
+          <div class="col-6 nav-tabs-primary">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="home-tab"
+                  data-toggle="tab"
+                  href="#home"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="profile-tab"
+                  data-toggle="tab"
+                  href="#profile"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                  >Profile</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="contact-tab"
+                  data-toggle="tab"
+                  href="#contact"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content p-16" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <p>Lorem, ipsum dolor. 1</p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                <p>Lorem, ipsum dolor. 2</p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="contact"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                <p>Lorem, ipsum dolor. 3</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 nav-pills-primary">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="pills-home-tab"
+                  data-toggle="pill"
+                  href="#pills-home"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="pills-profile-tab"
+                  data-toggle="pill"
+                  href="#pills-profile"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                  >Profile</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="pills-contact-tab"
+                  data-toggle="pill"
+                  href="#pills-contact"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+              >
+                <p>Lorem, ipsum dolor. 1</p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+              >
+                <p>Lorem, ipsum dolor. 2</p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-contact"
+                role="tabpanel"
+                aria-labelledby="pills-contact-tab"
+              >
+                <p>Lorem, ipsum dolor. 3</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6"></div>
+        </div>
+
+        <div class="row mb-xxxl">
+          <div class="col-6">
+            <h1>
+              Example heading <span class="badge badge-secondary">New</span>
+            </h1>
+            <h2>
+              Example heading <span class="badge badge-secondary">New</span>
+            </h2>
+            <h3>
+              Example heading <span class="badge badge-secondary">New</span>
+            </h3>
+            <h4>
+              Example heading <span class="badge badge-secondary">New</span>
+            </h4>
+            <h5>
+              Example heading <span class="badge badge-secondary">New</span>
+            </h5>
+            <h6>
+              Example heading <span class="badge badge-secondary">New</span>
+            </h6>
+          </div>
+          <div class="col-6">
+            <span class="badge badge-white text-16">405 Jobs</span>
+            <span class="badge badge-secondary">Secondary</span>
+            <span class="badge badge-success">Success</span>
+            <span class="badge badge-danger">Danger</span>
+            <span class="badge badge-warning">Warning</span>
+            <span class="badge badge-info">Info</span>
+            <span class="badge badge-light">Light</span>
+            <span class="badge badge-dark">Dark</span>
+          </div>
+          <div class="col-6">
+            <span class="badge badge-pill badge-primary">Primary</span>
+            <span class="badge badge-pill badge-secondary">Secondary</span>
+            <span class="badge badge-pill badge-success">Success</span>
+            <span class="badge badge-pill badge-danger">Danger</span>
+            <span class="badge badge-pill badge-warning">Warning</span>
+            <span class="badge badge-pill badge-info">Info</span>
+            <span class="badge badge-pill badge-light">Light</span>
+            <span class="badge badge-pill badge-dark">Dark</span>
+          </div>
+        </div>
+
+        <div class="row mb-xxxl">
+          <h4>Bootstrap select</h4>
+          <div class="col-6">
+            <select
+              class="selectpicker"
+              data-selected-text-format="count"
+              data-style="btn-white"
+              multiple
+            >
+              <option>Mustard</option>
+              <option>Ketchup</option>
+              <option>Barbecue</option>
+            </select>
+          </div>
+          <div class="col-6">
+            <select class="selectpicker" data-style="btn-white">
+              <option>Mustard</option>
+              <option>Ketchup</option>
+              <option>Barbecue</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mb-xxxl">
+          <div class="col-6">
+            <input
+              type="text"
+              class="bootstrap-slider"
+              value=""
+              data-slider-tooltip="always"
+              data-slider-min="10"
+              data-slider-max="1000"
+              data-slider-step="5"
+              data-slider-value="[250,450]"
+            />
+          </div>
+
+          <div class="col-6">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Tooltip on top"
+            >
+              Tooltip on top
+            </button>
+          </div>
+        </div>
+
+        <div class="row mb-xxxl">
+          <div class="col-md-8 offset-2">
+            <div class="list-group list-1">
+              <div class="list-group-item">
+                <img
+                  src="./assets/images/faces/1.jpg"
+                  alt=""
+                  class="item-thumbnail"
+                />
+                <div class="item-content">
+                  <h4>
+                    Restaurant General Manager.
+                  </h4>
+                  <div class="item-footer">
+                    <span> <i class="far fa-building"></i>King </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>San Francisco
+                    </span>
+                    <span> <i class="fas fa-male"></i>Full Time </span>
+                    <span> <i class="far fa-clock"></i>2 days ago </span>
+                  </div>
+                </div>
+                <div class="item-action">
+                  <button class="btn btn-raised btn-raised-light">
+                    apply now
+                  </button>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <img
+                  src="./assets/images/faces/1.jpg"
+                  alt=""
+                  class="item-thumbnail"
+                />
+                <div class="item-content">
+                  <h4>
+                    Restaurant General Manager.
+                  </h4>
+                  <div class="item-footer">
+                    <span> <i class="fas fa-map-marker-alt"></i>King </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>San Francisco
+                    </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>Full Time
+                    </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>2 days ago
+                    </span>
+                  </div>
+                </div>
+                <div class="item-action">
+                  <button class="btn btn-raised btn-raised-light">
+                    apply now
+                  </button>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <span class="item-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <div class="item-content">
+                  <h4>
+                    Restaurant General Manager.
+                  </h4>
+                  <div class="item-footer">
+                    <span> <i class="fas fa-map-marker-alt"></i>King </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>San Francisco
+                    </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>Full Time
+                    </span>
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>2 days ago
+                    </span>
+                  </div>
+                </div>
+                <div class="item-action">
+                  <button class="btn btn-raised btn-raised-light">
+                    apply now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-xxl">
+          <div class="col-md-3">
             <div class="card image-bg">
               <img src="./assets/images/cities/city-2.jpg" alt="" />
               <div class="image-bg-content">
@@ -1302,48 +1342,316 @@
               </div>
             </div>
           </div>
-
         </div>
-      </div>
-    </section>
 
-    <section class="py-xxl">
-      <div class="container">
+        <div class="row mb-xxl">
+          <div class="col-8">
+            <div class="alert alert-primary" role="alert">
+              A simple primary alert—check it out!
+            </div>
+            <div class="alert alert-raised-primary" role="alert">
+              A simple primary alert—check it out!
+            </div>
+            <div class="alert alert-secondary" role="alert">
+              A simple secondary alert—check it out!
+            </div>
+            <div class="alert alert-success" role="alert">
+              A simple success alert—check it out!
+            </div>
+            <div class="alert alert-danger" role="alert">
+              A simple danger alert—check it out!
+            </div>
+            <div class="alert alert-warning" role="alert">
+              A simple warning alert—check it out!
+            </div>
+            <div class="alert alert-info" role="alert">
+              A simple info alert—check it out!
+            </div>
+            <div class="alert alert-light" role="alert">
+              A simple light alert—check it out!
+            </div>
+            <div class="alert alert-dark" role="alert">
+              A simple dark alert—check it out!
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="alert alert-primary" role="alert">
+              A simple primary alert with
+              <a href="#" class="alert-link">an example link</a>. Give it a
+              click if you like.
+            </div>
+            <div class="alert alert-secondary" role="alert">
+              A simple secondary alert with
+              <a href="#" class="alert-link">an example link</a>. Give it a
+              click if you like.
+            </div>
+            <div class="alert alert-success" role="alert">
+              A simple success alert with
+              <a href="#" class="alert-link">an example link</a>. Give it a
+              click if you like.
+            </div>
+            <div class="alert alert-danger" role="alert">
+              A simple danger alert with
+              <a href="#" class="alert-link">an example link</a>. Give it a
+              click if you like.
+            </div>
+            <div class="alert alert-warning" role="alert">
+              A simple warning alert with
+              <a href="#" class="alert-link">an example link</a>. Give it a
+              click if you like.
+            </div>
+            <div class="alert alert-info" role="alert">
+              A simple info alert with
+              <a href="#" class="alert-link">an example link</a>. Give it a
+              click if you like.
+            </div>
+            <div class="alert alert-light" role="alert">
+              A simple light alert with
+              <a href="#" class="alert-link">an example link</a>. Give it a
+              click if you like.
+            </div>
+            <div class="alert alert-dark" role="alert">
+              A simple dark alert with
+              <a href="#" class="alert-link">an example link</a>. Give it a
+              click if you like.
+            </div>
+          </div>
+        </div>
         <div class="row">
+          <div class="col-6 mb-xxxl">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="assets/images/photo-wide-1.jpg"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="assets/images/photo-wide-4.jpg"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="assets/images/photo-wide-3.jpg"
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
           <div class="col-6">
-            <p class="text-uppercase font-weight-bold text-small">
-              Progress
+            <!-- Example single danger button -->
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-raised btn-raised-danger dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Action
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <h4>Collapse</h4>
+            <p>
+              <a
+                class="btn btn-primary"
+                data-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Link with href
+              </a>
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Button with data-target
+              </button>
             </p>
+            <div class="collapse card" id="collapseExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. Nihil anim keffiyeh
+                helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                ea proident.
+              </div>
+            </div>
 
-            <div class="progress-wrapper mb-xl">
-                <div class="progress-info">
-                  <span></span>
-                  <div class="progress-percentage">
-                    <span>80%</span>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div
+                  class="card-header"
+                  id="headingOne"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <h5 class="m-0">
+                    Collapsible Group Item #1
+                  </h5>
+                  <span class="flex-grow-1"></span>
+                  <i class="i-arrow ti-angle-down"></i>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse show"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    Leggings occaecat craft beer farm-to-table, raw denim
+                    aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.
                   </div>
                 </div>
-                <div class="progress mb-md">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="card">
+                <div
+                  class="card-header"
+                  id="headingTwo"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <h5 class="m-0">
+                    Collapsible Group Item #2
+                  </h5>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    Leggings occaecat craft beer farm-to-table, raw denim
+                    aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.
+                  </div>
                 </div>
               </div>
-
-            <div class="progress-wrapper mb-xl">
-              <div class="progress-info">
-                <span></span>
-                <div class="progress-percentage">
-                  <span>50%</span>
+              <div class="card">
+                <div
+                  class="card-header"
+                  id="headingThree"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <h5 class="mb-0">
+                    Collapsible Group Item #3
+                  </h5>
                 </div>
-              </div>
-              <div class="progress mb-md">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    Leggings occaecat craft beer farm-to-table, raw denim
+                    aesthetic synth nesciunt you probably haven't heard of them
+                    accusamus labore sustainable VHS.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-6">
-            <p class="text-uppercase font-weight-bold text-small">
-              Pagination
-            </p>
+          <div class="col-6 mb-xxxl">
             <nav aria-label="navigation" class="mb-xl">
               <ul class="pagination">
                 <li class="page-item">
@@ -1423,666 +1731,34 @@
                 </li>
               </ul>
             </nav>
-
-            <p class="text-uppercase font-weight-bold text-small">
-              Badge
-            </p>
-            <span class="badge badge-primary">Primary</span>
-            <span class="badge badge-secondary">Secondary</span>
-            <span class="badge badge-success">Success</span>
-            <span class="badge badge-danger">Danger</span>
-            <span class="badge badge-warning">Warning</span>
-            <span class="badge badge-info">Info</span>
-            <span class="badge badge-light">Light</span>
-            <span class="badge badge-dark">Dark</span>
-            <p class="text-uppercase font-weight-bold text-small mt-lg">
-              Badge pill
-            </p>
-            <span class="badge badge-pill badge-primary">Primary</span>
-            <span class="badge badge-pill badge-secondary">Secondary</span>
-            <span class="badge badge-pill badge-success">Success</span>
-            <span class="badge badge-pill badge-danger">Danger</span>
-            <span class="badge badge-pill badge-warning">Warning</span>
-            <span class="badge badge-pill badge-info">Info</span>
-            <span class="badge badge-pill badge-light">Light</span>
-            <span class="badge badge-pill badge-dark">Dark</span>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- ============= End progress ================ -->
-    <section class="py-xxl">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p class="text-uppercase font-weight-bold text-small">
-              Alerts
-            </p>
-
-            <div class="alert alert-primary" role="alert">
-              A simple primary alert—check it out!
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <i class="ti-close"></i>
-              </button>
-            </div>
-            <div class="alert alert-success" role="alert">
-              A simple success alert—check it out!
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <i class="ti-close"></i>
-              </button>
-            </div>
-            <div class="alert alert-danger" role="alert">
-              A simple danger alert—check it out!
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <i class="ti-close"></i>
-              </button>
-            </div>
-            <div class="alert alert-warning" role="alert">
-              A simple warning alert—check it out!
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <i class="ti-close"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ================== End Alerts ============== -->
-
-    <section class="py-xxl">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p class="text-uppercase font-weight-bold text-small">
-              Nav bar
-            </p>
-          </div>
-          <div class="col-6 mb-xxl">
-              <nav
-                class="navbar navbar-expand-lg navbar-dark bg-primary shadow-4dp rounded"
-              >
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarNavDropdown"
-                  aria-controls="navbarNavDropdown"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#"
-                        >Home <span class="sr-only">(current)</span></a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="navbarDropdownMenuLink"
-                        role="button"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        Dropdown link
-                      </a>
-                      <div
-                        class="dropdown-menu dropdown-primary"
-                        aria-labelledby="navbarDropdownMenuLink"
-                      >
-                        <a class="dropdown-header" href="#">Dropdown Header</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-xxl">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <p class="text-uppercase font-weight-bold text-small">
-              Modals
-            </p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-raised btn-raised-primary" data-toggle="modal" data-target="#exampleModal">
-              Launch demo modal
-            </button>
-              
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Soluta voluptas corrupti maxime eum ullam, odio debitis vero 
-                        reiciendis accusamus ducimus repellat numquam, magnam doloribus 
-                        obcaecati nostrum fugit, animi recusandae vitae!</p>
-                        <p>Maxime eum ullam, odio debitis vero 
-                          reiciendis accusamus ducimus repellat numquam, magnam doloribus 
-                          obcaecati nostrum fugit, animi recusandae vitae!</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-raised btn-raised-primary">Save changes</button>
-                      <div class="flex-grow-1"></div>
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Small modal -->
-              <button type="button" class="btn btn-raised btn-raised-secondary" data-toggle="modal" data-target=".done-example-modal-signup">Sign Up form</button>
-
-              <div class="modal fade done-example-modal-signup" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-sm">
-                  <div class="modal-content overflow-hidden">
-                    <div class="modal-body p-0">
-                      <div class="gray-200 px-xl pb-xxxl pt-xl">
-                        <div class="text-center mb-md">
-                          <small class="text-muted">Sign Up with Credential</small>
-                        </div>
-                        <form >
-                          <div class="input-group input-light mb-3">
-                            <div class="input-group-prepend">
-                              <i class="input-group-text fas fa-at"></i>
-                            </div>
-                            <input type="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
-                          </div>
-                          <div class="input-group input-light mb-3">
-                            <div class="input-group-prepend">
-                              <i class="input-group-text fas fa-lock"></i>
-                            </div>
-                            <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
-                          </div>
-                          <div class="input-group input-light mb-lg">
-                            <div class="input-group-prepend">
-                              <i class="input-group-text fas fa-check-circle"></i>
-                            </div>
-                            <input type="password" class="form-control" placeholder="Confirm password" aria-label="Username" aria-describedby="basic-addon1">
-                          </div>
-
-                          <div class="text-center">
-                            <button class="btn btn-raised btn-raised-primary">Sign up</button>
-                          </div>
-                        </form>
-                      </div>
-
-                      <div class="modal-footer flex-column border-0 px-xl pt-xxxl pb-xxxl">
-                        <div class="mb-md">
-                          <small class="text-muted">Or Sign Up with</small>
-                        </div>
-                        <div class="w-100 d-flex justify-content-around">
-                          <button class="btn btn-raised btn-google"><i class="fab fa-google"></i>Google</button>
-                          <button class="btn btn-raised btn-twitter"><i class="fab fa-twitter"></i>Twitter</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-          </div>
-          <!-- =========== End modal============== -->
-
-          <div class="col-6">
-            <p class="text-uppercase font-weight-bold text-small">
-              Popover
-            </p>
-            <button type="button" class="btn btn-sm btn-secondary mb-sm" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-              on top
-            </button>
-            
-            <button type="button" class="btn btn-sm btn-secondary mb-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-              on right
-            </button>
-            
-            <button type="button" class="btn btn-sm btn-secondary mb-sm" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-            sagittis lacus vel augue laoreet rutrum faucibus.">
-              on bottom
-            </button>
-            
-            <button type="button" class="btn btn-sm btn-secondary mb-sm" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-              on left
-            </button>
-
-            <p class="text-uppercase font-weight-bold text-small mt-md">
-              Tooltip
-            </p>
-            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-               on top
-            </button>
-            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
-               on right
-            </button>
-            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
-               on bottom
-            </button>
-            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
-               on left
-            </button>
-
-          </div> 
-          <!-- =========== End Popover & Tooltip ============== -->
-        </div>
-      </div>
-    </section>
-
-    <section class="py-xxl">
-      <div class="container">
-          <div class="col-8">
-            <p class="text-uppercase font-weight-bold text-small">
-              Carousel
-            </p>
-            <div
-              id="carouselExampleControls"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="1"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="2"
-                ></li>
+          <div class="col-6 mb-xxxl">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
               </ol>
-              <div class="carousel-inner shadow-4dp">
-                <div class="carousel-item active">
-                  <img
-                    class="d-block w-100"
-                    src="assets/images/photo-wide-1.jpg"
-                    alt="First slide"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="assets/images/photo-wide-4.jpg"
-                    alt="Second slide"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="assets/images/photo-wide-3.jpg"
-                    alt="Third slide"
-                  />
-                </div>
-              </div>
-              <a
-                class="carousel-control-prev"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="prev"
-              >
-              <i class="fas fa-chevron-left"></i>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="next"
-              >
-              <i class="fas fa-chevron-right"></i>
-              <span class="sr-only">Next</span>
-              </a>
-            </div>
+            </nav>
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Library
+                </li>
+              </ol>
+            </nav>
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
           </div>
+        </div>
       </div>
     </section>
-    <!-- ========= End carousel =========== -->
-    <section class="py-xxl">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="mb-xxl">Typography</h2>
-            <h3 class="text-primary">Heading tags</h3>
-          </div>
-        </div>
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Heading 1
-            </p>
-          </div>
-          <div class="col-md-9">
-            <h1 class="m-0">Done Design System heading 1</h1>
-          </div>
-        </div>
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Heading 2
-            </p>
-          </div>
-          <div class="col-md-9">
-            <h2 class="m-0">Done Design System heading 2</h2>
-          </div>
-        </div>
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Heading 3
-            </p>
-          </div>
-          <div class="col-md-9">
-            <h3 class="m-0">Done Design System heading 3</h3>
-          </div>
-        </div>
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Heading 4
-            </p>
-          </div>
-          <div class="col-md-9">
-            <h4 class="m-0">Done Design System heading 4</h4>
-          </div>
-        </div>
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Heading 5
-            </p>
-          </div>
-          <div class="col-md-9">
-            <h5 class="m-0">Done Design System heading 5</h5>
-          </div>
-        </div>
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Heading 6
-            </p>
-          </div>
-          <div class="col-md-9">
-            <h6 class="m-0">Done Design System heading 6</h6>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12">
-            <h3 class="text-primary">Heading & Title</h3>
-          </div>
-        </div>
-
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-            Heading
-            </p>
-          </div>
-          <div class="col-md-9">
-            <h4 class="heading">Done Design System Heading </h4>
-          </div>
-        </div>
-        
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-            Heading Title
-            </p>
-          </div>
-          <div class="col-md-9">
-            <h4 class="heading-title">Done Design System Heading Title </h4>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12">
-            <h3 class="text-primary">Display</h3>
-          </div>
-        </div>
-
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Display 1
-            </p>
-          </div>
-          <div class="col-md-9">
-            <h1 class="display-1 m-0">Done Design System Display 1</h1>
-          </div>
-        </div>
-
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Display 2
-            </p>
-          </div>
-          <div class="col-md-9">
-            <h1 class="display-2 m-0">Done Design System Display 2</h1>
-          </div>
-        </div>
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Display 3
-            </p>
-          </div>
-          <div class="col-md-9">
-            <h1 class="display-3 m-0">Done Design System Display 3</h1>
-          </div>
-        </div>
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Display 4
-            </p>
-          </div>
-          <div class="col-md-9">
-            <h1 class="display-4 m-0">Done Design System Display 4</h1>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12">
-            <h3 class="text-primary">Others</h3>
-          </div>
-        </div>
-
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Paragraph
-            </p>
-          </div>
-          <div class="col-md-9">
-            <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-              Fugiat consequuntur labore cum magni nam iste, facere quas, 
-              ex quia temporibus quaerat quis eaque ea amet est maxime ab veritatis 
-              sit amet consectetur adipisicing elit. 
-              Fugiat consequuntur labore cum magni nam iste, facere quas, 
-              ex quia temporibus quaerat quis eaque ea amet est maxime ab veritatis fuga?</p>
-          </div>
-        </div>
-
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Text lead
-            </p>
-          </div>
-          <div class="col-md-9">
-            <p class="lead m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat consequuntur labore cum magni nam iste, facere quas, ex quia temporibus quaerat quis eaque ea amet est maxime ab veritatis fuga?</p>
-          </div>
-        </div>
-
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Small tag
-            </p>
-          </div>
-          <div class="col-md-9">
-            <small>Done design system small text</small>
-          </div>
-        </div>
-
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Text muted
-            </p>
-          </div>
-          <div class="col-md-9">
-            <p class="text-muted m-0">Done design system muted text</p>
-          </div>
-        </div>
-
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Text Primary
-            </p>
-          </div>
-          <div class="col-md-9">
-            <p class="text-primary m-0">Done design system primary text</p>
-          </div>
-        </div>
-
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Text success
-            </p>
-          </div>
-          <div class="col-md-9">
-            <p class="text-success m-0">Done design system success text</p>
-          </div>
-        </div>
-
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Text Warning
-            </p>
-          </div>
-          <div class="col-md-9">
-            <p class="text-warning m-0">Done design system warning text</p>
-          </div>
-        </div>
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Text Danger
-            </p>
-          </div>
-          <div class="col-md-9">
-            <p class="text-danger m-0">Done design system danger text</p>
-          </div>
-        </div>
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Text light
-            </p>
-          </div>
-          <div class="col-md-9">
-            <p class="text-light m-0">Done design system light text</p>
-          </div>
-        </div>
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Text Dark
-            </p>
-          </div>
-          <div class="col-md-9">
-            <p class="text-dark m-0">Done design system dark text</p>
-          </div>
-        </div>
-
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Blockquote
-            </p>
-          </div>
-          <div class="col-md-9">
-            <blockquote class="blockquote">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              distinctio possimus ducimus ex quos eaque nobis, doloribus ut
-              quae? Facere sint consequatur eos soluta iusto excepturi
-              laudantium deserunt cum fugiat.
-              <footer class="blockquote-footer">Jhone Will</footer>
-            </blockquote>
-          </div>
-        </div>
-
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Blockquote Primary
-            </p>
-          </div>
-          <div class="col-md-9">
-            <blockquote class="blockquote blockquote-primary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              distinctio possimus ducimus ex quos eaque nobis, doloribus ut
-              quae? Facere sint consequatur eos soluta iusto excepturi
-              laudantium deserunt cum fugiat.
-              <footer class="blockquote-footer">Jhone Will</footer>
-            </blockquote>
-          </div>
-        </div>
-        <div class="row align-items-center py-md">
-          <div class="col-md-3">
-            <p class="text-uppercase font-weight-bold text-small text-muted m-0">
-              Blockquote danger
-            </p>
-          </div>
-          <div class="col-md-9">
-            <blockquote class="blockquote blockquote-danger">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              distinctio possimus ducimus ex quos eaque nobis, doloribus ut
-              quae? Facere sint consequatur eos soluta iusto excepturi
-              laudantium deserunt cum fugiat.
-              <footer class="blockquote-footer">Jhone Will</footer>
-            </blockquote>
-          </div>
-        </div>
-
-        
-   
-      </div>
-    </section>
-    <!-- ============ End Typography ============= -->
     <script src="./assets/vendor/jquery-3.4.1.min.js"></script>
 
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

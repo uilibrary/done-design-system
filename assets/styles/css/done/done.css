@@ -422,6 +422,9 @@ small {
 .text-small {
   font-size: 0.8125rem; }
 
+.font-weight-semi {
+  font-weight: 500; }
+
 .h-0px {
   height: 0px; }
 
@@ -4148,7 +4151,7 @@ input[disabled] + .slider {
       top: 0;
       left: 0; }
   .section-header .section-header-content {
-    padding: 80px 0 0; }
+    padding-top: 3rem; }
 
 .header-container {
   z-index: 1;
@@ -4156,7 +4159,6 @@ input[disabled] + .slider {
   overflow: hidden;
   display: flex;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%), url("../../../images/header-bg-1.jpg");
   background-blend-mode: soft-light;
   background-size: cover;
   background-position: center center; }
