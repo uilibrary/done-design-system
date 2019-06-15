@@ -34,6 +34,19 @@ gulp.task('browserSync', function () {
         startPath: 'index.html'
     });
 });
+function browserSyncInit(done) {
+  browserSync.init({
+    server: {
+      // baseDir: '/'
+    },
+    startPath: "index.html"
+  });
+  done();
+}
+function browserSyncReload(done) {
+  browserSync.reload();
+  done();
+}
 
 gulp.task('minifycss', function () {
     return gulp.src('assets/css/**/*')
@@ -42,14 +55,22 @@ gulp.task('minifycss', function () {
 });
 
 
-gulp.task('default', function (callback) {
-    runSequence(['sass', 'browserSync', 'watch'],
-        callback
-    )
-});
+// gulp.task('default', function (callback) {
+//     runSequence(['sass', 'browserSync', 'watch'],
+//         callback
+//     )
+// });
 
-gulp.task('watch', ['browserSync', 'sass'], function () {
-    gulp.watch('assets/sass/**/*.scss', ['sass', browserSync.reload]);
-    gulp.watch('assets/js/*.js', [browserSync.reload]);
-    gulp.watch('*.html', browserSync.reload);
-});
+// gulp.task('watch', ['browserSync', 'sass'], function () {
+//     gulp.watch('assets/sass/**/*.scss', ['sass', browserSync.reload]);
+//     gulp.watch('assets/js/*.js', [browserSync.reload]);
+//     gulp.watch('*.html', browserSync.reload);
+// });
+
+function watchFiles() {
+  gulp.watch("assets/sass/**/*.scss", gulp.series("sass", browserSyncReload));
+  gulp.watch("assets/js/*.js", gulp.parallel(browserSyncReload));
+  gulp.watch("*.html", gulp.parallel(browserSyncReload));
+}
+
+gulp.task("default", gulp.series("sass", browserSyncInit, watchFiles));
