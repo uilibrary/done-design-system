@@ -116,14 +116,14 @@ pre {
           display: block;
           color: $gray-900;
           padding: 8px 20px;
-          &.active {
-            background: rgba($primary, 0.3);
-          }
+          // &.active {
+          //   background: rgba($primary, 0.3);
+          // }
 
-          &:hover {
-            text-decoration: none;
-            background: $gray-300;
-          }
+          // &:hover {
+          //   text-decoration: none;
+          //   background: $gray-300;
+          // }
         }
         ul {
           list-style: none;
@@ -134,9 +134,15 @@ pre {
             a {
               padding-left: 40px;
               color: $gray-700;
+              border-radius: 0 30px 30px 0;
+              padding-top: 4px;
+              padding-bottom: 4px;
+              font-size: rem(14);
+              margin-right: 1rem;
               &.active {
-                background: none;
-                font-weight: $font-weight-semi;
+                background: #7467ef;
+                color: #fff;
+                // font-weight: $font-weight-semi;
                 &:hover {
                   background: $gray-300;
                 }

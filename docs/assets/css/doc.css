@@ -4401,11 +4401,6 @@ input[disabled] + .slider {
       display: block;
       color: #494858;
       padding: 8px 20px; }
-      .doc-content__sidebar .sidebar__list li a.active {
-        background: rgba(115, 103, 240, 0.3); }
-      .doc-content__sidebar .sidebar__list li a:hover {
-        text-decoration: none;
-        background: #dcdbe2; }
     .doc-content__sidebar .sidebar__list li ul {
       list-style: none;
       text-transform: capitalize;
@@ -4413,10 +4408,15 @@ input[disabled] + .slider {
       padding: 0; }
       .doc-content__sidebar .sidebar__list li ul li a {
         padding-left: 40px;
-        color: #6f6c85; }
+        color: #6f6c85;
+        border-radius: 0 30px 30px 0;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 0.875rem;
+        margin-right: 1rem; }
         .doc-content__sidebar .sidebar__list li ul li a.active {
-          background: none;
-          font-weight: 500; }
+          background: #7467ef;
+          color: #fff; }
           .doc-content__sidebar .sidebar__list li ul li a.active:hover {
             background: #dcdbe2; }
 
