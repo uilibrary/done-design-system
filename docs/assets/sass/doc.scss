@@ -135,10 +135,14 @@ pre {
               padding-left: 40px;
               color: $gray-700;
               border-radius: 0 30px 30px 0;
-              // padding-top: 4px;
-              // padding-bottom: 4px;
+              padding-top: 6px;
+              padding-bottom: 6px;
               font-size: rem(14);
-              margin-right: 1rem;
+              // margin-right: 1rem;
+              padding-top: 6px;
+              padding-bottom: 6px;
+              margin: 4px 8px 4px 0;
+
               &.active {
                 background: #7467ef;
                 color: #fff;

@@ -4412,8 +4412,12 @@ input[disabled] + .slider {
         padding-left: 40px;
         color: #6f6c85;
         border-radius: 0 30px 30px 0;
+        padding-top: 6px;
+        padding-bottom: 6px;
         font-size: 0.875rem;
-        margin-right: 1rem; }
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin: 4px 8px 4px 0; }
         .doc-content__sidebar .sidebar__list li ul li a.active {
           background: #7467ef;
           color: #fff; }
