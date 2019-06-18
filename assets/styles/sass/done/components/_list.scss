@@ -11,7 +11,10 @@
     border-radius: 0 !important;
     border-left: $border-width-lg solid transparent;
     @include transition-all();
-
+    @include responsive(tab-port) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     &:hover {
       box-shadow: shadow-4dp($gray-400);
       border-left: $border-width-lg solid $primary;
@@ -31,6 +34,10 @@
     }
     .item-thumbnail {
       padding: .5rem;
+      @include responsive(tab-port) {
+        padding: 0;
+        margin-bottom: 1rem;
+      }
     }
     .item-icon {
       background: $background-light;
@@ -40,11 +47,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include responsive(tab-port) {
+        margin-bottom: 1rem;
+      }
     }
 
     .item-content {
       flex-grow: 1;
       padding: 0 rem(40) 0 rem(15);
+      @include responsive(tab-port) {
+        padding: 0;
+        margin-bottom: 1rem;
+      }
       h4 {
         font-size: rem(18);
         margin-top: 0;
@@ -55,7 +69,10 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        // justify-content: space-between;
+        @include responsive(tab-port) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
         span {
           color: $gray-600;
           // font-weight: $font-weight-semi;

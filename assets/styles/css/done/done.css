@@ -3795,6 +3795,9 @@ input[disabled] + .slider {
   font-size: 0.75rem; }
   .navbar-nav .nav-item .nav-link {
     text-transform: uppercase; }
+    .navbar-nav .nav-item .nav-link i {
+      font-size: 1rem;
+      padding: 0 0.25rem; }
   .navbar-nav .nav-item .feather {
     height: 18px;
     width: 18px; }
@@ -3818,6 +3821,10 @@ input[disabled] + .slider {
     border-radius: 0 !important;
     border-left: 3px solid transparent;
     transition: all 0.2s ease-in-out !important; }
+    @media (max-width: 991px) {
+      .list-1 .list-group-item {
+        flex-direction: column;
+        align-items: flex-start; } }
     .list-1 .list-group-item:hover {
       box-shadow: 0 4px 20px 0 rgba(187, 186, 198, 0.6);
       border-left: 3px solid #7367F0;
@@ -3832,6 +3839,10 @@ input[disabled] + .slider {
       border-radius: 0.25rem; }
     .list-1 .list-group-item .item-thumbnail {
       padding: .5rem; }
+      @media (max-width: 991px) {
+        .list-1 .list-group-item .item-thumbnail {
+          padding: 0;
+          margin-bottom: 1rem; } }
     .list-1 .list-group-item .item-icon {
       background: #f2f2f4;
       border: 1px solid #f2f2f4;
@@ -3840,9 +3851,16 @@ input[disabled] + .slider {
       display: flex;
       align-items: center;
       justify-content: center; }
+      @media (max-width: 991px) {
+        .list-1 .list-group-item .item-icon {
+          margin-bottom: 1rem; } }
     .list-1 .list-group-item .item-content {
       flex-grow: 1;
       padding: 0 2.5rem 0 0.9375rem; }
+      @media (max-width: 991px) {
+        .list-1 .list-group-item .item-content {
+          padding: 0;
+          margin-bottom: 1rem; } }
       .list-1 .list-group-item .item-content h4 {
         font-size: 1.125rem;
         margin-top: 0;
@@ -3852,6 +3870,10 @@ input[disabled] + .slider {
         display: flex;
         flex-direction: row;
         align-items: center; }
+        @media (max-width: 991px) {
+          .list-1 .list-group-item .item-content .item-footer {
+            flex-direction: column;
+            align-items: flex-start; } }
         .list-1 .list-group-item .item-content .item-footer span {
           color: #8e8da2;
           padding-right: 1.25rem;

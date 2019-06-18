@@ -109,7 +109,7 @@ gulp.task("clean:dist", function(done) {
 function watchFiles() {
   gulp.watch("assets/styles/sass/**/*.scss", gulp.series("sass", browserSyncReload));
   gulp.watch("assets/js/main/*.js", gulp.series("compilejs", browserSyncReload));
-  gulp.watch("*.html", gulp.parallel(browserSyncReload));
+  gulp.watch("*.html", gulp.series(browserSyncReload));
 }
 
 
