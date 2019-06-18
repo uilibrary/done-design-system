@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./node_modules/gulp/bin/gulp.js",
+    "build": "node ./node_modules/gulp/bin/gulp.js build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -30,6 +31,7 @@
     "gulp-uglify-es": "^1.0.4",
     "gulp-useref": "^3.1.5",
     "gulp-wait": "0.0.2",
+    "imagemin-svgo": "^7.0.0",
     "run-sequence": "^2.2.1"
   }
 }

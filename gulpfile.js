@@ -13,6 +13,7 @@ var wait = require("gulp-wait");
 var babel = require("gulp-babel");
 var autoprefixer = require("gulp-autoprefixer");
 var sourcemaps = require("gulp-sourcemaps");
+const imageminSvgo = require('imagemin-svgo');
 
 gulp.task("sass", function(cb) {
   return (
@@ -34,14 +35,7 @@ gulp.task("sass", function(cb) {
   );
 });
 
-gulp.task("browserSync", function() {
-  browserSync.init({
-    server: {
-      // baseDir: '/'
-    },
-    startPath: "index.html"
-  });
-});
+
 function browserSyncInit(done) {
   browserSync.init({
     server: {
@@ -106,27 +100,9 @@ gulp.task("font", function() {
   return gulp.src("assets/fonts/**/*").pipe(gulp.dest("dist/assets/fonts"));
 });
 
-gulp.task("clean:dist", function() {
-  return del.sync("dist");
-});
-
-
-
-gulp.task("build", function(callback) {
-  runSequence(
-    "clean:dist",
-    "sass",
-    [
-      "compilejs",
-      "minifyjs",
-      "minifycss",
-      "vendorcss",
-      "minifyhtml",
-      "images",
-      "font"
-    ],
-    callback
-  );
+gulp.task("clean:dist", function(done) {
+  del.sync("dist");
+  done();
 });
 
 
@@ -138,3 +114,13 @@ function watchFiles() {
 
 
 gulp.task("default", gulp.series("sass", "compilejs", browserSyncInit, watchFiles));
+gulp.task("build", gulp.series(
+  "clean:dist",
+  "sass",
+  "compilejs",
+  "minifyjs",
+  "minifycss",
+  "minifyhtml",
+  "images",
+  "font"
+));

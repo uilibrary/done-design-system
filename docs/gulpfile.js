@@ -54,19 +54,6 @@ gulp.task('minifycss', function () {
         .pipe(gulp.dest('assets/css'))
 });
 
-
-// gulp.task('default', function (callback) {
-//     runSequence(['sass', 'browserSync', 'watch'],
-//         callback
-//     )
-// });
-
-// gulp.task('watch', ['browserSync', 'sass'], function () {
-//     gulp.watch('assets/sass/**/*.scss', ['sass', browserSync.reload]);
-//     gulp.watch('assets/js/*.js', [browserSync.reload]);
-//     gulp.watch('*.html', browserSync.reload);
-// });
-
 function watchFiles() {
   gulp.watch("assets/sass/**/*.scss", gulp.series("sass", browserSyncReload));
   gulp.watch("assets/js/*.js", gulp.parallel(browserSyncReload));
