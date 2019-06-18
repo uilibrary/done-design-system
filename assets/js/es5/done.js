@@ -34,7 +34,72 @@ var utils = {
 
       // console.log($elem, distance);
     }, 20);
+  },
+  currentYPosition: function currentYPosition() {
+    if (!window) {
+      return;
+    }
+    // Firefox, Chrome, Opera, Safari
+    if (window.pageYOffset) return window.pageYOffset;
+    // Internet Explorer 6 - standards mode
+    if (document.documentElement && document.documentElement.scrollTop) return document.documentElement.scrollTop;
+    // Internet Explorer 6, 7 and 8
+    if (document.body.scrollTop) return document.body.scrollTop;
+    return 0;
+  },
+
+  elmYPosition: function elmYPosition(elm) {
+    var y = elm.offsetTop;
+    var node = elm;
+    while (node.offsetParent && node.offsetParent !== document.body) {
+      node = node.offsetParent;
+      y += node.offsetTop;
+    }
+    return y;
+  },
+  scrollTo: function scrollTo(elm) {
+    // var elm = document.getElementById(elmID);
+    if (!elm) {
+      return;
+    }
+    var startY = this.currentYPosition();
+    var stopY = this.elmYPosition(elm);
+    var distance = stopY > startY ? stopY - startY : startY - stopY;
+    if (distance < 100) {
+      scrollTo(0, stopY);
+      return;
+    }
+    var speed = Math.round(distance / 50);
+    if (speed >= 20) speed = 20;
+    var step = Math.round(distance / 25);
+    var leapY = stopY > startY ? startY + step : startY - step;
+    var timer = 0;
+    if (stopY > startY) {
+      for (var i = startY; i < stopY; i += step) {
+        setTimeout(function (leapY) {
+          return function () {
+            window.scrollTo(0, leapY);
+          };
+        }(leapY), timer * speed);
+        leapY += step;
+        if (leapY > stopY) leapY = stopY;
+        timer++;
+      }
+      return;
+    }
+    for (var _i = startY; _i > stopY; _i -= step) {
+      setTimeout(function (leapY) {
+        return function () {
+          window.scrollTo(0, leapY);
+        };
+      }(leapY), timer * speed);
+      leapY -= step;
+      if (leapY < stopY) leapY = stopY;
+      timer++;
+    }
+    return false;
   }
+
 };
 
 $(document).ready(function () {
@@ -78,5 +143,18 @@ $(document).ready(function () {
     $(this).parent(".input-group").addClass("input-group-focus");
   }).on("blur", function () {
     $(this).parent(".input-group").removeClass("input-group-focus");
+  });
+
+  // data-scroll-to
+  $('[data-scroll-to]').each(function (i) {
+    var $this = $(this);
+    var id = $this.data('scroll-to');
+
+    $this.on('click', function (e) {
+      console.log(id);
+
+      e.preventDefault();
+      utils.scrollTo(document.getElementById(id));
+    });
   });
 });

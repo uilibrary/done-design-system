@@ -47,7 +47,7 @@ $(document).ready(function() {
   clipboard.on("error", function(e) {});
 
   // Load Sidebar
-  var templateDir = window.location.origin + '/arpon-design-system/docs/assets/template-parts';
+  var templateDir = window.location.origin + '/done-design-system/docs/assets/template-parts';
   $.get(templateDir+"/sidebar-nav.html", function(data) {
     var $sidebar = $(".doc-content__sidebar").html(data);
     var path = window.location.pathname;
