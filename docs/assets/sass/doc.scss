@@ -35,6 +35,7 @@ pre {
 // 
 .doc-section-title {
   margin: 1.5rem 0 1rem 0;
+  font-weight: $font-weight-semi;
   &::before {
     display: block;
     height: 6rem;
@@ -165,7 +166,7 @@ pre {
     z-index: 96;
     ul {
       li {
-        margin-bottom: $spacing-xs;
+        // margin-bottom: $spacing-xs; //conflicting with bootstrap select
       }
     }
   }

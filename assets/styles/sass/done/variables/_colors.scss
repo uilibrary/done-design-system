@@ -55,7 +55,8 @@ $gray-base: desaturate($purple, 72);
 
 $white:    #fff !default;
 $gray-100: lighten($gray-base, 36) !default;
-$gray-200: lighten($gray-base, 28) !default;
+// $gray-200: lighten($gray-base, 28) !default;
+$gray-200: #f9f9f9 !default;
 $gray-300: lighten($gray-base, 20) !default;
 $gray-400: lighten($gray-base, 8)  !default;
 $gray-500: $gray-base !default;

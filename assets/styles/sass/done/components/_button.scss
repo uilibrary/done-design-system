@@ -36,6 +36,9 @@ html [type="button"],
       transform: translateY(-2px);
     }
   }
+  &:not(:last-child) {
+    margin-right: .5rem;
+  }
 }
 
 .btn-group {
