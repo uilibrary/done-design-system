@@ -1380,11 +1380,15 @@ small {
   box-shadow: 0 4px 20px 0 rgba(73, 72, 88, 0.6); }
 
 .alert {
+  position: relative;
   padding: 1rem 1.5rem;
   color: #fff !important;
   border: 1px solid transparent !important; }
   .alert .alert-link {
     color: #dcdbe2; }
+  .alert .close {
+    position: absolute;
+    right: .8rem; }
   .alert.alert-primary {
     background-color: #7367F0; }
   .alert.alert-raised-primary {

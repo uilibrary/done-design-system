@@ -1,11 +1,15 @@
 .alert {
+  position: relative;
   padding: $alert-padding-y $alert-padding-x;
   color: $alert-text-color !important;
   border: 1px solid transparent !important;
   .alert-link {
     color: $alert-link-color;
   }
-  
+  .close {
+    position: absolute;
+    right: .8rem;
+  }
   @each $name, $value in $theme-colors {
     &.alert-#{$name} {
       background-color: $value;
