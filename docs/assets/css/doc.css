@@ -4429,30 +4429,35 @@ input[disabled] + .slider {
     text-transform: capitalize;
     margin: 0;
     padding: 30px 0 0 0; }
+    .doc-content__sidebar .sidebar__list > li > a {
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase; }
     .doc-content__sidebar .sidebar__list li a {
       display: block;
-      color: #494858;
-      padding: 8px 20px; }
+      color: #a5a3b4;
+      padding: 4px 20px; }
       .doc-content__sidebar .sidebar__list li a:hover {
         text-decoration: none; }
     .doc-content__sidebar .sidebar__list li ul {
       list-style: none;
       text-transform: capitalize;
-      margin: 0;
+      margin: 0 0 1.5rem;
       padding: 0; }
       .doc-content__sidebar .sidebar__list li ul li a {
-        padding-left: 40px;
-        color: #6f6c85;
+        color: #494858;
         border-radius: 0 30px 30px 0;
         padding-top: 6px;
         padding-bottom: 6px;
         font-size: 0.875rem;
-        padding-top: 6px;
-        padding-bottom: 6px;
-        margin: 4px 8px 4px 0; }
+        padding-top: 4px;
+        padding-bottom: 4px;
+        margin: 2px 8px 2px 0; }
         .doc-content__sidebar .sidebar__list li ul li a.active {
-          background: #7467ef;
+          background: #7367F0;
           color: #fff; }
+          .doc-content__sidebar .sidebar__list li ul li a.active:hover {
+            background: #7367F0; }
         .doc-content__sidebar .sidebar__list li ul li a:hover {
           background: #dcdbe2; }
 

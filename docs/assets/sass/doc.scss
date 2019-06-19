@@ -112,41 +112,44 @@ pre {
       text-transform: capitalize;
       margin: 0;
       padding: 30px 0 0 0;
+      > li > a {
+        font-size: $font-size-xs;
+        font-weight: $font-weight-semi;
+        text-transform: uppercase;
+      }
       li {
         a {
           display: block;
-          color: $gray-900;
-          padding: 8px 20px;
-          // &.active {
-          //   background: rgba($primary, 0.3);
-          // }
-
+          color: $gray-500;
+          padding: 4px 20px;
           &:hover {
             text-decoration: none;
-            // background: $gray-300;
           }
         }
         ul {
           list-style: none;
           text-transform: capitalize;
-          margin: 0;
+          margin: 0 0 1.5rem;
           padding: 0;
           li {
             a {
-              padding-left: 40px;
-              color: $gray-700;
+              // padding-left: 40px;
+              color: $gray-900;
               border-radius: 0 30px 30px 0;
               padding-top: 6px;
               padding-bottom: 6px;
               font-size: rem(14);
               // margin-right: 1rem;
-              padding-top: 6px;
-              padding-bottom: 6px;
-              margin: 4px 8px 4px 0;
+              padding-top: 4px;
+              padding-bottom: 4px;
+              margin: 2px 8px 2px 0;
 
               &.active {
-                background: #7467ef;
+                background: $primary;
                 color: #fff;
+                &:hover {
+                  background: $primary;
+                }
                 // font-weight: $font-weight-semi;
               }
               &:hover {
