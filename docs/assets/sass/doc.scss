@@ -74,6 +74,7 @@ pre {
 .doc-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: $header-height;
   width: 100%;
   position: fixed;
@@ -95,6 +96,26 @@ pre {
       }
     }
   }
+  .sidebar-toggle {
+    // display: none;
+    @media (max-width: 767px) {
+      display: inline-block;
+    }
+    .ti-close {
+      display: none;
+    }
+    .ti-menu {
+      display: inline-block;
+    }
+    .sidebar-open & {
+      .ti-close {
+        display: inline-block;
+      }
+      .ti-menu {
+        display: none;
+      }
+    }
+  }
 }
 .doc-content {
   &__sidebar {
@@ -106,7 +127,13 @@ pre {
     border-right: 1px solid $gray-300;
     background: rgba($gray-200, 0.5);
     overflow-y: scroll;
-    z-index: 98;
+    z-index: $z-index-sticky;
+    .sidebar-open & {
+      left: 0 !important;
+    }
+    @media (max-width: 767px) {
+      left: -$sidebar-width;
+    }
     .sidebar__list {
       list-style: none;
       text-transform: capitalize;
@@ -167,6 +194,11 @@ pre {
     width: calc(100% - #{$sidebar-width} - #{$secondary-sidebar-width});
     left: $sidebar-width;
     z-index: 96;
+    
+    @media (max-width: 767px) {
+      width: 100%;
+      left: 0;
+    }
     ul {
       li {
         // margin-bottom: $spacing-xs; //conflicting with bootstrap select
@@ -182,6 +214,10 @@ pre {
     border-left: 1px solid $border-color;
     margin-top: 2rem;
     padding: .25rem 1.5rem;
+    @media (max-width: 767px) {
+      display: none;
+    }
+
     ul {
       list-style: none;
       padding: 0;
@@ -206,5 +242,16 @@ pre {
         }
       }
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar-container {
+      .sidebar {
+          background: $white;
+          .sidebar-close {
+              display: block;
+          }
+      }
   }
 }

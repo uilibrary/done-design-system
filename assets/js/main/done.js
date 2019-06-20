@@ -12,7 +12,9 @@ var utils = {
       if (immediate && !timeout) func.apply(context, args);
     };
   },
-
+  isMobile: function isMobile() {
+    return window && window.matchMedia("(max-width: 767px)").matches;
+  },
   onSrollChangeColor: function onSrollChangeColor($elemOnScroll) {
     return utils.debounce(function() {
       var colorClass = $elemOnScroll.data("color-on-scroll");

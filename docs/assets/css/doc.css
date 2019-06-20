@@ -4396,6 +4396,7 @@ input[disabled] + .slider {
 .doc-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 3.75rem;
   width: 100%;
   position: fixed;
@@ -4413,6 +4414,17 @@ input[disabled] + .slider {
     letter-spacing: 2px; }
     .doc-header .brand a:hover {
       text-decoration: none; }
+  @media (max-width: 767px) {
+    .doc-header .sidebar-toggle {
+      display: inline-block; } }
+  .doc-header .sidebar-toggle .ti-close {
+    display: none; }
+  .doc-header .sidebar-toggle .ti-menu {
+    display: inline-block; }
+  .sidebar-open .doc-header .sidebar-toggle .ti-close {
+    display: inline-block; }
+  .sidebar-open .doc-header .sidebar-toggle .ti-menu {
+    display: none; }
 
 .doc-content__sidebar {
   width: 240px;
@@ -4423,7 +4435,12 @@ input[disabled] + .slider {
   border-right: 1px solid #dcdbe2;
   background: rgba(249, 249, 249, 0.5);
   overflow-y: scroll;
-  z-index: 98; }
+  z-index: 100; }
+  .sidebar-open .doc-content__sidebar {
+    left: 0 !important; }
+  @media (max-width: 767px) {
+    .doc-content__sidebar {
+      left: -240px; } }
   .doc-content__sidebar .sidebar__list {
     list-style: none;
     text-transform: capitalize;
@@ -4467,6 +4484,10 @@ input[disabled] + .slider {
   width: calc(100% - 240px - 200px);
   left: 240px;
   z-index: 96; }
+  @media (max-width: 767px) {
+    .doc-content__body {
+      width: 100%;
+      left: 0; } }
 
 .doc-content__secondary-sidebar {
   position: fixed;
@@ -4476,6 +4497,9 @@ input[disabled] + .slider {
   border-left: 1px solid #dcdbe2;
   margin-top: 2rem;
   padding: .25rem 1.5rem; }
+  @media (max-width: 767px) {
+    .doc-content__secondary-sidebar {
+      display: none; } }
   .doc-content__secondary-sidebar ul {
     list-style: none;
     padding: 0;
@@ -4493,3 +4517,9 @@ input[disabled] + .slider {
       padding-left: 1rem; }
       .doc-content__secondary-sidebar ul li ul a {
         font-size: 0.8125rem; }
+
+@media (max-width: 767px) {
+  .sidebar-container .sidebar {
+    background: #fff; }
+    .sidebar-container .sidebar .sidebar-close {
+      display: block; } }
