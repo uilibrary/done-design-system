@@ -81,7 +81,7 @@ pre {
   top: 0;
   left: 0;
   box-shadow: shadow-2dp($gray-400);
-  z-index: 99;
+  z-index: $z-index-popup;
   padding: 10px 40px;
   background: $white;
   .brand {
@@ -97,7 +97,7 @@ pre {
     }
   }
   .sidebar-toggle {
-    // display: none;
+    display: none;
     @media (max-width: 767px) {
       display: inline-block;
     }
@@ -128,6 +128,7 @@ pre {
     background: rgba($gray-200, 0.5);
     overflow-y: scroll;
     z-index: $z-index-sticky;
+    background: $body-bg;
     .sidebar-open & {
       left: 0 !important;
     }
