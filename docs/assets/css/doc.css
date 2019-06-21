@@ -4403,12 +4403,13 @@ input[disabled] + .slider {
   top: 0;
   left: 0;
   box-shadow: 0 2px 12px 0 rgba(187, 186, 198, 0.6);
-  z-index: 5000;
-  padding: 10px 40px;
+  z-index: 101;
+  padding: 10px 20px;
   background: #fff; }
   .doc-header .brand a {
     display: block;
     font-size: 1.125rem;
+    font-weight: 500;
     color: #332f5c;
     line-height: 1.1;
     letter-spacing: 2px; }

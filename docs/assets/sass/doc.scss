@@ -81,13 +81,14 @@ pre {
   top: 0;
   left: 0;
   box-shadow: shadow-2dp($gray-400);
-  z-index: $z-index-popup;
-  padding: 10px 40px;
+  z-index: 101;
+  padding: 10px 20px;
   background: $white;
   .brand {
     a {
       display: block;
       font-size: rem(18);
+      font-weight: $font-weight-semi;
       color: $black;
       line-height: 1.1;
       letter-spacing: 2px;
