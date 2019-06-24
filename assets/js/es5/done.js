@@ -1,5 +1,8 @@
 "use strict";
 
+/*
+* Utilities
+*/
 var utils = {
   debounce: function debounce(func, wait, immediate) {
     var timeout;
@@ -103,10 +106,16 @@ var utils = {
   }
 
 };
+/*
+* End Utilities
+*/
 
 $(document).ready(function () {
   var $elemOnScroll = $("[data-color-on-scroll]");
+  // init
+  utils.onSrollChangeColor($elemOnScroll)();
 
+  // onScroll event listener
   if ($elemOnScroll.length) {
     $(window).on("scroll", utils.onSrollChangeColor($elemOnScroll));
   }
@@ -117,15 +126,17 @@ $(document).ready(function () {
   }
 
   /*
-    Bootstrap Select
+  *  Bootstrap Select
   */
   $(".selectpicker").selectpicker();
   /*
-    Bootstrap Slider
+  *  Bootstrap Slider
   */
   $(".bootstrap-slider").slider({});
 
-  // Bootstrap Tooltip & popover
+  /* 
+  *  Bootstrap Tooltip & popover 
+  */
   $('[data-toggle="tooltip"]').tooltip();
 
   // Popover
@@ -147,14 +158,14 @@ $(document).ready(function () {
     $(this).parent(".input-group").removeClass("input-group-focus");
   });
 
-  // data-scroll-to
+  /*
+  * data-scroll-to="elementID"
+  */
   $('[data-scroll-to]').each(function (i) {
     var $this = $(this);
     var id = $this.data('scroll-to');
 
     $this.on('click', function (e) {
-      console.log(id);
-
       e.preventDefault();
       utils.scrollTo(document.getElementById(id));
     });
