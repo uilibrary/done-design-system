@@ -58,12 +58,12 @@ $(document).ready(function() {
   // Load Header
   $.get(templateDir + "/header.html", function(data) {
     var $header = $(".doc-header").html(data);
-  });
 
-  // Collapsible sidebar
-  $('.sidebar-toggle').on('click', function() {
-    $('.wrapper').toggleClass('sidebar-open');
-  })
+    // Collapsible sidebar
+    $('.sidebar-toggle').on('click', function() {
+      $('.wrapper').toggleClass('sidebar-open');
+    });
+  });
 
 });
 
