@@ -75,7 +75,21 @@
             </h2>
             <p>Run <code>npm run build</code> to build your project. 
               All files including compiled & minified css, js files will be stored in <code>/dist</code> directory.</p>
+            
+            <h2 class="doc-section-title" id="troubleshooting">
+              Troubleshooting
+              <a href="#troubleshooting" class="section-link"></a>
+            </h2>
 
+            <p>If Node.js is already installed, make sure you’re running v8 or up.</p>
+            <p>JavaScript dependencies sometimes get out of sync and inexplicable bugs start to happen. 
+              Follow these steps to give a fresh start to your development environment:</p>
+            <ul>
+              <li>1. The installed <code>npm</code> version must be at least v6.9.0 You can update your npm with: <code>npm install npm -g</code> (<code>sudo</code> may be required).</li>
+              <li>2. Re-install dependencies: <code>rm -Rf node_modules && npm install</code></li>
+              <li>3. Run <code>npm start</code></li>
+              <li>If this did not work, try running <code>npm cache clean</code> and repeat the above steps.</li>
+            </ul>
         </div>
 
         <div class="doc-content__secondary-sidebar">
@@ -85,6 +99,7 @@
                 <li><a href="#install">Installation</a></li>
                 <li><a href="#serve">Serve</a></li>
                 <li><a href="#build">Build</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
               </ul>
             </li>
           </ul>

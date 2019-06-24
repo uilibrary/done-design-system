@@ -1,12 +1,7 @@
 $(document).ready(function() {
   var $examples = $(".doc-example");
 
-  // $examples.each(function(e) {
-  //   var $example = $(this);
-  //   var $exampleHTML = $example.html();
-  //   $example.next().next().data('code', $exampleHTML);
 
-  // });
 
   // hilight
   var $codes = $(".code");
@@ -14,12 +9,9 @@ $(document).ready(function() {
 
   $codes.each(function(e) {
     var $code = $(this);
-    // var $example = $code.prev().prev();
     var code = $code.data("code");
 
-    // $example.html(code);
-
-    var highlighted = hljs.highlightAuto(code);
+    var highlighted = hljs.highlightAuto(code, ['xml', 'css']);
     $code.addClass("hljs");
     $code.html(hljs.fixMarkup(highlighted.value));
     $code.wrap("<pre></pre>");
