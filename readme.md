@@ -11,6 +11,44 @@
 ## Documetation
 Visit [documentation](https://uilibrary.github.io/done-design-system/docs) for detail instructions.
 
+## Folder Structure
+
+<pre class="highlight"><code>done/
+├── LICENSE.md
+├── README.md
+├── assets/
+  ├── styles/
+  │   ├── css
+  │   │    ├── done/done.css
+  │   │    ├── done/done.min.css
+  │   ├── sass
+  │       ├── done
+  │           ├── components
+  │           ├── functions
+  │           ├── mixins
+  │           ├── sections
+  │           ├── utilities
+  │           ├── variables
+  │   
+  └── imgages/
+  │   ├── cities/
+  │   ├── faces/
+  │   ├── illustrations/
+  │   ├── logos/
+  │   ├── products/
+  └── js/
+  │   ├── es5/done.min.js
+  │   ├── es5/done.js
+  │   └── main/done.js
+  │   
+  └── vendor/
+      ├── bootstrap/
+      ├── bootstrap-select/
+      ├── bootstrap-slider/
+
+</code></pre>
+
+
 ## Troubleshooting
 
 ### npm and Node.js
