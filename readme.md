@@ -4,7 +4,7 @@ So we decided to build a design system for our upcoming products. Done is like a
 
 Done is `MIT` licensed, so you can use for your personal/commercial projects.
 
-Files & [SASS variables](https://uilibrary.github.io/done-design-system/docs/sass/variable.html) are organized very carefully as these gets messy very easily.
+Files & [SASS variables](https://uilibrary.github.io/done-design-system/docs/sass/variable.html) are organized very carefully as these get messy very easily.
 
 ## Quick start
 
