@@ -1,5 +1,5 @@
 ## [Done Design System](https://uilibrary.github.io/done-design-system/)
-Design system for bootstrap 4. While bilding new products we were doing same thing over and over again.
+Design system for bootstrap 4. While building new products we were doing same thing over and over again.
 So we decided to build a design system for our upcoming products. Done is like an inventory. 
 
 Done is `MIT` licensed, so you can use for your personal/commercial projects.
