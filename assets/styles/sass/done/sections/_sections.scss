@@ -6,22 +6,29 @@
 .section-header {
   min-height: 100vh;
   padding-top: 120px;
+  height: 750px;
+  // padding-bottom: 120px;
+  // height: 750px;
+  // background-image: url(../../../images/done_illustration.png);
+  // background-size: contain !important;
+  // background-repeat: no-repeat;
+  // background-position-x: right !important;
   .section-header-image {
     position: absolute;
     height: 100%;
-    width: 100%;
+    // width: 100%;
     top: 0;
-    left: 0;
-    background-size: cover;
+    right: 0;
+    // background-size: cover;
     z-index: -1;
-    &::after {
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   height: 100%;
+    //   width: 100%;
+    //   top: 0;
+    //   left: 0;
+    // }
   }
   .section-header-content {
     padding-top: 3rem;

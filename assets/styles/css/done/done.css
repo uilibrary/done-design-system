@@ -4161,22 +4161,14 @@ input[disabled] + .slider {
 
 .section-header {
   min-height: 100vh;
-  padding-top: 120px; }
+  padding-top: 120px;
+  height: 750px; }
   .section-header .section-header-image {
     position: absolute;
     height: 100%;
-    width: 100%;
     top: 0;
-    left: 0;
-    background-size: cover;
+    right: 0;
     z-index: -1; }
-    .section-header .section-header-image::after {
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0; }
   .section-header .section-header-content {
     padding-top: 3rem; }
 
