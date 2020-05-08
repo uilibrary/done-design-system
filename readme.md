@@ -1,4 +1,6 @@
-## [Done Design System](https://uilibrary.github.io/done-design-system/)
+## [Done Design System](https://ui-lib.com/downloads/done-design-system/)
+![Done Design System](https://ui-lib.com/wp-content/uploads/2019/06/done-banner.png)
+
 Design system for bootstrap 4. While building new products we were doing same thing over and over again.
 So we decided to build a design system for our upcoming products. Done is like an inventory. 
 
